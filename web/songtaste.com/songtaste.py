@@ -15,11 +15,18 @@ import traceback
 
 from threadpool import ThreadPool
 
+
+#--------------------------------------------------------------------------------------
+#Configuraion
+
 host = 'http://songtaste.com'
+
 #proxy = {'http': 'http://beiwebcache1.core.hp.com:8080'}
 proxy = None
 
 thread_count = 3
+#--------------------------------------------------------------------------------------
+
 
 #get the HTML Source from url through proxies
 def getContent(url, proxies = None):
@@ -49,21 +56,28 @@ def getContent(url, proxies = None):
             time.sleep(10)
     return content
 
+def existFile(filename):
+    if os.path.exists(filename):
+        return True
+    else:
+        return False
+
+#--------------------------------------------------------------------------------------
 def getSong(song_id, order, save_path):
     global proxy
-    
+
     url = 'http://songtaste.com/play.php?song_id='+song_id
     htmlcontent = getContent(url, proxy)
     match_obj = re.search('''WrtSongLine\("(\d+)", "(.*?)\s*", ".*?", "\d*", "\d*", "(.*?)"\);''', htmlcontent)
-    
+
     if not match_obj:
         return
-    
+
     song_id = match_obj.group(1).strip()
     song_name = match_obj.group(2).strip()
     song_url = match_obj.group(3).strip()
     #print " ", song_id, song_name, song_url
-    
+
     try:
         saveSong(order, song_id, song_name, song_url, save_path)
     except:
@@ -72,12 +86,7 @@ def getSong(song_id, order, save_path):
 def getSongThread(data):
     getSong(data[0], data[1], data[2])
 
-def existFile(filename):
-    if os.path.exists(filename):
-        return True
-    else:
-        return False
-        
+
 def saveSong(order, song_id, song_name, song_url, save_path):
     global proxy
     order = int(order)
@@ -91,18 +100,18 @@ def saveSong(order, song_id, song_name, song_url, save_path):
     file_name = file_name.replace('>', '-')
     file_name = file_name.replace('|', '-')
     song_save_path = save_path+'/'+"%03d"%order+'_'+song_id+'_'+file_name+song_url[song_url.rfind('.'):]
-    
+
     if not os.path.isdir(save_path):
         if existFile(save_path):
             print "  Path:", save_path, 'is a file, not a directory, exit!\n'
             return
         else:
             os.makedirs(save_path)
-    
+
     if existFile(song_save_path):
         print "%03d"%order, "- Song:", song_save_path, "exists, pass.\n"
         return
-    
+
     print "%03d"%order, "- Download Song:", song_save_path
     content = getContent(song_url, proxy)
     if content:
@@ -113,21 +122,23 @@ def saveSong(order, song_id, song_name, song_url, save_path):
     else:
         print "%03d"%order, "- Failed to download song:" + song_save_path
     print ""
-    
+
+
+#--------------------------------------------------------------------------------------
 def getAllRecommendedSongs(url, save_path):
     global proxy
     global host
     global thread_count
-    
+
     htmlcontent = getContent(url, proxy)
-    
+
     matched_groups = re.findall('''<a href='(/user/\d+/allrec/\d+)'>(\d+)</a>''', htmlcontent)
     for matched in matched_groups:
         url = host+matched[0].strip()
         htmlcontent += getContent(url, proxy)
-    
+
     pool = ThreadPool(thread_count)
-    
+
     matched_groups = re.findall('''WL\("(\d+)", "(\d+)","(.*?)\s+",".*?"\);''', htmlcontent)
     for matched in matched_groups:
         print '-'*2 ,matched
@@ -136,17 +147,17 @@ def getAllRecommendedSongs(url, save_path):
         song_name = matched[2].strip()
         #getSong(song_id, order, save_path)
         pool.queueTask(getSongThread, (song_id, order, save_path))
-    
+
     pool.joinAll()
-    
+
 def getAllRecommendedSongsFromUser(user_id):
     global host
     url = host+'/user/'+str(user_id)+'/allrec'
     getAllRecommendedSongs(url, str(user_id))
-    
+
+#--------------------------------------------------------------------------------------
 if __name__=="__main__":
     getAllRecommendedSongsFromUser('232464')
-    
-    
-    
-    
+
+
+
