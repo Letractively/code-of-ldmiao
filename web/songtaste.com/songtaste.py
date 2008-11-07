@@ -124,23 +124,13 @@ def saveSong(order, song_id, song_name, song_url, save_path):
         print "%03d"%order, "- Failed to download song:" + song_save_path
     print ""
 
-
 #--------------------------------------------------------------------------------------
-def getAllRecommendedSongs(url, save_path):
-    global proxy
-    global host
+def getSongsFromHTML(htmlcontent, save_path):
     global thread_count
-
-    htmlcontent = getContent(url, proxy)
-
-    matched_groups = re.findall('''<a href='(/user/\d+/allrec/\d+)'>(\d+)</a>''', htmlcontent)
-    for matched in matched_groups:
-        url = host+matched[0].strip()
-        htmlcontent += getContent(url, proxy)
 
     pool = ThreadPool(thread_count)
 
-    matched_groups = re.findall('''WL\("(\d+)", "(\d+)","(.*?)\s+",".*?"\);''', htmlcontent)
+    matched_groups = re.findall('''W[LS]\("(\d+)",\s*"(\d+)",\s*"(.*?)\s+",''', htmlcontent)
     for matched in matched_groups:
         print '-'*2 ,matched
         order = matched[0].strip()
@@ -151,15 +141,42 @@ def getAllRecommendedSongs(url, save_path):
 
     pool.joinAll()
 
+def getSongsFromURL(url, save_path):
+    global proxy
+
+    htmlcontent = getContent(url, proxy)
+    getSongsFromHTML(htmlcontent, save_path)
+    
+#--------------------------------------------------------------------------------------
+def getAllRecommendedSongsFromUser(url, save_path):
+    global proxy
+    global host
+    
+    htmlcontent = getContent(url, proxy)
+
+    matched_groups = re.findall('''<a href='(/user/\d+/allrec/\d+)'>(\d+)</a>''', htmlcontent)
+    for matched in matched_groups:
+        url = host+matched[0].strip()
+        htmlcontent += getContent(url, proxy)
+    
+    getSongsFromHTML(htmlcontent, save_path)
+
 def getAllRecommendedSongsFromUser(user_id):
     global host
     url = host+'/user/'+str(user_id)+'/allrec'
-    getAllRecommendedSongs(url, str(user_id))
+    getAllRecommendedSongsFromUser(url, 'user_'+str(user_id))
+
+#--------------------------------------------------------------------------------------
+def getSongsFromAblum(album_id):
+    global host
+    
+    url = host+'/album/'+str(album_id)
+    getSongsFromURL(url, 'album_'+str(album_id))
 
 #--------------------------------------------------------------------------------------
 if __name__=="__main__":
-    user_id = '332611'
-    getAllRecommendedSongsFromUser('232464')
-
+    #getAllRecommendedSongsFromUser('232464')
+    #getSongsFromAblum('136560')
+    getSongsFromURL('http://songtaste.com/music/chart', 'week_order');
 
 
