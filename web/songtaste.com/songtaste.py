@@ -85,6 +85,10 @@ def saveSong(order, song_id, song_name, song_url, save_path):
     file_name = file_name.replace('>', '-')
     file_name = file_name.replace('|', '-')
     song_save_path = save_path+'/'+"%03d"%order+'_'+song_id+'_'+file_name+song_url[song_url.rfind('.'):]
+    
+    if not os.path.isdir(save_path):
+        os.makedirs(save_path)
+    
     if existFile(song_save_path):
         print "  Song:", song_save_path, "exists, pass\n"
         return
@@ -92,10 +96,13 @@ def saveSong(order, song_id, song_name, song_url, save_path):
     print "  Download Song:", song_save_path
     content = getContent(song_url, proxy)
     if content:
-        print "  Save song to " + song_save_path +"\n"
+        print "  Save song to " + song_save_path
         f = open(song_save_path,"wb")
         f.write(content)
         f.close()
+    else:
+        print "  Failed to download song:" + song_save_path
+    print ""
     
 def getAllRecommendedSongs(url):
     global proxy
