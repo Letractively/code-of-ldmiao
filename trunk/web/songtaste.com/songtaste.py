@@ -24,7 +24,7 @@ host = 'http://songtaste.com'
 #proxy = {'http': 'http://beiwebcache1.core.hp.com:8080'}
 proxy = None
 
-thread_count = 3
+thread_count = 5
 
 
 #--------------------------------------------------------------------------------------
@@ -54,7 +54,7 @@ def getContent(url, proxies = None):
             #success = False
             test_time = test_time-1
             print "-->Get: "+url+" failed, " + str(test_time) + " times left~~~~"
-            time.sleep(10)
+            time.sleep(random.randrange(8,12,1))
     return content
 
 def existFile(filename):
@@ -148,7 +148,7 @@ def getSongsFromURL(url, save_path):
     getSongsFromHTML(htmlcontent, save_path)
     
 #--------------------------------------------------------------------------------------
-def getAllRecommendedSongsFromUser(url, save_path):
+def getAllRecommendedSongsFromUserURL(url, save_path):
     global proxy
     global host
     
@@ -164,7 +164,7 @@ def getAllRecommendedSongsFromUser(url, save_path):
 def getAllRecommendedSongsFromUser(user_id):
     global host
     url = host+'/user/'+str(user_id)+'/allrec'
-    getAllRecommendedSongsFromUser(url, 'user_'+str(user_id))
+    getAllRecommendedSongsFromUserURL(url, 'user_'+str(user_id))
 
 #--------------------------------------------------------------------------------------
 def getSongsFromAblum(album_id):
@@ -175,8 +175,8 @@ def getSongsFromAblum(album_id):
 
 #--------------------------------------------------------------------------------------
 if __name__=="__main__":
-    #getAllRecommendedSongsFromUser('232464')
+    getAllRecommendedSongsFromUser('232464')
     #getSongsFromAblum('136560')
-    getSongsFromURL('http://songtaste.com/music/chart', 'week_order');
-
+    #getSongsFromURL('http://songtaste.com/music/chart', 'week_order');
+    #getSongsFromURL('http://songtaste.com/music.php?tag=chart&dt=2008-10-27', 'week_2008-10-27');
 
