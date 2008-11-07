@@ -87,10 +87,14 @@ def saveSong(order, song_id, song_name, song_url, save_path):
     song_save_path = save_path+'/'+"%03d"%order+'_'+song_id+'_'+file_name+song_url[song_url.rfind('.'):]
     
     if not os.path.isdir(save_path):
-        os.makedirs(save_path)
+        if existFile(save_path):
+            print "  Path:", save_path, 'is a file, not a directory, exit!\n'
+            return
+        else:
+            os.makedirs(save_path)
     
     if existFile(song_save_path):
-        print "  Song:", song_save_path, "exists, pass\n"
+        print "  Song:", song_save_path, "exists, pass.\n"
         return
     
     print "  Download Song:", song_save_path
