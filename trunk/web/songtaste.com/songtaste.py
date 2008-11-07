@@ -158,6 +158,7 @@ def getAllRecommendedSongsFromUser(user_id):
 
 #--------------------------------------------------------------------------------------
 if __name__=="__main__":
+    user_id = '332611'
     getAllRecommendedSongsFromUser('232464')
 
 
