@@ -23,7 +23,7 @@ def getContent(url, proxies = None):
         print "  Get: "+url
     else:
         print "  Get: "+url+" through " + proxies['http']
-    content = ""
+    content = None
     test_time = 3
     #success = False
     #while(success == False):
@@ -91,10 +91,11 @@ def saveSong(order, song_id, song_name, song_url, save_path):
     
     print "  Download Song:", song_save_path
     content = getContent(song_url, proxy)
-    print "  Save song to " + song_save_path +"\n"
-    f = open(song_save_path,"wb")
-    f.write(content)
-    f.close()
+    if content:
+        print "  Save song to " + song_save_path +"\n"
+        f = open(song_save_path,"wb")
+        f.write(content)
+        f.close()
     
 def getAllRecommendedSongs(url):
     global proxy
