@@ -24,9 +24,9 @@ thread_count = 3
 #get the HTML Source from url through proxies
 def getContent(url, proxies = None):
     if proxies==None:
-        print "  Get: "+url
+        print "-->Get: "+url
     else:
-        print "  Get: "+url+" through " + proxies['http']
+        print "-->Get: "+url+" through " + proxies['http']
     content = None
     test_time = 3
     #success = False
@@ -45,7 +45,7 @@ def getContent(url, proxies = None):
         except:
             #success = False
             test_time = test_time-1
-            print "  Get: "+url+" failed, " + str(test_time) + " times left~~~~"
+            print "-->Get: "+url+" failed, " + str(test_time) + " times left~~~~"
             time.sleep(10)
     return content
 
@@ -100,18 +100,18 @@ def saveSong(order, song_id, song_name, song_url, save_path):
             os.makedirs(save_path)
     
     if existFile(song_save_path):
-        print "  Song:", song_save_path, "exists, pass.\n"
+        print "%03d"%order, "- Song:", song_save_path, "exists, pass.\n"
         return
     
-    print "  Download Song:", song_save_path
+    print "%03d"%order, "- Download Song:", song_save_path
     content = getContent(song_url, proxy)
     if content:
-        print "  Save song to " + song_save_path
+        print "%03d"%order, "- Save song to " + song_save_path
         f = open(song_save_path,"wb")
         f.write(content)
         f.close()
     else:
-        print "  Failed to download song:" + song_save_path
+        print "%03d"%order, "- Failed to download song:" + song_save_path
     print ""
     
 def getAllRecommendedSongs(url, save_path):
@@ -145,7 +145,7 @@ def getAllRecommendedSongsFromUser(user_id):
     getAllRecommendedSongs(url, str(user_id))
     
 if __name__=="__main__":
-    getAllRecommendedSongsFromUser('36692')
+    getAllRecommendedSongsFromUser('232464')
     
     
     
