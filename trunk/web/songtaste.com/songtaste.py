@@ -109,10 +109,10 @@ def saveSong(order, song_id, song_name, song_url, save_path):
             os.makedirs(save_path)
 
     if existFile(song_save_path):
-        print "%03d"%order, "- Song:", song_save_path, "exists, pass.\n"
+        print "%03d"%order, "- Song:", song_save_path, "already exists, pass.\n"
         return
 
-    print "%03d"%order, "- Download Song:", song_save_path
+    print "%03d"%order, "- Start downloading Song:", song_save_path
     content = getContent(song_url, proxy)
     if content:
         print "%03d"%order, "- Save song to " + song_save_path
