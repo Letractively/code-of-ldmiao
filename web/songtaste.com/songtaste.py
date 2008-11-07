@@ -86,7 +86,7 @@ def saveSong(order, song_id, song_name, song_url, save_path):
     file_name = file_name.replace('|', '-')
     song_save_path = save_path+'/'+"%03d"%order+'_'+song_id+'_'+file_name+song_url[song_url.rfind('.'):]
     if existFile(song_save_path):
-        print "  Song:", song_save_path, "exists, pass"
+        print "  Song:", song_save_path, "exists, pass\n"
         return
     
     print "  Download Song:", song_save_path
