@@ -68,8 +68,9 @@ def existFile(filename):
 #--------------------------------------------------------------------------------------
 def getSong(song_id, order, save_path):
     global proxy
-
-    url = 'http://songtaste.com/play.php?song_id='+song_id
+    global host
+    
+    url = host + '/play.php?song_id='+song_id
     htmlcontent = getContent(url, proxy)
     match_obj = re.search('''WrtSongLine\("(\d+)", "(.*?)\s*", ".*?", "\d*", "\d*", "(.*?)"\);''', htmlcontent)
 
@@ -93,16 +94,19 @@ def getSongThread(data):
 def saveSong(order, song_id, song_name, song_url, save_path):
     global proxy
     order = int(order)
-    file_name = song_name.replace('\\','')
-    file_name = file_name.replace('/', '')
-    file_name = file_name.replace(':', '-')
-    file_name = file_name.replace('*', '-')
-    file_name = file_name.replace('?', '-')
-    file_name = file_name.replace('"', '-')
-    file_name = file_name.replace('<', '-')
-    file_name = file_name.replace('>', '-')
-    file_name = file_name.replace('|', '-')
-    song_save_path = save_path+'/'+"%03d"%order+'_'+song_id+'_'+file_name+song_url[song_url.rfind('.'):]
+    
+    #--------------------------------------------------------------------------
+    #Replace all the invalid characters
+    #re.sub('''[\\\\/\:\*\?"<>\|]+''', '-', '\\,/,|,",:,*,?,<,>')
+    #re.sub('''[\\\\/\:\*\?"<>\|]+''', '-', '\\/|":*?<>')
+    #Replace '\' and '/' to empty string ''
+    song_name = re.sub('''[\\\\/]+''', '', song_name)
+    #Replace ':', '*', '?', '"', '<', '>', '|' to string '-'
+    song_name = re.sub('''[\:\*\?"<>\|]+''', '-', song_name)
+    song_name = song_name.strip()
+    #--------------------------------------------------------------------------
+    
+    song_save_path = save_path+'/'+"%03d"%order+'_'+song_id+'_'+song_name+song_url[song_url.rfind('.'):]
 
     if not os.path.isdir(save_path):
         if existFile(save_path):
