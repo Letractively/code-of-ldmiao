@@ -24,7 +24,7 @@ host = 'http://songtaste.com'
 #proxy = {'http': 'http://beiwebcache1.core.hp.com:8080'}
 proxy = None
 
-thread_count = 2
+thread_count = 5
 
 
 #--------------------------------------------------------------------------------------
@@ -55,7 +55,7 @@ def getContent(url, proxies = None):
         except:
             #success = False
             test_time = test_time-1
-            print "           -> Get:["+url+"] failed, " + str(test_time) + " times left~~~~"
+            print "           -> Get:["+url+"] failed, " + str(test_time) + " times left~"
             time.sleep(random.randrange(8,12,1))
     return content
 
@@ -118,12 +118,12 @@ def saveSong(order, song_id, song_name, song_url, save_path):
     print "%03d"%order, '- Downloading:[' + song_save_path + '] \n           - From:[' + song_url+']'
     content = getContent(song_url, proxy)
     if content:
-        print "%03d"%order, "- File  Saved:[" + song_save_path+"]"
+        print "%03d"%order, "- File  Saved:[" + song_save_path + "]"
         f = open(song_save_path,"wb")
         f.write(content)
         f.close()
     else:
-        print "%03d"%order, "- Failed to download:[" + song_save_path + "]"
+        print "%03d"%order, "- Failed  for:[" + song_save_path + "]"
     print ""
 
 #--------------------------------------------------------------------------------------
@@ -177,7 +177,7 @@ def getSongsFromAblum(album_id):
 
 #--------------------------------------------------------------------------------------
 if __name__=="__main__":
-    getAllRecommendedSongsFromUser('107869')
+    getAllRecommendedSongsFromUser('232464')
     #getSongsFromAblum('136560')
     #getSongsFromURL('http://songtaste.com/music/chart', 'week_order');
     #getSongsFromURL('http://songtaste.com/music.php?tag=chart&dt=2008-10-27', 'week_2008-10-27');
