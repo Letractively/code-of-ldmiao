@@ -186,4 +186,3 @@ if __name__=="__main__":
     #getSongsFromURL('http://songtaste.com/music/chart', 'week_order');
     #getSongsFromURL('http://songtaste.com/music.php?tag=chart&dt=2008-10-27', 'week_2008-10-27');
     #getSongsFromURL('http://songtaste.com/music/lsn', 'lsn');
-
