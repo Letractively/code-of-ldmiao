@@ -1,0 +1,1 @@
+python pythoncard_py2exe_setup.py py2exe -b 1 -c
