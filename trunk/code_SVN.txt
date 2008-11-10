@@ -1,0 +1,6 @@
+http://pygtalkrobot.googlecode.com/svn/trunk/
+http://aiassistant.googlecode.com/svn/trunk/
+http://newsmth.googlecode.com/svn/trunk/
+http://picasa-album-download.googlecode.com/svn/trunk/
+http://ipsmth.googlecode.com/svn/trunk/
+
