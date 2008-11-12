@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<crawler>
+    <pattern>
+        <list name="user_songs">
+            <subPattern><![CDATA[<a href='(/user/\d+/allrec/\d+)'>(\d+)</a>]]></subPattern>
+            <subURL><![CDATA[%HOST%1]]><subURL/>
+            <nextPagePattern><![CDATA[<a href='(/user/\d+/allrec/\d+)'>(\d+)</a>]]></nextPagePattern>
+            <nextPageURL><![CDATA[%HOST%1]]><nextPageURL/>
+        </list>
+        <list name="song">
+            <subPattern><![CDATA[W[LS]\("(\d+)",\s*"(\d+)",\s*"(.*?)\s+",]]></subPattern>
+            <subURL><![CDATA[%HOST/play.php?song_id=%1]]><subURL/>
+            <nextPagePattern><![CDATA[<a href='(/user/\d+/allrec/\d+)'>(\d+)</a>]]></nextPagePattern>
+            <nextPageURL><![CDATA[%HOST%1]]><nextPageURL/>
+        </list>
+        <data name="songfile">
+            <dataPattern><![CDATA[WrtSongLine\("(\d+)", "(.*?)\s*", ".*?", "\d*", "\d*", "(.*?)"\);]]></dataPattern>
+            <dataName><![CDATA[%1.%URL_FILE_EXTENSION]]></dataName>
+            <dataURL><![CDATA[%2]]><dataURL/>
+        </data>
+    </pattern>
+    <crawling>
+        <path name="user_recommendation">
+            <process name="user_songs"/>
+            <process name="song"/>
+            <process name="songfile"/>
+        <path>
+        <path name="album">
+            <process name="album_songs"/>
+            <process name="song"/>
+            <process name="songfile"/>
+        <path>
+    </crawling>
+</crawler>
