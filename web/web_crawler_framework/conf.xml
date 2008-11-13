@@ -3,20 +3,18 @@
     <pattern>
         <list name="user_songs">
             <subPattern><![CDATA[<a href='(/user/\d+/allrec/\d+)'>(\d+)</a>]]></subPattern>
-            <subURL><![CDATA[%HOST%1]]><subURL/>
+            <subURL><![CDATA[%H%1]]></subURL>
             <nextPagePattern><![CDATA[<a href='(/user/\d+/allrec/\d+)'>(\d+)</a>]]></nextPagePattern>
-            <nextPageURL><![CDATA[%HOST%1]]><nextPageURL/>
+            <nextPageURL><![CDATA[%H%1]]></nextPageURL>
         </list>
         <list name="song">
             <subPattern><![CDATA[W[LS]\("(\d+)",\s*"(\d+)",\s*"(.*?)\s+",]]></subPattern>
-            <subURL><![CDATA[%HOST/play.php?song_id=%1]]><subURL/>
-            <nextPagePattern><![CDATA[<a href='(/user/\d+/allrec/\d+)'>(\d+)</a>]]></nextPagePattern>
-            <nextPageURL><![CDATA[%HOST%1]]><nextPageURL/>
+            <subURL><![CDATA[%H/play.php?song_id=%1]]></subURL>
         </list>
         <data name="songfile">
             <dataPattern><![CDATA[WrtSongLine\("(\d+)", "(.*?)\s*", ".*?", "\d*", "\d*", "(.*?)"\);]]></dataPattern>
-            <dataName><![CDATA[%1.%URL_FILE_EXTENSION]]></dataName>
-            <dataURL><![CDATA[%2]]><dataURL/>
+            <dataName><![CDATA[%1]]></dataName>
+            <dataURL><![CDATA[%2]]></dataURL>
         </data>
     </pattern>
     <crawling>
@@ -24,11 +22,11 @@
             <process name="user_songs"/>
             <process name="song"/>
             <process name="songfile"/>
-        <path>
+        </path>
         <path name="album">
             <process name="album_songs"/>
             <process name="song"/>
             <process name="songfile"/>
-        <path>
+        </path>
     </crawling>
 </crawler>
