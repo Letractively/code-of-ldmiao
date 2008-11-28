@@ -57,25 +57,45 @@ class feedconverter(object):
         #from pprint import pprint
         #pprint(r)
         print r.feed.title.value
-        return r.feed.entry
+        return r.feed.title.value.encode('utf-8', 'ignore'), r.feed.entry
+    
+    def saveToGAE(self, feed_name, title, url, content):
+        gae_url = "http://ismth.appspot.com/rss/add/"
+        #gae_url = "http://localhost:8080/rss/add/"
+        result = self.send(gae_url, {'name': feed_name, 'title': title, 'url': url, 'content': content, } )
+        if result:
+            print title, 'saved!'
+        else:
+            print title, 'error!'
         
-if __name__=='__main__':
-    feed = "http://blog.sina.com.cn/rss/skyinwell.xml"
-    #feed = "http://feeds.feedburner.com/Betterexplained"
+    def send(self, url, data, proxies=None):
+        params = urllib.urlencode(data)
+        nf = urllib.urlopen(url, data=params, proxies=proxies)
+        if nf:
+            return True
+        return False
+    
+def test():
+    #feed = "http://blog.sina.com.cn/rss/skyinwell.xml"
+    feed = "http://feeds.feedburner.com/Betterexplained"
+    #feed = "http://blog.ifeng.com/rss/1300174.xml"
+    #feed = "http://feeds.feedburner.com/ruanyifeng"
     
     user = "PyGtalkRobot"
     passwd = "PyGtalkRobotByLdmiao"
     fc = feedconverter(user, passwd)
-    feeds = fc.feeds(feed, 160)
+    title, feeds = fc.feeds(feed, 2000)
     
-    f = open('skyinwell.html', 'w')
+    f = open(u'skyinwell.html', 'w')
+    
+    
     style='''<style>
         * {font-family: Consolas; font-size: 16px;}
         .feed {margin: 0.8em 1em 0.8em 1em; border: thin solid gray;}
         .title {padding: 0.3em 0 0.3em 1em; background-color:gray; font-weight:bold; font-size: 20px; text-decoration:none;}
-        .content {padding: 0 0 0 1em; }
-    </style>\n'''
-    f.write(style)
+        .content {padding: 0 0 0 1em; }\n</style>\n'''
+    
+    f.write('<html>\n<head>\n<title>%s</title>\n%s\n</head>\n<body>\n'%(title.encode('utf-8', 'ignore'), style))
     
     idx = 1
     feeds = reversed(feeds)
@@ -99,6 +119,36 @@ if __name__=='__main__':
         f.flush()
         
         idx += 1
-        
+    f.write('</body></html>')
     f.close()
 
+if __name__=='__main__':
+    #test()
+    feed = "http://blog.sina.com.cn/rss/skyinwell.xml"
+    #feed = "http://feeds.feedburner.com/Betterexplained"
+    #feed = "http://blog.ifeng.com/rss/1300174.xml"
+    #feed = "http://feeds.feedburner.com/ruanyifeng"
+    
+    user = "PyGtalkRobot"
+    passwd = "PyGtalkRobotByLdmiao"
+    fc = feedconverter(user, passwd)
+    feed_title, feeds = fc.feeds(feed, 2000)
+    
+    idx = 1
+    feeds = reversed(feeds)
+    for feed in feeds:
+        
+        url = feed.link.href.encode('utf-8', 'ignore')
+        title = feed.title.value.encode('utf-8', 'ignore')
+        
+        content = ''
+        if feed.has_key('content'):
+            content = feed.content.value
+        elif feed.has_key('summary'):
+            content = feed.summary.value
+        content = content.encode('utf-8', 'ignore')
+        
+        fc.saveToGAE('skyinwell', title, url, content)
+        
+        idx += 1
+        
