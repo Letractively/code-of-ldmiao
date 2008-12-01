@@ -94,8 +94,11 @@ def test():
         .feed {margin: 0.8em 1em 0.8em 1em; border: thin solid gray;}
         .title {padding: 0.3em 0 0.3em 1em; background-color:gray; font-weight:bold; font-size: 20px; text-decoration:none;}
         .content {padding: 0 0 0 1em; }\n</style>\n'''
+        
+    title = unicode(title, 'gbk', 'ignore').encode('utf-8', 'ignore')
+    html_pre = '<html>\n<head>\n<title>%s</title>\n%s\n</head>\n<body>\n'%(title, style)
     
-    f.write('<html>\n<head>\n<title>%s</title>\n%s\n</head>\n<body>\n'%(title.encode('utf-8', 'ignore'), style))
+    f.write(html_pre)
     
     idx = 1
     feeds = reversed(feeds)
@@ -103,9 +106,9 @@ def test():
         print '%03d:'%(idx), feed.title.value
         #print 'feed source:', feed.source['stream-id'].value
         #print 'feed content:', feed.summary.value
-        f.write('<div class="feed">\n')
-        pattern = '  <div class="%s">%s</div>\n'
-        f.write('  <div class="title">%d. <a href="%s" target="_blank">%s</a></div>\n'%(idx, feed.link.href.encode('utf-8', 'ignore'), feed.title.value.encode('utf-8', 'ignore')))
+        feed_pre = '<div class="feed">\n'
+        feed_pre += '  <div class="title">%d. <a href="%s" target="_blank">%s</a></div>\n'%(idx, feed.link.href.encode('utf-8', 'ignore'), feed.title.value.encode('utf-8', 'ignore'))
+        f.write(feed_pre)
         
         content = ''
         if feed.has_key('content'):
@@ -114,8 +117,12 @@ def test():
             content = feed.summary.value
         content = content.encode('utf-8', 'ignore')
 		
-        f1 = open(u'%3d.html'%(idx), 'w')
+        f1 = open(u'skyinwell/%03d.html'%(idx), 'w')
+        f1.write(html_pre)
+        f1.write(feed_pre)
         f1.write('<div class="content">%s</div>\n'%(content));
+        f1.write('</div>\n\n')
+        f1.write('</body></html>')
         f1.close()
 		
         f.write('  <div class="content">%s</div>\n'%(content))
