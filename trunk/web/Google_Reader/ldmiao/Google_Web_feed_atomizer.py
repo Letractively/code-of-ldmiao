@@ -1,5 +1,5 @@
 ﻿import sys
-import httplib2 #easy_install httplib2
+import httplib2
 import urllib, urllib2
 from xml2dict import XML2Dict
 
@@ -76,8 +76,8 @@ class feedconverter(object):
         return False
     
 def test():
-    #feed = "http://blog.sina.com.cn/rss/skyinwell.xml"
-    feed = "http://feeds.feedburner.com/Betterexplained"
+    feed = "http://blog.sina.com.cn/rss/skyinwell.xml"
+    #feed = "http://feeds.feedburner.com/Betterexplained"
     #feed = "http://blog.ifeng.com/rss/1300174.xml"
     #feed = "http://feeds.feedburner.com/ruanyifeng"
     
@@ -113,7 +113,11 @@ def test():
         elif feed.has_key('summary'):
             content = feed.summary.value
         content = content.encode('utf-8', 'ignore')
-        
+		
+        f1 = open(u'%3d.html'%(idx), 'w')
+        f1.write('<div class="content">%s</div>\n'%(content));
+        f1.close()
+		
         f.write('  <div class="content">%s</div>\n'%(content))
         f.write('</div>\n\n')
         f.flush()
@@ -121,9 +125,8 @@ def test():
         idx += 1
     f.write('</body></html>')
     f.close()
-
-if __name__=='__main__':
-    #test()
+	
+def saveFeedToGAE():
     feed = "http://blog.sina.com.cn/rss/skyinwell.xml"
     #feed = "http://feeds.feedburner.com/Betterexplained"
     #feed = "http://blog.ifeng.com/rss/1300174.xml"
@@ -151,4 +154,9 @@ if __name__=='__main__':
         fc.saveToGAE('skyinwell', title, url, content)
         
         idx += 1
+		
+if __name__=='__main__':
+    test()
+	#saveFeedToGAE()
+
         
