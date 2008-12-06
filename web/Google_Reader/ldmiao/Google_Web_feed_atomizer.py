@@ -80,13 +80,14 @@ def test():
     #feed = "http://feeds.feedburner.com/Betterexplained"
     #feed = "http://blog.ifeng.com/rss/1300174.xml"
     #feed = "http://feeds.feedburner.com/ruanyifeng"
+    feed = "http://blog.sina.com.cn/rss/gongzicaosan.xml"
     
     user = "PyGtalkRobot"
     passwd = "PyGtalkRobotByLdmiao"
     fc = feedconverter(user, passwd)
     title, feeds = fc.feeds(feed, 2000)
     
-    f = open(u'skyinwell.html', 'w')
+    f = open(u'gongzicaosan.html', 'w')
     
     
     style='''<style>
@@ -117,6 +118,7 @@ def test():
             content = feed.summary.value
         content = content.encode('utf-8', 'ignore')
 		
+        '''
         f1 = open(u'skyinwell/%03d.html'%(idx), 'w')
         f1.write(html_pre)
         f1.write(feed_pre)
@@ -124,7 +126,8 @@ def test():
         f1.write('</div>\n\n')
         f1.write('</body></html>')
         f1.close()
-		
+		'''
+        
         f.write('  <div class="content">%s</div>\n'%(content))
         f.write('</div>\n\n')
         f.flush()
