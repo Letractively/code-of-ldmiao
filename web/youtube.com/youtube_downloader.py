@@ -20,6 +20,8 @@ import traceback
 
 from threadpool import ThreadPool
 
+import convert_flv
+
 #--------------------------------------------------------------------------------------
 #Configuraion
 
@@ -75,7 +77,7 @@ def existFile(filename):
     else:
         return False
     
-def saveFile(path, name, content):
+def saveFile(path, name, url):
     #--------------------------------------------------------------------------
     #Replace all the invalid characters
     #re.sub('''[\\\\/\:\*\?"<>\|]+''', '-', '\\,/,|,",:,*,?,<,>')
@@ -100,7 +102,9 @@ def saveFile(path, name, content):
         print "  File:[" + save_path+ "] already exists, pass.\n"
         log("  File:[" + save_path+ "] already exists, pass.\n")
         return
-        
+    
+    global proxy
+    content = getContent(url, proxy)
     if content:
         f = open(save_path,"wb")
         f.write(content)
@@ -113,11 +117,19 @@ def saveFile(path, name, content):
     
 def log(str):
     global work_path
-    log_file = open(work_path+'\log.txt', 'a')
-    log_file.write('[%s] %s\n'%( time.strftime('%Y-%m-%d %H:%M:%S'), str))
-    log_file.flush()
-    log_file.close()
-    
+    try:
+        log_file = open(work_path+'\log.txt', 'a')
+        log_file.write('[%s] %s\n'%( time.strftime('%Y-%m-%d %H:%M:%S'), str))
+        log_file.flush()
+        log_file.close()
+    except:
+        pass
+
+def clearLog():
+    global work_path
+    log_file_path = work_path+'\log.txt'
+    if os.path.isfile(log_file_path):
+        os.remove(log_file_path)
     
 #--------------------------------------------------------------------------------------
 def getVideoInfo(url):
@@ -161,8 +173,7 @@ def downloadVideo(url):
     global proxy, work_path
     video_real_url, video_title, simple_title = getVideoInfo(url)
     
-    content = getContent(video_real_url, proxy)
-    saveFile(work_path+'\youtube_videos', '%s.flv'%(video_title), content);
+    saveFile(work_path+'\youtube_videos', '%s.flv'%(video_title), video_real_url);
     
 def downloadAllVideos(url):
     global proxy, host, thread_count
@@ -185,12 +196,16 @@ def downloadAllVideos(url):
     
 #--------------------------------------------------------------------------------------
 if __name__ == '__main__':
+    global work_path
+    clearLog()
     #print getVideoInfo('http://www.youtube.com/watch?v=W8xfmFMz1RE')
     #downloadVideo('http://www.youtube.com/watch?v=W8xfmFMz1RE')
     search_video_url = 'http://www.youtube.com/results?search_query=%s&search_sort=video_date_uploaded'
     #downloadAllVideos(search_video_url%(urllib.quote_plus('文茜小妹大')))
     downloadAllVideos(search_video_url%(urllib.quote_plus('文茜世界周报')))
-    downloadAllVideos(search_video_url%(urllib.quote_plus('锵锵三人行')))
+    #downloadAllVideos(search_video_url%(urllib.quote_plus('锵锵三人行')))
     downloadAllVideos(search_video_url%(urllib.quote_plus('文涛拍案')))
     downloadAllVideos(search_video_url%(urllib.quote_plus('中天骇客赵少康')))
+    
+    #convert_flv.convertFlv2Mp4underDir(work_path+'\youtube_videos')
 
