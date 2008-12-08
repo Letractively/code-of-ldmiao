@@ -3,6 +3,11 @@
 
 import os
 
+from threadpool import ThreadPool
+
+def run_cmd(cmd):
+    os.system(cmd)
+
 def convertFlv2Mp4underDir(path):
     if not os.path.isdir(path):
         if existFile(path):
@@ -10,7 +15,9 @@ def convertFlv2Mp4underDir(path):
             return
         else:
             os.makedirs(path)
-    CMD = '''D:\Program\tools\ffmpeg.exe -i "%s" -vcodec libx264 -s 320x240 -r 20 -g 250 -keyint_min 25 -coder ac -me_range 16 -subq 5 -sc_threshold 40 -acodec libfaac -ab 96000 -ar 22500 -cmp +chroma -partitions +parti4x4+partp8x8+partb8x8 -i_qfactor 0.71 -b_strategy 1 -crf 30 -y "%s"'''
+    pool = ThreadPool(6)
+    
+    CMD = '''D:\\Program\\tools\\ffmpeg.exe -i "%s" -vcodec mpeg4 -b 1200kb -mbd 2 -aic 2 -cmp 2 -subcmp 2 -acodec libfaac -ac 2 -ab 128000 -y "%s"'''
     for file_name in os.listdir(path):
         flv_path = path+'/'+file_name
         if os.path.isfile(flv_path):
@@ -23,8 +30,10 @@ def convertFlv2Mp4underDir(path):
                 continue
             cmd = CMD%(flv_path, mp4_save_path)
             print cmd
-            os.system(cmd)
-        
+            
+            pool.queueTask(run_cmd, (cmd))
+            
+    pool.joinAll()
     
 #--------------------------------------------------------------------------------------
 if __name__ == '__main__':

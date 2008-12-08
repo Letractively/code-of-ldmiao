@@ -1,1 +1,1 @@
-ffmpeg -i "Cohen_s_Football_Corner_Footbo_com-Wf0RnCGwZ7w.flv" -vcodec libx264 -s 320x240 -r 20 -g 250 -keyint_min 25 -coder ac -me_range 16 -subq 5 -sc_threshold 40 -acodec libfaac -ab 96000 -ar 22500 -cmp +chroma -partitions +parti4x4+partp8x8+partb8x8 -i_qfactor 0.71 -b_strategy 1 -crf 30 -y "converted_video_file.mp4" 2>"converted_video_file.txt"
+ffmpeg -i "Cohen_s_Football_Corner_Footbo_com-Wf0RnCGwZ7w.flv" -vcodec mpeg4 -b 1200kb -mbd 2 -aic 2 -cmp 2 -subcmp 2 -acodec libfaac -ac 2 -ab 128000 -y "Cohen_s_Football_Corner_Footbo_com-Wf0RnCGwZ7w.mp4"
