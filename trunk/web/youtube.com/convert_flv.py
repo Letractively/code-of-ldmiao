@@ -19,7 +19,7 @@ def convertFlv2Mp4underDir(path):
     pool = ThreadPool(6)
     
     MP4_CMD = '''D:\\Program\\tools\\ffmpeg.exe -i "%s" -vcodec mpeg4 -b 1200kb -mbd 2 -aic 2 -cmp 2 -subcmp 2 -acodec libfaac -ac 2 -ab 128000 -y "%s"'''
-    MP3_CMD = '''D:\\Program\\tools\\ffmpeg.exe -i "%s" -acodec copy "%s"'''
+    MP3_CMD = '''D:\\Program\\tools\\ffmpeg.exe -i "%s" -vn -ar 44100 -ac 2 -ab 64 -f mp3 "%s"'''
     for file_name in os.listdir(path):
         flv_path = path+'/'+file_name
         if os.path.isfile(flv_path):
