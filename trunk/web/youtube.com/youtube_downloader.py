@@ -36,7 +36,7 @@ thread_count = 5
 
 work_path = 'D:\Develop\Others\code-of-ldmiao\web\youtube.com'
 
-downloaded_url_set = None
+downloaded_video_set = None
 
 #--------------------------------------------------------------------------------------
 
@@ -80,44 +80,52 @@ def existFile(filename):
         return False
 
 #--------------------------------------------------------------------------------------
-def initDownloadedURLSet():
-    global downloaded_url_set, work_path
-    if downloaded_url_set is None:
-        downloaded_url_set = set()
-        f = open(work_path+'/video_urls.txt', 'r')
+def initDownloadedVideoIDSet():
+    global downloaded_video_set, work_path
+    if downloaded_video_set is None:
+        downloaded_video_set = set()
+        f = open(work_path+'/video_ids.txt', 'r')
         line = f.readline()
         while line:
             line = line.strip()
             if line and line !='':
-                downloaded_url_set.add(line)
+                downloaded_video_set.add(line)
             line = f.readline()
         f.close()
-    return downloaded_url_set
+    return downloaded_video_set
 
-def persistDownloadedURLSet():
-    global downloaded_url_set, work_path
-    if downloaded_url_set is not None:
-        f = open(work_path+'/video_urls.txt', 'w')
-        for url in downloaded_url_set:
+def persistDownloadedVideoIDSet():
+    global downloaded_video_set, work_path
+    if downloaded_video_set is not None:
+        f = open(work_path+'/video_ids.txt', 'w')
+        for url in downloaded_video_set:
             f.write(url+'\n')
             f.flush()
         f.close()
 
 def hasBeenDownloadedBefore(video_url):
-    global downloaded_url_set
-    initDownloadedURLSet()
-    video_url = video_url.strip()
-    if video_url in downloaded_url_set:
-        return True
-    else:
-        return False
+    global downloaded_video_set
+    initDownloadedVideoIDSet()
+    video_id = None
+    mobj = re.search('''video_id=(.*?)&t''', video_url)
+    if mobj is not None:
+        video_id = mobj.group(1)
+        print video_id
+        if video_id in downloaded_video_set:
+            print 'found!'
+            return True
+    return False
         
-def addToDownloadedURLSet(video_url):
-    global downloaded_url_set
-    initDownloadedURLSet()
-    video_url = video_url.strip()
-    if video_url and video_url !='':
-        downloaded_url_set.add(video_url)
+def addToDownloadedVideoIDSet(video_url):
+    global downloaded_video_set
+    initDownloadedVideoIDSet()
+    video_id = None
+    mobj = re.search('''video_id=(.*?)&t''', video_url)
+    if mobj is not None:
+        video_id = mobj.group(1)
+        if video_id and video_id !='':
+            downloaded_video_set.add(video_id)
+            persistDownloadedVideoIDSet()
 
 #--------------------------------------------------------------------------------------
 def saveFile(path, name, url):
@@ -141,12 +149,14 @@ def saveFile(path, name, url):
             os.makedirs(path)
 
     save_path = path+'/'+name
+    '''
     if existFile(save_path):
         print "  File:[" + save_path+ "] already exists, pass.\n"
         log("  File:[" + save_path+ "] already exists, pass.\n")
-        addToDownloadedURLSet(url)
+        addToDownloadedVideoIDSet(url)
         return
-
+    '''
+    
     if hasBeenDownloadedBefore(url):
         print "  URL:[" + url+ "] has been downloaded before, pass.\n"
         log("  URL:[" + url+ "] has been downloaded before, pass.\n")
@@ -160,8 +170,7 @@ def saveFile(path, name, url):
         f.close()
         print " File  Saved:[" + save_path + "]"
         log(" URL  Downloaded:[" + url + "]")
-        addToDownloadedURLSet(url)
-        
+        addToDownloadedVideoIDSet(url)
     else:
         print " Failed  for:[" + save_path + "]"
         log("  Failed for:[" + url + "]")
@@ -245,7 +254,7 @@ def downloadAllVideos(url):
         pool.queueTask(downloadVideo, (video_url))
 
     pool.joinAll()
-    persistDownloadedURLSet()
+    
 
 #--------------------------------------------------------------------------------------
 if __name__ == '__main__':
