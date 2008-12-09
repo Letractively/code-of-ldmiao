@@ -15,6 +15,7 @@ def convertFlv2Mp4underDir(path):
             return
         else:
             os.makedirs(path)
+    
     pool = ThreadPool(6)
     
     MP4_CMD = '''D:\\Program\\tools\\ffmpeg.exe -i "%s" -vcodec mpeg4 -b 1200kb -mbd 2 -aic 2 -cmp 2 -subcmp 2 -acodec libfaac -ac 2 -ab 128000 -y "%s"'''
