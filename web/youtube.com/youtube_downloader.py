@@ -36,6 +36,8 @@ thread_count = 5
 
 work_path = 'D:\Develop\Others\code-of-ldmiao\web\youtube.com'
 
+downloaded_url_set = None
+
 #--------------------------------------------------------------------------------------
 
 #get the HTML Source from url through proxies
@@ -47,7 +49,7 @@ def getContent(url, proxies = None):
         print "           -> Get:["+url+"] through " + proxies['http']
     '''
     log("Get:["+url+"]")
-    
+
     content = None
     test_time = 3
     #success = False
@@ -76,7 +78,47 @@ def existFile(filename):
         return True
     else:
         return False
-    
+
+#--------------------------------------------------------------------------------------
+def initDownloadedURLSet():
+    global downloaded_url_set, work_path
+    if downloaded_url_set is None:
+        downloaded_url_set = set()
+        f = open(work_path+'/video_urls.txt', 'r')
+        line = f.readline()
+        while line:
+            line = line.strip()
+            if line and line !='':
+                downloaded_url_set.add(line)
+            line = f.readline()
+        f.close()
+    return downloaded_url_set
+
+def persistDownloadedURLSet():
+    global downloaded_url_set, work_path
+    if downloaded_url_set is not None:
+        f = open(work_path+'/video_urls.txt', 'w')
+        for url in downloaded_url_set:
+            f.write(url+'\n')
+            f.flush()
+        f.close()
+
+def hasBeenDownloadedBefore(video_url):
+    downloaded_url_set = initDownloadedURLSet()
+    video_url = video_url.strip()
+    if video_url in downloaded_url_set:
+        return True
+    else:
+        return False
+        
+def addToDownloadedURLSet(video_url):
+    downloaded_url_set = initDownloadedURLSet()
+    video_url = video_url.strip()
+    if video_url and video_url !='':
+        downloaded_url_set.add(video_url)
+        persistDownloadedURLSet()
+
+#--------------------------------------------------------------------------------------
 def saveFile(path, name, url):
     #--------------------------------------------------------------------------
     #Replace all the invalid characters
@@ -88,7 +130,7 @@ def saveFile(path, name, url):
     name = re.sub('''[\:\*\?"<>\|]+''', '-', name)
     name = name.strip()
     #--------------------------------------------------------------------------
-    
+
     if not os.path.isdir(path):
         if existFile(path):
             print "  Path:["+ path+ "] is not a directory, exit!\n"
@@ -96,13 +138,19 @@ def saveFile(path, name, url):
             return
         else:
             os.makedirs(path)
-    
+
     save_path = path+'/'+name
     if existFile(save_path):
         print "  File:[" + save_path+ "] already exists, pass.\n"
         log("  File:[" + save_path+ "] already exists, pass.\n")
+        addToDownloadedURLSet(url)
         return
-    
+
+    if hasBeenDownloadedBefore(url):
+        print "  URL:[" + url+ "] has been downloaded before, pass.\n"
+        log("  URL:[" + url+ "] has been downloaded before, pass.\n")
+        return
+
     global proxy
     content = getContent(url, proxy)
     if content:
@@ -110,11 +158,14 @@ def saveFile(path, name, url):
         f.write(content)
         f.close()
         print " File  Saved:[" + save_path + "]"
-        log(" File  Saved:[" + save_path + "]")
+        log(" URL  Downloaded:[" + url + "]")
+        addToDownloadedURLSet(url)
+        
     else:
         print " Failed  for:[" + save_path + "]"
-        log(" Failed  for:[" + save_path + "]")
+        log("  Failed for:[" + url + "]")
     
+
 def log(str):
     global work_path
     try:
@@ -130,12 +181,12 @@ def clearLog():
     log_file_path = work_path+'\log.txt'
     if os.path.isfile(log_file_path):
         os.remove(log_file_path)
-    
+
 #--------------------------------------------------------------------------------------
 def getVideoInfo(url):
     global proxy, host
     video_webpage = getContent(url, proxy)
-    
+
     # Extract video id from URL
     video_id = ''
     VALID_URL = r'^((?:http://)?(?:\w+\.)?youtube\.com/(?:(?:v/)|(?:(?:watch(?:\.php)?)?\?(?:.+&)?v=)))?([0-9A-Za-z_-]+)(?(1).+)?$'
@@ -151,9 +202,9 @@ def getVideoInfo(url):
         return None
     else:
         t_param = mobj.group(1)
-    
+
     video_real_url = '%s/get_video?video_id=%s&t=%s' % (host, video_id, t_param)
-    
+
     # title
     video_title = ''
     mobj = re.search(r'(?im)<title>YouTube - ([^<]*)</title>', video_webpage)
@@ -166,46 +217,45 @@ def getVideoInfo(url):
     simple_title_chars = string.ascii_letters.decode('ascii') + string.digits.decode('ascii')
     simple_title = re.sub(ur'(?u)([^%s]+)' % simple_title_chars, ur'_', video_title)
     simple_title = simple_title.strip(ur'_')
-    
+
     return video_real_url, video_title, simple_title
 
 def downloadVideo(url):
     global proxy, work_path
     video_real_url, video_title, simple_title = getVideoInfo(url)
-    
+
     saveFile(work_path+'\youtube_videos', '%s.flv'%(video_title), video_real_url);
-    
+
 def downloadAllVideos(url):
     global proxy, host, thread_count
     htmlcontent = getContent(url, proxy)
-    
+
     pool = ThreadPool(thread_count)
-    
+
     video_url_set = set()
     matched_groups = re.findall('''"(/watch\\?v=.*?)"''', htmlcontent)
     for matched in matched_groups:
         video_url = "%s%s"%(host, matched.strip())
         video_url_set.add(video_url)
-    
+
     for video_url in video_url_set:
         print video_url
         log(video_url)
         pool.queueTask(downloadVideo, (video_url))
-        
+
     pool.joinAll()
-    
+
 #--------------------------------------------------------------------------------------
 if __name__ == '__main__':
-    global work_path
     clearLog()
     #print getVideoInfo('http://www.youtube.com/watch?v=W8xfmFMz1RE')
     #downloadVideo('http://www.youtube.com/watch?v=W8xfmFMz1RE')
     search_video_url = 'http://www.youtube.com/results?search_query=%s&search_sort=video_date_uploaded'
-    #downloadAllVideos(search_video_url%(urllib.quote_plus('文茜小妹大')))
-    downloadAllVideos(search_video_url%(urllib.quote_plus('文茜世界周报')))
-    #downloadAllVideos(search_video_url%(urllib.quote_plus('锵锵三人行')))
-    downloadAllVideos(search_video_url%(urllib.quote_plus('文涛拍案')))
-    downloadAllVideos(search_video_url%(urllib.quote_plus('中天骇客赵少康')))
-    
-    #convert_flv.convertFlv2Mp4underDir(work_path+'\youtube_videos')
+
+    search_words = ['文茜小妹大', '文茜世界周报', '锵锵三人行', '文涛拍案', '有报天天读', '中天骇客赵少康',
+                    '文道非常道', '世界周刊', '新闻周刊', '开卷八分钟']
+    for word in search_words:
+        downloadAllVideos(search_video_url%(urllib.quote_plus(word)))
+
+    convert_flv.convertFlv2Mp4underDir(work_path+'\youtube_videos')
 
