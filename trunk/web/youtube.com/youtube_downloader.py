@@ -149,13 +149,11 @@ def saveFile(path, name, url):
             os.makedirs(path)
 
     save_path = path+'/'+name
-    '''
     if existFile(save_path):
         print "  File:[" + save_path+ "] already exists, pass.\n"
         log("  File:[" + save_path+ "] already exists, pass.\n")
         addToDownloadedVideoIDSet(url)
         return
-    '''
     
     if hasBeenDownloadedBefore(url):
         print "  URL:[" + url+ "] has been downloaded before, pass.\n"
