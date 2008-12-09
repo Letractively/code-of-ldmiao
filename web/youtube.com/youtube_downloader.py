@@ -104,7 +104,8 @@ def persistDownloadedURLSet():
         f.close()
 
 def hasBeenDownloadedBefore(video_url):
-    downloaded_url_set = initDownloadedURLSet()
+    global downloaded_url_set
+    initDownloadedURLSet()
     video_url = video_url.strip()
     if video_url in downloaded_url_set:
         return True
@@ -112,11 +113,11 @@ def hasBeenDownloadedBefore(video_url):
         return False
         
 def addToDownloadedURLSet(video_url):
-    downloaded_url_set = initDownloadedURLSet()
+    global downloaded_url_set
+    initDownloadedURLSet()
     video_url = video_url.strip()
     if video_url and video_url !='':
         downloaded_url_set.add(video_url)
-        persistDownloadedURLSet()
 
 #--------------------------------------------------------------------------------------
 def saveFile(path, name, url):
@@ -244,6 +245,7 @@ def downloadAllVideos(url):
         pool.queueTask(downloadVideo, (video_url))
 
     pool.joinAll()
+    persistDownloadedURLSet()
 
 #--------------------------------------------------------------------------------------
 if __name__ == '__main__':
