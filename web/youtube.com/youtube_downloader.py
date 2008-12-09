@@ -102,6 +102,17 @@ def persistDownloadedVideoIDSet():
             f.write(url+'\n')
             f.flush()
         f.close()
+        
+def hasBeenDownloadedBeforeByVideoPageURL(url):
+    global downloaded_video_set
+    initDownloadedVideoIDSet()
+    video_id = None
+    mobj = re.search('''\\?v=(.*)''', url.strip())
+    if mobj is not None:
+        video_id = mobj.group(1)
+        if video_id in downloaded_video_set:
+            return True
+    return False
 
 def hasBeenDownloadedBefore(video_url):
     global downloaded_video_set
@@ -110,9 +121,7 @@ def hasBeenDownloadedBefore(video_url):
     mobj = re.search('''video_id=(.*?)&t''', video_url)
     if mobj is not None:
         video_id = mobj.group(1)
-        print video_id
         if video_id in downloaded_video_set:
-            print 'found!'
             return True
     return False
         
@@ -155,11 +164,6 @@ def saveFile(path, name, url):
         addToDownloadedVideoIDSet(url)
         return
     
-    if hasBeenDownloadedBefore(url):
-        print "  URL:[" + url+ "] has been downloaded before, pass.\n"
-        log("  URL:[" + url+ "] has been downloaded before, pass.\n")
-        return
-
     global proxy
     content = getContent(url, proxy)
     if content:
@@ -230,8 +234,13 @@ def getVideoInfo(url):
 
 def downloadVideo(url):
     global proxy, work_path
-    video_real_url, video_title, simple_title = getVideoInfo(url)
-
+    
+    if hasBeenDownloadedBeforeByVideoPageURL(url):
+        print "  Video:[" + url+ "] has been downloaded before, pass.\n"
+        log("  Video:[" + url+ "] has been downloaded before, pass.\n")
+        return
+        
+    video_real_url, video_title, simple_title = getVideoInfo(url) 
     saveFile(work_path+'\youtube_videos', '%s.flv'%(video_title), video_real_url);
 
 def downloadAllVideos(url):
