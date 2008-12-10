@@ -351,16 +351,16 @@ if __name__ == '__main__':
     video_url = 'http://v.youku.com/v_show/id_XNDczODA3NTI=.html'
     print getVideoInfo(video_url)
     downloadVideo(video_url)
-    
-    
-    search_video_url = 'http://so.youku.com/search_video/q_%s/orderby_2'
-    search_words = ['今日观察']
-    for word in search_words:
-        downloadAllVideos(search_video_url%(urllib.quote_plus(word)))
     '''
     
-    search_video_url = 'http://so.youku.com/search_video/q_%s/orderby_3'
-    downloadAllPagesVideos(search_video_url%(urllib.quote_plus('哆啦a梦')))
+    search_video_url = 'http://so.youku.com/search_video/q_%s/orderby_2'
+    search_words = ['坚定信心促发展', '中国财经报道', '台湾万象', '防务新观察', '今日观察', '新闻30分', '晚间新闻']
+    for word in search_words:
+        downloadAllVideos(search_video_url%(urllib.quote_plus(word)))
+    
+    
+    #search_video_url = 'http://so.youku.com/search_video/q_%s/orderby_3'
+    #downloadAllPagesVideos(search_video_url%(urllib.quote_plus('哆啦a梦')))
     
     #convert_flv.convertFlv2Mp4underDir(work_path+'\\videos')
     
