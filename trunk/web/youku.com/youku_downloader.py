@@ -10,6 +10,8 @@ import sys
 import random
 import time
 
+from urllib2 import Request, urlopen, URLError, HTTPError
+
 import htmlentitydefs
 import string
 
@@ -80,12 +82,22 @@ def getContent(url, data=None, proxies=None):
             #print content
             #success = True
             test_time = 0
-        except:
+        except HTTPError, e:
+            print 'The server couldn\'t fulfill the request.'
+            print 'Error code: ', e.code
+            content = None
+        except URLError, e:
+            print 'We failed to reach a server.'
+            print 'Reason: ', e.reason
+            content = None
+        
+        if content is None:
             #success = False
             test_time = test_time-1
             print "Get:["+url+"] failed, " + str(test_time) + " times left~"
             log("Get:["+url+"] failed, " + str(test_time) + " times left~")
             time.sleep(random.randrange(8,12,1))
+        
     return content
 
 def existFile(filename):
@@ -147,6 +159,29 @@ def addToDownloadedVideoIDSet(video_id):
         persistDownloadedVideoIDSet()
 
 #--------------------------------------------------------------------------------------
+def getAllFlvContent(url):
+    global proxy
+    
+    all_content = None
+    mobj = re.search(r'''(.*?/st/flv/fileid/\d{8})(\d{2})(.*)''', url)
+    if mobj is not None:
+        url_prefix = mobj.group(1)
+        file_order = mobj.group(2)
+        url_suffix = mobj.group(3)
+        for i in range(10):
+            url = url_prefix+'%02d'+url_suffix
+            url = url%(i)
+            print url
+            content = getContent(url, None, proxy)
+            if content is None:
+                break
+            if all_content is None:
+                all_content = content
+            else:
+                all_content += content
+    
+    return all_content
+    
 def saveFile(path, name, url, video_id):
     #--------------------------------------------------------------------------
     #Replace all the invalid characters
@@ -173,21 +208,44 @@ def saveFile(path, name, url, video_id):
         log("  File:[" + save_path+ "] already exists, pass.\n")
         addToDownloadedVideoIDSet(video_id)
         return
+    
+    mobj = re.search(r'''(.*?/st/flv/fileid/\d{8})(\d{2})(.*)''', url)
+    if mobj is not None:
+        url_prefix = mobj.group(1)
+        file_order = mobj.group(2)
+        url_suffix = mobj.group(3)
+        for i in range(10):
+            url = url_prefix+'%02d'+url_suffix
+            url = url%(i)
+            print url
+            content = getContent(url, None, proxy)
+            if content:
+                part_save_path = save_path+'%02d.flv'
+                part_save_path = part_save_path%(i)
+                f = open(part_save_path, "wb")
+                f.write(content)
+                f.close()
+                print " File  Saved:[" + part_save_path + "]"
+                log(" URL  Downloaded:[" + url + "]")
+                addToDownloadedVideoIDSet(video_id)
+            else:
+                break
+        mergeFlv(save_path, i)
 
-    global proxy
-    content = getContent(url, proxy)
-    if content:
-        f = open(save_path,"wb")
-        f.write(content)
-        f.close()
-        print " File  Saved:[" + save_path + "]"
-        log(" URL  Downloaded:[" + url + "]")
-        addToDownloadedVideoIDSet(video_id)
-    else:
-        print " Failed  for:[" + save_path + "]"
-        log("  Failed for:[" + url + "]")
-
-
+def mergeFlv(save_path, count):
+    Merge_CMD = 'D:\\Program\\tools\\FLVMerge.exe'
+    DEL_CMD = 'del '
+    for i in range(count):
+        part_save_path = save_path+'%02d.flv'
+        part_save_path = part_save_path%(i)
+        Merge_CMD += ' "'+part_save_path+'"'
+        DEL_CMD += ' "'+part_save_path+'"'
+        
+    #Merge_CMD += ' "'+save_path+'"'
+    
+    print Merge_CMD
+    print DEL_CMD
+        
 def log(str):
     global work_path
     try:
@@ -259,16 +317,17 @@ def downloadAllVideos(url):
 if __name__ == '__main__':
     
     #clearLog()
-    #video_url = 'http://v.youku.com/v_show/id_XNTgzNTkyMTY=.html'
-    #print getVideoInfo(video_url)
-    #downloadVideo(video_url)
+    video_url = 'http://v.youku.com/v_show/id_XNTgzNTkyMTY=.html'
+    video_url = 'http://v.youku.com/v_show/id_XNDczODA3NTI=.html'
+    print getVideoInfo(video_url)
+    downloadVideo(video_url)
     
-    
+    '''
     search_video_url = 'http://so.youku.com/search_video/q_%s/orderby_2'
     search_words = ['今日观察']
     for word in search_words:
         downloadAllVideos(search_video_url%(urllib.quote_plus(word)))
     
-    
+    '''
     #convert_flv.convertFlv2Mp4underDir(work_path+'\\videos')
-
+    
