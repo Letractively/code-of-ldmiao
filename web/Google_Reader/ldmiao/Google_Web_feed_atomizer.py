@@ -80,14 +80,14 @@ def test():
     #feed = "http://feeds.feedburner.com/Betterexplained"
     #feed = "http://blog.ifeng.com/rss/1300174.xml"
     #feed = "http://feeds.feedburner.com/ruanyifeng"
-    feed = "http://blog.sina.com.cn/rss/gongzicaosan.xml"
+    #feed = "http://blog.sina.com.cn/rss/gongzicaosan.xml"
     
     user = "PyGtalkRobot"
     passwd = "PyGtalkRobotByLdmiao"
     fc = feedconverter(user, passwd)
     title, feeds = fc.feeds(feed, 2000)
     
-    f = open(u'gongzicaosan.html', 'w')
+    f = open(u'skyinwell.html', 'w')
     
     
     style='''<style>
