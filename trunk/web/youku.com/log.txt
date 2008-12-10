@@ -1,158 +1,102 @@
-[2008-12-10 16:19:58] Get:[http://flv.appspot.com/flvurl]
-[2008-12-10 16:20:58] Get:[http://flv.appspot.com/flvurl]
-[2008-12-10 16:27:45] Get:[http://flv.appspot.com/flvurl]
-[2008-12-10 16:28:05] Get:[http://flv.appspot.com/flvurl]
-[2008-12-10 16:28:36] Get:[http://flv.appspot.com/flvurl]
-[2008-12-10 16:33:26] Get:[http://www.wbwb.net/video/]
-[2008-12-10 16:35:42] Get:[http://www.wbwb.net/video/]
-[2008-12-10 16:35:45] Get:[http://www.wbwb.net/video/]
-[2008-12-10 16:35:48] Get:[http://f.youku.com/player/getFlvPath/sid/122889814881052932742_00/st/flv/fileid/0200640400493E3679DA4C00BC19389D32EC44-3A81-1150-8BB3-462836653D1D?K=3559b1b40f2c8105161a0b32]
-[2008-12-10 16:36:48]  URL  Downloaded:[http://f.youku.com/player/getFlvPath/sid/122889814881052932742_00/st/flv/fileid/0200640400493E3679DA4C00BC19389D32EC44-3A81-1150-8BB3-462836653D1D?K=3559b1b40f2c8105161a0b32]
-[2008-12-10 16:39:40] Get:[http://so.youku.com/search_video/q_%E4%BB%8A%E6%97%A5%E8%A7%82%E5%AF%9F/orderby_2]
-[2008-12-10 16:40:09] Get:[http://so.youku.com/search_video/q_%E4%BB%8A%E6%97%A5%E8%A7%82%E5%AF%9F/orderby_2]
-[2008-12-10 16:41:28] Get:[http://so.youku.com/search_video/q_%E4%BB%8A%E6%97%A5%E8%A7%82%E5%AF%9F/orderby_2]
-[2008-12-10 16:43:22] Get:[http://so.youku.com/search_video/q_%E4%BB%8A%E6%97%A5%E8%A7%82%E5%AF%9F/orderby_2]
-[2008-12-10 16:43:57] Get:[http://so.youku.com/search_video/q_%E4%BB%8A%E6%97%A5%E8%A7%82%E5%AF%9F/orderby_2]
-[2008-12-10 16:45:00] Get:[http://www.youku.com/]
-[2008-12-10 16:45:42] Get:[http://www.youku.com/]
-[2008-12-10 16:54:29] Get:[http://www.youku.com/]
-[2008-12-10 16:54:29] Get:[http://www.youku.com/] failed, 2 times left~
-[2008-12-10 16:55:05] Get:[http://www.wbwb.net/video/]
-[2008-12-10 16:55:05] Get:[http://www.wbwb.net/video/] failed, 2 times left~
-[2008-12-10 16:55:56] Get:[http://www.wbwb.net/video/]
-[2008-12-10 16:56:06] Get:[http://www.wbwb.net/video/]
-[2008-12-10 16:56:47] Get:[http://www.youku.com/]
-[2008-12-10 16:57:12] Get:[http://so.youku.com/search_video/q_%E4%BB%8A%E6%97%A5%E8%A7%82%E5%AF%9F/orderby_2]
-[2008-12-10 17:00:04] Get:[http://so.youku.com/search_video/q_%E4%BB%8A%E6%97%A5%E8%A7%82%E5%AF%9F/orderby_2]
-[2008-12-10 17:00:05] http://v.youku.comhttp://v.youku.com/v_show/id_XNTczMDAxMjA=.html
-[2008-12-10 17:00:05] http://v.youku.comhttp://v.youku.com/v_show/id_XNTcxOTg1NTI=.html
-[2008-12-10 17:00:05] http://v.youku.comhttp://v.youku.com/v_show/id_XNTc1NTA2MDg=.html
-[2008-12-10 17:00:05] http://v.youku.comhttp://v.youku.com/v_show/id_XNTgwNDYzMjg=.html
-[2008-12-10 17:00:05] http://v.youku.comhttp://v.youku.com/v_show/id_XNTgzNTkyMTY=.html
-[2008-12-10 17:00:05] http://v.youku.comhttp://v.youku.com/v_show/id_XNTczNzk0OTI=.html
-[2008-12-10 17:00:05] http://v.youku.comhttp://v.youku.com/v_show/id_XNTgyNDM5MDA=.html
-[2008-12-10 17:00:05] http://v.youku.comhttp://v.youku.com/v_show/id_XNTc4MzQyNjg=.html
-[2008-12-10 17:00:05] http://v.youku.comhttp://v.youku.com/v_show/id_XNTc3NDAyODQ=.html
-[2008-12-10 17:00:05] http://v.youku.comhttp://v.youku.com/v_show/id_XNTc4MzMwNDA=.html
-[2008-12-10 17:00:32] Get:[http://so.youku.com/search_video/q_%E4%BB%8A%E6%97%A5%E8%A7%82%E5%AF%9F/orderby_2]
-[2008-12-10 17:00:33] http://v.youku.com/v_show/id_XNTc4MzQyNjg=.html
-[2008-12-10 17:00:33] http://v.youku.com/v_show/id_XNTczNzk0OTI=.html
-[2008-12-10 17:00:33] http://v.youku.com/v_show/id_XNTcxOTg1NTI=.html
-[2008-12-10 17:00:33] http://v.youku.com/v_show/id_XNTgzNTkyMTY=.html
-[2008-12-10 17:00:33] http://v.youku.com/v_show/id_XNTc1NTA2MDg=.html
-[2008-12-10 17:00:33] http://v.youku.com/v_show/id_XNTgwNDYzMjg=.html
-[2008-12-10 17:00:33] http://v.youku.com/v_show/id_XNTc3NDAyODQ=.html
-[2008-12-10 17:00:33] http://v.youku.com/v_show/id_XNTczMDAxMjA=.html
-[2008-12-10 17:00:33] http://v.youku.com/v_show/id_XNTgyNDM5MDA=.html
-[2008-12-10 17:00:33] http://v.youku.com/v_show/id_XNTc4MzMwNDA=.html
-[2008-12-10 17:09:09] Get:[http://so.youku.com/search_video/q_%E4%BB%8A%E6%97%A5%E8%A7%82%E5%AF%9F/orderby_2]
-[2008-12-10 17:09:10] http://v.youku.com/v_show/id_XNTc4MzQyNjg=.html
-[2008-12-10 17:09:10] http://v.youku.com/v_show/id_XNTczNzk0OTI=.html
-[2008-12-10 17:09:10] http://v.youku.com/v_show/id_XNTcxOTg1NTI=.html
-[2008-12-10 17:09:10] http://v.youku.com/v_show/id_XNTgzNTkyMTY=.html
-[2008-12-10 17:09:10] http://v.youku.com/v_show/id_XNTc1NTA2MDg=.html
-[2008-12-10 17:09:10] http://v.youku.com/v_show/id_XNTgwNDYzMjg=.html
-[2008-12-10 17:09:10] http://v.youku.com/v_show/id_XNTc3NDAyODQ=.html
-[2008-12-10 17:09:10] http://v.youku.com/v_show/id_XNTczMDAxMjA=.html
-[2008-12-10 17:09:10] http://v.youku.com/v_show/id_XNTgyNDM5MDA=.html
-[2008-12-10 17:09:10] http://v.youku.com/v_show/id_XNTc4MzMwNDA=.html
-[2008-12-10 17:09:33] Get:[http://so.youku.com/search_video/q_%E4%BB%8A%E6%97%A5%E8%A7%82%E5%AF%9F/orderby_2]
-[2008-12-10 17:09:34] http://v.youku.com/v_show/id_XNTc4MzQyNjg=.html
-[2008-12-10 17:09:34] http://v.youku.com/v_show/id_XNTczNzk0OTI=.html
-[2008-12-10 17:09:34] http://v.youku.com/v_show/id_XNTcxOTg1NTI=.html
-[2008-12-10 17:09:34] http://v.youku.com/v_show/id_XNTgzNTkyMTY=.html
-[2008-12-10 17:09:34] http://v.youku.com/v_show/id_XNTc1NTA2MDg=.html
-[2008-12-10 17:09:34] http://v.youku.com/v_show/id_XNTgwNDYzMjg=.html
-[2008-12-10 17:09:34] http://v.youku.com/v_show/id_XNTc3NDAyODQ=.html
-[2008-12-10 17:09:34] http://v.youku.com/v_show/id_XNTczMDAxMjA=.html
-[2008-12-10 17:09:34] http://v.youku.com/v_show/id_XNTgyNDM5MDA=.html
-[2008-12-10 17:09:34] http://v.youku.com/v_show/id_XNTc4MzMwNDA=.html
-[2008-12-10 17:14:52] Get:[http://so.youku.com/search_video/q_%E4%BB%8A%E6%97%A5%E8%A7%82%E5%AF%9F/orderby_2]
-[2008-12-10 17:14:53] http://v.youku.com/v_show/id_XNTc4MzQyNjg=.html
-[2008-12-10 17:14:53] http://v.youku.com/v_show/id_XNTczNzk0OTI=.html
-[2008-12-10 17:14:53] http://v.youku.com/v_show/id_XNTcxOTg1NTI=.html
-[2008-12-10 17:14:53] http://v.youku.com/v_show/id_XNTgzNTkyMTY=.html
-[2008-12-10 17:14:53] http://v.youku.com/v_show/id_XNTc1NTA2MDg=.html
-[2008-12-10 17:14:53] http://v.youku.com/v_show/id_XNTgwNDYzMjg=.html
-[2008-12-10 17:14:53] http://v.youku.com/v_show/id_XNTc3NDAyODQ=.html
-[2008-12-10 17:14:53] http://v.youku.com/v_show/id_XNTczMDAxMjA=.html
-[2008-12-10 17:14:54] http://v.youku.com/v_show/id_XNTgyNDM5MDA=.html
-[2008-12-10 17:14:54] http://v.youku.com/v_show/id_XNTc4MzMwNDA=.html
-[2008-12-10 17:14:54] Get:[http://www.wbwb.net/video/]
-[2008-12-10 17:14:54] Get:[http://www.wbwb.net/video/]
-[2008-12-10 17:14:54] Get:[http://www.wbwb.net/video/]
-[2008-12-10 17:14:58] Get:[http://www.wbwb.net/video/]
-[2008-12-10 17:14:58] Get:[http://f.youku.com/player/getFlvPath/sid/122890049794095745875_00/st/flv/fileid/02006404004936F7A3BCE60079E0D8BCF192FC-AA91-9E69-21B7-BCBE897B01F4?K=6e82928e46cc79d214fa053]
-[2008-12-10 17:14:58] Get:[http://f.youku.com/player/getFlvPath/sid/12289004978775752650_00/st/flv/fileid/0200640400493A3BDF083A0079E0D80FA1E16C-96D8-7890-F8DD-22F96CD297A6?K=6e82928e46cc79d214fa053]
-[2008-12-10 17:14:58] Get:[http://f.youku.com/player/getFlvPath/sid/12289004978860178670_00/st/flv/fileid/02006404004939262B729000BC19385921F9D4-BFC9-14F4-1B1F-10D40BD1EEAD?K=a9f361327e18736d161a0b36]
-[2008-12-10 17:14:58] Get:[http://f.youku.com/player/getFlvPath/sid/122890049791975040759_00/st/flv/fileid/02006404004937FFAACCA500D12923332DFEEC-C399-23F3-9299-44615401DCD7?K=a9f361327e18736d161a0b36]
-[2008-12-10 17:15:01] Get:[http://f.youku.com/player/getFlvPath/sid/12289005013651784937_00/st/flv/fileid/0200640400493C0E61ED7B0079E0D887889D8C-60CC-938D-038B-FE51D2A7BC3D?K=a9f361327e18736d161a0b36]
-[2008-12-10 17:16:47]  URL  Downloaded:[http://f.youku.com/player/getFlvPath/sid/122890049794095745875_00/st/flv/fileid/02006404004936F7A3BCE60079E0D8BCF192FC-AA91-9E69-21B7-BCBE897B01F4?K=6e82928e46cc79d214fa053]
-[2008-12-10 17:16:47] Get:[http://www.wbwb.net/video/]
-[2008-12-10 17:16:54] Get:[http://f.youku.com/player/getFlvPath/sid/122890061415332546701_00/st/flv/fileid/0200640400493A5668D83600BC1938A6996830-527D-20E8-08F6-CCF329B32186?K=6e82928e46cc79d214fa053]
-[2008-12-10 17:17:21]  URL  Downloaded:[http://f.youku.com/player/getFlvPath/sid/12289004978775752650_00/st/flv/fileid/0200640400493A3BDF083A0079E0D80FA1E16C-96D8-7890-F8DD-22F96CD297A6?K=6e82928e46cc79d214fa053]
-[2008-12-10 17:17:21] Get:[http://www.wbwb.net/video/]
-[2008-12-10 17:17:24]  URL  Downloaded:[http://f.youku.com/player/getFlvPath/sid/12289004978860178670_00/st/flv/fileid/02006404004939262B729000BC19385921F9D4-BFC9-14F4-1B1F-10D40BD1EEAD?K=a9f361327e18736d161a0b36]
-[2008-12-10 17:17:24] Get:[http://www.wbwb.net/video/]
-[2008-12-10 17:17:26] Get:[http://f.youku.com/player/getFlvPath/sid/12289006458937126476_00/st/flv/fileid/02006404004937A2B6933100BC193835DF7B40-BE4F-8488-9FCE-CAD743D3EC2A?K=6e82928e46cc79d214fa053]
-[2008-12-10 17:17:29] Get:[http://f.youku.com/player/getFlvPath/sid/122890064866651574584_00/st/flv/fileid/0200640500493D58546FE100D12923A954B1BA-CB72-6F14-82A6-FD8E01CFEEEE?K=e1f3a7dc6be83fb718247619]
-[2008-12-10 17:17:32]  URL  Downloaded:[http://f.youku.com/player/getFlvPath/sid/122890049791975040759_00/st/flv/fileid/02006404004937FFAACCA500D12923332DFEEC-C399-23F3-9299-44615401DCD7?K=a9f361327e18736d161a0b36]
-[2008-12-10 17:17:32] Get:[http://www.wbwb.net/video/]
-[2008-12-10 17:17:33]  URL  Downloaded:[http://f.youku.com/player/getFlvPath/sid/12289005013651784937_00/st/flv/fileid/0200640400493C0E61ED7B0079E0D887889D8C-60CC-938D-038B-FE51D2A7BC3D?K=a9f361327e18736d161a0b36]
-[2008-12-10 17:17:36] Get:[http://f.youku.com/player/getFlvPath/sid/122890065576284824817_00/st/flv/fileid/0200640400493A3BD653250079E0D8AA73BE87-61B3-D155-443C-437D45ACCCB0?K=e1f3a7dc6be83fb718247619]
-[2008-12-10 17:18:58]  URL  Downloaded:[http://f.youku.com/player/getFlvPath/sid/122890061415332546701_00/st/flv/fileid/0200640400493A5668D83600BC1938A6996830-527D-20E8-08F6-CCF329B32186?K=6e82928e46cc79d214fa053]
-[2008-12-10 17:19:06]  URL  Downloaded:[http://f.youku.com/player/getFlvPath/sid/12289006458937126476_00/st/flv/fileid/02006404004937A2B6933100BC193835DF7B40-BE4F-8488-9FCE-CAD743D3EC2A?K=6e82928e46cc79d214fa053]
-[2008-12-10 17:19:17]  URL  Downloaded:[http://f.youku.com/player/getFlvPath/sid/122890065576284824817_00/st/flv/fileid/0200640400493A3BD653250079E0D8AA73BE87-61B3-D155-443C-437D45ACCCB0?K=e1f3a7dc6be83fb718247619]
-[2008-12-10 17:19:19]  URL  Downloaded:[http://f.youku.com/player/getFlvPath/sid/122890064866651574584_00/st/flv/fileid/0200640500493D58546FE100D12923A954B1BA-CB72-6F14-82A6-FD8E01CFEEEE?K=e1f3a7dc6be83fb718247619]
-[2008-12-10 18:05:52] Get:[http://www.wbwb.net/video/]
-[2008-12-10 18:05:56]   Video:[http://v.youku.com/v_show/id_XNTgzNTkyMTY=.html] has been downloaded before, pass.
-
-[2008-12-10 18:06:36] Get:[http://www.wbwb.net/video/]
-[2008-12-10 18:06:40] Get:[http://www.wbwb.net/video/]
-[2008-12-10 18:06:43]   Failed for:[http://f.youku.com/player/getFlvPath/sid/122890360341079652449_00/st/flv/fileid/0200640400493E3679DA4C00BC19389D32EC44-3A81-1150-8BB3-462836653D1D?K=21f5fa34fa03fa161824761e]
-[2008-12-10 18:16:06] Get:[http://www.wbwb.net/video/]
-[2008-12-10 18:16:10] Get:[http://www.wbwb.net/video/] failed, -1 times left~
-[2008-12-10 18:16:38] Get:[http://www.wbwb.net/video/]
-[2008-12-10 18:16:42] Get:[http://www.wbwb.net/video/]
-[2008-12-10 18:16:46] Get:[http://f.youku.com/player/getFlvPath/sid/122890420528816943679_00/st/flv/fileid/0200640400493E3679DA4C00BC19389D32EC44-3A81-1150-8BB3-462836653D1D?K=9c74daaff7d33e3814fa056]
-[2008-12-10 18:17:16] Get:[http://f.youku.com/player/getFlvPath/sid/122890420528816943679_00/st/flv/fileid/0200640401493E3679DA4C00BC19389D32EC44-3A81-1150-8BB3-462836653D1D?K=9c74daaff7d33e3814fa056]
-[2008-12-10 18:17:45] Get:[http://f.youku.com/player/getFlvPath/sid/122890420528816943679_00/st/flv/fileid/0200640402493E3679DA4C00BC19389D32EC44-3A81-1150-8BB3-462836653D1D?K=9c74daaff7d33e3814fa056]
-[2008-12-10 18:18:13] Get:[http://f.youku.com/player/getFlvPath/sid/122890420528816943679_00/st/flv/fileid/0200640403493E3679DA4C00BC19389D32EC44-3A81-1150-8BB3-462836653D1D?K=9c74daaff7d33e3814fa056]
-[2008-12-10 18:18:33] Get:[http://f.youku.com/player/getFlvPath/sid/122890420528816943679_00/st/flv/fileid/0200640404493E3679DA4C00BC19389D32EC44-3A81-1150-8BB3-462836653D1D?K=9c74daaff7d33e3814fa056]
-[2008-12-10 18:18:59] Get:[http://www.wbwb.net/video/]
-[2008-12-10 18:19:03] Get:[http://www.wbwb.net/video/]
-[2008-12-10 18:19:07] Get:[http://f.youku.com/player/getFlvPath/sid/12289043472642232379_00/st/flv/fileid/0200640400493E3679DA4C00BC19389D32EC44-3A81-1150-8BB3-462836653D1D?K=f884e95b8e3a6d2918247620]
-[2008-12-10 18:19:36] Get:[http://f.youku.com/player/getFlvPath/sid/12289043472642232379_00/st/flv/fileid/0200640401493E3679DA4C00BC19389D32EC44-3A81-1150-8BB3-462836653D1D?K=f884e95b8e3a6d2918247620]
-[2008-12-10 18:20:05] Get:[http://f.youku.com/player/getFlvPath/sid/12289043472642232379_00/st/flv/fileid/0200640402493E3679DA4C00BC19389D32EC44-3A81-1150-8BB3-462836653D1D?K=f884e95b8e3a6d2918247620]
-[2008-12-10 18:20:33] Get:[http://f.youku.com/player/getFlvPath/sid/12289043472642232379_00/st/flv/fileid/0200640403493E3679DA4C00BC19389D32EC44-3A81-1150-8BB3-462836653D1D?K=f884e95b8e3a6d2918247620]
-[2008-12-10 18:20:52] Get:[http://f.youku.com/player/getFlvPath/sid/12289043472642232379_00/st/flv/fileid/0200640404493E3679DA4C00BC19389D32EC44-3A81-1150-8BB3-462836653D1D?K=f884e95b8e3a6d2918247620]
-[2008-12-10 18:20:54] Get:[http://f.youku.com/player/getFlvPath/sid/12289043472642232379_00/st/flv/fileid/0200640404493E3679DA4C00BC19389D32EC44-3A81-1150-8BB3-462836653D1D?K=f884e95b8e3a6d2918247620] failed, 2 times left~
-[2008-12-10 18:21:06] Get:[http://f.youku.com/player/getFlvPath/sid/12289043472642232379_00/st/flv/fileid/0200640404493E3679DA4C00BC19389D32EC44-3A81-1150-8BB3-462836653D1D?K=f884e95b8e3a6d2918247620] failed, 1 times left~
-[2008-12-10 18:21:17] Get:[http://f.youku.com/player/getFlvPath/sid/12289043472642232379_00/st/flv/fileid/0200640404493E3679DA4C00BC19389D32EC44-3A81-1150-8BB3-462836653D1D?K=f884e95b8e3a6d2918247620] failed, 0 times left~
-[2008-12-10 18:21:30]  URL  Downloaded:[http://f.youku.com/player/getFlvPath/sid/12289043472642232379_00/st/flv/fileid/0200640400493E3679DA4C00BC19389D32EC44-3A81-1150-8BB3-462836653D1D?K=f884e95b8e3a6d2918247620]
-[2008-12-10 18:22:40] Get:[http://www.wbwb.net/video/]
-[2008-12-10 18:22:44]   Video:[http://v.youku.com/v_show/id_XNTgzNTkyMTY=.html] has been downloaded before, pass.
-
-[2008-12-10 18:51:55] Get:[http://www.wbwb.net/video/]
-[2008-12-10 18:52:00] Get:[http://www.wbwb.net/video/]
-[2008-12-10 18:52:03] Get:[http://f.youku.com/player/getFlvPath/sid/12289063239501826015_00/st/flv/fileid/020064030048F6FFFBBF7B00BC19383BE9BBEA-FE2B-188A-3B0E-AF187251AA07?K=2cf2d501675cf324161a0b3e]
-[2008-12-10 18:52:32]  URL  Downloaded:[http://f.youku.com/player/getFlvPath/sid/12289063239501826015_00/st/flv/fileid/020064030048F6FFFBBF7B00BC19383BE9BBEA-FE2B-188A-3B0E-AF187251AA07?K=2cf2d501675cf324161a0b3e]
-[2008-12-10 18:52:32] Get:[http://f.youku.com/player/getFlvPath/sid/12289063239501826015_00/st/flv/fileid/020064030148F6FFFBBF7B00BC19383BE9BBEA-FE2B-188A-3B0E-AF187251AA07?K=2cf2d501675cf324161a0b3e]
-[2008-12-10 18:52:58] Get:[http://www.wbwb.net/video/]
-[2008-12-10 18:53:02]   Video:[http://v.youku.com/v_show/id_XNDczODA3NTI=.html] has been downloaded before, pass.
-
-[2008-12-10 18:54:41] Get:[http://www.wbwb.net/video/]
-[2008-12-10 18:54:45] Get:[http://www.wbwb.net/video/]
-[2008-12-10 18:54:51] Get:[http://f.youku.com/player/getFlvPath/sid/122890649097606834353_00/st/flv/fileid/020064030048F6FFFBBF7B00BC19383BE9BBEA-FE2B-188A-3B0E-AF187251AA07?K=2502c5eb5d9cf0ac18247624]
-[2008-12-10 18:55:53] Get:[http://www.wbwb.net/video/]
-[2008-12-10 18:55:56] Get:[http://www.wbwb.net/video/]
-[2008-12-10 18:55:59] Get:[http://f.youku.com/player/getFlvPath/sid/12289065592797231517_00/st/flv/fileid/020064030048F6FFFBBF7B00BC19383BE9BBEA-FE2B-188A-3B0E-AF187251AA07?K=2502c5eb5d9cf0ac18247624]
-[2008-12-10 18:56:27]  URL  Downloaded:[http://f.youku.com/player/getFlvPath/sid/12289065592797231517_00/st/flv/fileid/020064030048F6FFFBBF7B00BC19383BE9BBEA-FE2B-188A-3B0E-AF187251AA07?K=2502c5eb5d9cf0ac18247624]
-[2008-12-10 18:56:27] Get:[http://f.youku.com/player/getFlvPath/sid/12289065592797231517_00/st/flv/fileid/020064030148F6FFFBBF7B00BC19383BE9BBEA-FE2B-188A-3B0E-AF187251AA07?K=2502c5eb5d9cf0ac18247624]
-[2008-12-10 18:56:56]  URL  Downloaded:[http://f.youku.com/player/getFlvPath/sid/12289065592797231517_00/st/flv/fileid/020064030148F6FFFBBF7B00BC19383BE9BBEA-FE2B-188A-3B0E-AF187251AA07?K=2502c5eb5d9cf0ac18247624]
-[2008-12-10 18:56:56] Get:[http://f.youku.com/player/getFlvPath/sid/12289065592797231517_00/st/flv/fileid/020064030248F6FFFBBF7B00BC19383BE9BBEA-FE2B-188A-3B0E-AF187251AA07?K=2502c5eb5d9cf0ac18247624]
-[2008-12-10 18:57:13]  URL  Downloaded:[http://f.youku.com/player/getFlvPath/sid/12289065592797231517_00/st/flv/fileid/020064030248F6FFFBBF7B00BC19383BE9BBEA-FE2B-188A-3B0E-AF187251AA07?K=2502c5eb5d9cf0ac18247624]
-[2008-12-10 18:57:13] Get:[http://f.youku.com/player/getFlvPath/sid/12289065592797231517_00/st/flv/fileid/020064030348F6FFFBBF7B00BC19383BE9BBEA-FE2B-188A-3B0E-AF187251AA07?K=2502c5eb5d9cf0ac18247624]
-[2008-12-10 18:57:14] Get:[http://f.youku.com/player/getFlvPath/sid/12289065592797231517_00/st/flv/fileid/020064030348F6FFFBBF7B00BC19383BE9BBEA-FE2B-188A-3B0E-AF187251AA07?K=2502c5eb5d9cf0ac18247624] failed, 2 times left~
-[2008-12-10 18:57:27] Get:[http://f.youku.com/player/getFlvPath/sid/12289065592797231517_00/st/flv/fileid/020064030348F6FFFBBF7B00BC19383BE9BBEA-FE2B-188A-3B0E-AF187251AA07?K=2502c5eb5d9cf0ac18247624] failed, 1 times left~
-[2008-12-10 18:57:38] Get:[http://f.youku.com/player/getFlvPath/sid/12289065592797231517_00/st/flv/fileid/020064030348F6FFFBBF7B00BC19383BE9BBEA-FE2B-188A-3B0E-AF187251AA07?K=2502c5eb5d9cf0ac18247624] failed, 0 times left~
+[2008-12-10 21:40:58] Get:[http://so.youku.com/search_video/q_%E5%93%86%E5%95%A6a%E6%A2%A6/orderby_3]
+[2008-12-10 21:41:01] Get:[http://so.youku.com/search_video/q_%E5%93%86%E5%95%A6a%E6%A2%A6_orderby_3_page_2.html]
+[2008-12-10 21:41:01] Get:[http://so.youku.com/search_video/q_%E5%93%86%E5%95%A6a%E6%A2%A6_orderby_3_page_3.html]
+[2008-12-10 21:41:02] Get:[http://so.youku.com/search_video/q_%E5%93%86%E5%95%A6a%E6%A2%A6_orderby_3_page_4.html]
+[2008-12-10 21:41:03] Get:[http://so.youku.com/search_video/q_%E5%93%86%E5%95%A6a%E6%A2%A6_orderby_3_page_5.html]
+[2008-12-10 21:41:03] Get:[http://so.youku.com/search_video/q_%E5%93%86%E5%95%A6a%E6%A2%A6_orderby_3_page_6.html]
+[2008-12-10 21:41:04] Get:[http://so.youku.com/search_video/q_%E5%93%86%E5%95%A6a%E6%A2%A6_orderby_3_page_7.html]
+[2008-12-10 21:41:05] Get:[http://so.youku.com/search_video/q_%E5%93%86%E5%95%A6a%E6%A2%A6_orderby_3_page_8.html]
+[2008-12-10 21:41:05] Get:[http://so.youku.com/search_video/q_%E5%93%86%E5%95%A6a%E6%A2%A6_orderby_3_page_9.html]
+[2008-12-10 21:41:17] Get:[http://so.youku.com/search_video/q_%E5%93%86%E5%95%A6a%E6%A2%A6_orderby_3_page_10.html]
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMTQxNTg1NjA=.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMTA4OTE2NDA=.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMzI1ODMzODg=.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMTQzNDE5Ng==.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMTg5MjkwMA==.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMjYxMzIxMg==.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMjQwMDc4NA==.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMTA4OTE2MzI=.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XNzM0MjY4NA==.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMzczOTQ3MDA=.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMjkwMTQwODg=.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMjQ1NjQ0NjA=.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMjkwMTM2NDQ=.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMjkwMTQwNTY=.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XNzUwMjk0MA==.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMzM0NDczNTI=.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XNTIwODk1NjA=.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMzM0NDc2Njg=.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMzI1ODA4NjA=.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XNjQ4MDU0OA==.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMjQ1NjIxNjQ=.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMjU1NTQ5NzI=.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMTE3MTEyNDQ=.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XNjIwMzkwOA==.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMjQwMzQwMA==.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XNDA5ODA1Njg=.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XODAwNDA0OA==.html
+[2008-12-10 21:41:18] Get:[http://www.wbwb.net/video/]
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMzg1NzA3ODQ=.html
+[2008-12-10 21:41:18] Get:[http://www.wbwb.net/video/]
+[2008-12-10 21:41:18] Get:[http://www.wbwb.net/video/]
+[2008-12-10 21:41:18] Get:[http://www.wbwb.net/video/]
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XNzE4MzUzMg==.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XNzM0MzQwOA==.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMTg4OTExNg==.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMzI4Nzc2Njg=.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMTg4ODAwOA==.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMTA4OTE2NDQ=.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMjc4NTQ1NTI=.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XNzE1NjIxNg==.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMjQwMTkwMA==.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMTA4OTE2MzY=.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMjkwMTM2OTY=.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMTgyOTY3NDg=.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMjQ1NTY2NTY=.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMjQwMjU2MA==.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMTc3MDkwNjA=.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XNjM3NzE4OA==.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMjQwMzQxNg==.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMjYxODMwNA==.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XNTAwNTcyMDA=.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XNjUwMDgzNg==.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMTg5MzAzMg==.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMTg4NzgwMA==.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMzg1NDM3MDA=.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMzI1Nzk4ODQ=.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMzI4Nzc0NDA=.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XNzEwODcwNA==.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMzI4NDg2OTY=.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMjk1MzU0MDA=.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMjA2MDM0MTI=.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMjk0OTMyNDQ=.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMTg4NzYwMA==.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMTg4Nzg4MA==.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMTczODA3NTI=.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMzE5OTQ2MDQ=.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMTg4ODc1Ng==.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMTQwNTM0MDQ=.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XODYzNDYzMg==.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMzI4NzczNzY=.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMTA4OTE2NDg=.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMjQ1NjQ0NzY=.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XNjU1MjY2OA==.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMTgyNjY0MjA=.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMTg4ODQwNA==.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XNDEwMzY2MjQ=.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMTg4ODEzNg==.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMzQ0MzI4NDA=.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMTkyODU5Mg==.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMjQ3MzkyMA==.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMTkwNzc2NA==.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMTQwOTk2Njg=.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMjQ1NjIxMTI=.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMzA3MjQ0OTI=.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMzI1ODMyOTI=.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMTczMDUzODQ=.html
+[2008-12-10 21:41:18] http://v.youku.com/v_show/id_XMTU3NTQ0MTI=.html
+[2008-12-10 21:41:22] Get:[http://f.youku.com/player/getFlvPath/sid/122891648322059266447_00/st/flv/fileid/020064030046E042D4EBD7003D5454ED17CAC5-9821-7BA3-2B5F-48490561ACC6?K=33a9b24aa0c35e9f14fa061]
+[2008-12-10 21:41:23] Get:[http://f.youku.com/player/getFlvPath/sid/122891648323274853512_00/st/flv/fileid/020064010047A92F48A56700118E14CA5DA6A3-5C73-4AA0-7869-36F54A7E9E0F?K=33a9b24aa0c35e9f14fa061]
+[2008-12-10 21:41:23] Get:[http://f.youku.com/player/getFlvPath/sid/12289164832295837451_00/st/flv/fileid/02006401004718C49163F2004A62725BF0AD11-54CB-561F-4D6D-A986CCDCF825?K=72ecabdf5171c46f161a0b4c]
+[2008-12-10 21:41:24] Get:[http://f.youku.com/player/getFlvPath/sid/12289164847870152148_00/st/flv/fileid/0200640100471EDAEAE4BF004F326CCF8DBA21-E5AC-C954-F5EE-B66DCD384078?K=33a9b24aa0c35e9f14fa061]
+[2008-12-10 21:41:24] Get:[http://f.youku.com/player/getFlvPath/sid/122891648439407154684_00/st/flv/fileid/020064010047173BA9F1EC004A627286BF5BE8-4752-A523-627A-0BE02F106A3E?K=72ecabdf5171c46f161a0b4c]

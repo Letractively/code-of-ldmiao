@@ -10,7 +10,7 @@ def run_cmd(cmd):
 
 def convertFlv2Mp4underDir(path):
     if not os.path.isdir(path):
-        if existFile(path):
+        if os.path.exists(path):
             print "  Path:["+ path+ "] is not a directory, exit!\n"
             return
         else:
@@ -24,7 +24,7 @@ def convertFlv2Mp4underDir(path):
         flv_path = path+'/'+file_name
         if os.path.isfile(flv_path):
             mp4_file_name = file_name[:file_name.rfind('.')]+'.mp4'
-            mp4_save_path = path+'/mp4/'+mp4_file_name
+            mp4_save_path = path+'\\mp4\\'+mp4_file_name
             if os.path.exists(mp4_save_path):
                 print "  File:[" + mp4_save_path+ "] already exists, pass.\n"
             else:
@@ -33,7 +33,7 @@ def convertFlv2Mp4underDir(path):
                 pool.queueTask(run_cmd, (cmd))
             
             mp3_file_name = file_name[:file_name.rfind('.')]+'.mp3'
-            mp3_save_path = path+'/mp3/'+mp3_file_name
+            mp3_save_path = path+'\\mp3\\'+mp3_file_name
             if os.path.exists(mp3_save_path):
                 print "  File:[" + mp3_save_path+ "] already exists, pass.\n"
             else:

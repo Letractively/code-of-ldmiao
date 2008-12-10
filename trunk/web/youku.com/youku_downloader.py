@@ -36,7 +36,7 @@ proxy = None
 
 thread_count = 5
 
-work_path = 'D:\Develop\Others\code-of-ldmiao\web\youku.com'
+work_path = 'D:\\Develop\\Others\\code-of-ldmiao\\web\\youku.com'
 
 downloaded_video_set = None
 
@@ -86,12 +86,13 @@ def getContent(url, data=None, proxies=None):
             print 'The server couldn\'t fulfill the request.'
             print 'Error code: ', e.code
             content = None
+            break
         except URLError, e:
             print 'We failed to reach a server.'
             print 'Reason: ', e.reason
             content = None
-        
-        if content is None:
+            break
+        except:
             #success = False
             test_time = test_time-1
             print "Get:["+url+"] failed, " + str(test_time) + " times left~"
@@ -202,7 +203,7 @@ def saveFile(path, name, url, video_id):
         else:
             os.makedirs(path)
 
-    save_path = path+'/'+name
+    save_path = path+'\\'+name
     if existFile(save_path):
         print "  File:[" + save_path+ "] already exists, pass.\n"
         log("  File:[" + save_path+ "] already exists, pass.\n")
@@ -220,23 +221,25 @@ def saveFile(path, name, url, video_id):
             print url
             content = getContent(url, None, proxy)
             if content:
-                part_save_path = save_path+'%02d.flv'
+                part_save_path = save_path+'_%02d.flv'
                 part_save_path = part_save_path%(i)
                 f = open(part_save_path, "wb")
                 f.write(content)
                 f.close()
                 print " File  Saved:[" + part_save_path + "]"
                 log(" URL  Downloaded:[" + url + "]")
-                addToDownloadedVideoIDSet(video_id)
             else:
                 break
-        mergeFlv(save_path, i)
+        
+        addToDownloadedVideoIDSet(video_id)
+        #mergeFlv(save_path, i)
+        
 
 def mergeFlv(save_path, count):
     Merge_CMD = 'D:\\Program\\tools\\FLVMerge.exe'
     DEL_CMD = 'del '
     for i in range(count):
-        part_save_path = save_path+'%02d.flv'
+        part_save_path = save_path+'_%02d.flv'
         part_save_path = part_save_path%(i)
         Merge_CMD += ' "'+part_save_path+'"'
         DEL_CMD += ' "'+part_save_path+'"'
@@ -249,7 +252,7 @@ def mergeFlv(save_path, count):
 def log(str):
     global work_path
     try:
-        log_file = open(work_path+'\log.txt', 'a')
+        log_file = open(work_path+'\\log.txt', 'a')
         log_file.write('[%s] %s\n'%( time.strftime('%Y-%m-%d %H:%M:%S'), str))
         log_file.flush()
         log_file.close()
@@ -258,7 +261,7 @@ def log(str):
 
 def clearLog():
     global work_path
-    log_file_path = work_path+'\log.txt'
+    log_file_path = work_path+'\\log.txt'
     if os.path.isfile(log_file_path):
         os.remove(log_file_path)
 
@@ -289,7 +292,7 @@ def downloadVideo(url):
         return
     
     video_real_url, video_title = getVideoInfo(url)
-    saveFile(work_path+'\\videos', '%s.flv'%(video_title), video_real_url, url);
+    saveFile(work_path+'\\videos', video_title, video_real_url, url);
 
 def downloadAllVideos(url):
     global proxy, host, thread_count
@@ -312,22 +315,52 @@ def downloadAllVideos(url):
 
     pool.joinAll()
     
+def downloadAllPagesVideos(url):
+    global proxy, host, thread_count
+    print url
+    content = getContent(url, None, proxy)
+    
+    all_page_content = ''
+    matched_groups = re.findall('''<a href="(.*?)" title='第\d+页' charset=".*?">\d+</a>''', content)
+    for matched in matched_groups:
+        page_url = 'http://so.youku.com'+matched.strip()
+        all_page_content += getContent(page_url, None, proxy)
+    
+    
+    pool = ThreadPool(thread_count)
 
+    video_url_set = set()
+    matched_groups = re.findall('''<a href="(http\://v\.youku\.com/v_show/id_.*?=\.html)"''', all_page_content)
+    for matched in matched_groups:
+        #print matched.strip()
+        video_url = matched.strip()
+        video_url_set.add(video_url)
+
+    for video_url in video_url_set:
+        print video_url
+        log(video_url)
+        pool.queueTask(downloadVideo, (video_url))
+
+    pool.joinAll()
 #--------------------------------------------------------------------------------------
 if __name__ == '__main__':
+    clearLog()
     
-    #clearLog()
+    '''
     video_url = 'http://v.youku.com/v_show/id_XNTgzNTkyMTY=.html'
     video_url = 'http://v.youku.com/v_show/id_XNDczODA3NTI=.html'
     print getVideoInfo(video_url)
     downloadVideo(video_url)
     
-    '''
+    
     search_video_url = 'http://so.youku.com/search_video/q_%s/orderby_2'
     search_words = ['今日观察']
     for word in search_words:
         downloadAllVideos(search_video_url%(urllib.quote_plus(word)))
-    
     '''
+    
+    search_video_url = 'http://so.youku.com/search_video/q_%s/orderby_3'
+    downloadAllPagesVideos(search_video_url%(urllib.quote_plus('哆啦a梦')))
+    
     #convert_flv.convertFlv2Mp4underDir(work_path+'\\videos')
     
