@@ -1,8 +1,6 @@
 ﻿#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-#import youtube-dl as youtube
-
 
 import re
 import urllib
@@ -25,29 +23,41 @@ import convert_flv
 #--------------------------------------------------------------------------------------
 #Configuraion
 
-host = 'http://www.youtube.com'
+host = 'http://v.youku.com'
+
+get_flvurl_service_url = 'http://www.wbwb.net/video/'
 
 #proxy = {'http': 'http://beiwebcache1.core.hp.com:8080'}
-proxy = {'http': 'http://web-proxy.hpl.hp.com:8088'}
+proxy = {'http': 'http://web-proxy.china.hp.com:8080'}
 
 proxy = None
 
 thread_count = 5
 
-work_path = 'D:\Develop\Others\code-of-ldmiao\web\youtube.com'
+work_path = 'D:\Develop\Others\code-of-ldmiao\web\youku.com'
 
 downloaded_video_set = None
 
 #--------------------------------------------------------------------------------------
 
+
+
 #get the HTML Source from url through proxies
-def getContent(url, proxies = None):
-    '''
+def getContent(url, data=None, proxies=None):
+    
+    std_headers = {	
+        'User-Agent': 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.1) Gecko/2008070208 Firefox/3.0.1',
+        'Accept-Charset': 'ISO-8859-1,utf-8;q=0.7,*;q=0.7',
+        'Accept': 'text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5',
+        'Accept-Language': 'en-us,en;q=0.5',
+    }
+    
     if proxies==None:
         print "           -> Get:["+url+"]"
     else:
         print "           -> Get:["+url+"] through " + proxies['http']
-    '''
+    
+
     log("Get:["+url+"]")
 
     content = None
@@ -56,12 +66,17 @@ def getContent(url, proxies = None):
     #while(success == False):
     while(test_time>0):
         try:
-            filehandle = None
-            if proxies==None:
-                filehandle = urllib.urlopen(url)
-            else:
-                filehandle = urllib.urlopen(url, proxies=proxies)
-            content = filehandle.read()
+            if data:
+                data = urllib.urlencode(data)
+            if proxies is not None:
+                proxy_support = urllib2.ProxyHandler(proxies)
+                opener = urllib2.build_opener(proxy_support)
+                urllib2.install_opener(opener)
+            
+            request = urllib2.Request(url, data, std_headers)
+            response = urllib2.urlopen(request)
+            content = response.read()
+            
             #print content
             #success = True
             test_time = 0
@@ -102,42 +117,37 @@ def persistDownloadedVideoIDSet():
             f.write(url+'\n')
             f.flush()
         f.close()
-        
+
 def hasBeenDownloadedBeforeByVideoPageURL(url):
     global downloaded_video_set
     initDownloadedVideoIDSet()
-    video_id = None
-    mobj = re.search('''\\?v=(.*)''', url.strip())
-    if mobj is not None:
-        video_id = mobj.group(1)
-        if video_id in downloaded_video_set:
+    
+    if url is not None:
+        url = url.strip()
+        if url in downloaded_video_set:
             return True
     return False
 
-def hasBeenDownloadedBefore(video_url):
+def hasBeenDownloadedBefore(video_id):
     global downloaded_video_set
     initDownloadedVideoIDSet()
-    video_id = None
-    mobj = re.search('''video_id=(.*?)&t''', video_url)
-    if mobj is not None:
-        video_id = mobj.group(1)
-        if video_id in downloaded_video_set:
+    
+    if url is not None:
+        url = url.strip()
+        if url in downloaded_video_set:
             return True
     return False
-        
-def addToDownloadedVideoIDSet(video_url):
+
+def addToDownloadedVideoIDSet(video_id):
     global downloaded_video_set
     initDownloadedVideoIDSet()
-    video_id = None
-    mobj = re.search('''video_id=(.*?)&t''', video_url)
-    if mobj is not None:
-        video_id = mobj.group(1)
-        if video_id and video_id !='':
-            downloaded_video_set.add(video_id)
-            persistDownloadedVideoIDSet()
+    if video_id and video_id !='':
+        video_id = video_id.strip()
+        downloaded_video_set.add(video_id)
+        persistDownloadedVideoIDSet()
 
 #--------------------------------------------------------------------------------------
-def saveFile(path, name, url):
+def saveFile(path, name, url, video_id):
     #--------------------------------------------------------------------------
     #Replace all the invalid characters
     #re.sub('''[\\\\/\:\*\?"<>\|]+''', '-', '\\,/,|,",:,*,?,<,>')
@@ -161,9 +171,9 @@ def saveFile(path, name, url):
     if existFile(save_path):
         print "  File:[" + save_path+ "] already exists, pass.\n"
         log("  File:[" + save_path+ "] already exists, pass.\n")
-        addToDownloadedVideoIDSet(url)
+        addToDownloadedVideoIDSet(video_id)
         return
-    
+
     global proxy
     content = getContent(url, proxy)
     if content:
@@ -172,11 +182,11 @@ def saveFile(path, name, url):
         f.close()
         print " File  Saved:[" + save_path + "]"
         log(" URL  Downloaded:[" + url + "]")
-        addToDownloadedVideoIDSet(url)
+        addToDownloadedVideoIDSet(video_id)
     else:
         print " Failed  for:[" + save_path + "]"
         log("  Failed for:[" + url + "]")
-    
+
 
 def log(str):
     global work_path
@@ -196,63 +206,45 @@ def clearLog():
 
 #--------------------------------------------------------------------------------------
 def getVideoInfo(url):
-    global proxy, host
-    video_webpage = getContent(url, proxy)
+    global proxy, host, get_flvurl_service_url
+    
+    #url=http%3A%2F%2Fv.youku.com%2Fv_show%2Fid_XNTgzNTkyMTY%3D.html&wantdown=haha&Submit=%E6%98%BE%E7%A4%BA%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80
+    data = {'url': url,'wantdown': 'haha' ,'submit': '显示下载地址', }
+    video_webpage = getContent(get_flvurl_service_url, data, proxy)
 
-    # Extract video id from URL
-    video_id = ''
-    VALID_URL = r'^((?:http://)?(?:\w+\.)?youtube\.com/(?:(?:v/)|(?:(?:watch(?:\.php)?)?\?(?:.+&)?v=)))?([0-9A-Za-z_-]+)(?(1).+)?$'
-    mobj = re.match(VALID_URL, url)
-    if mobj is None:
-        return None
-    else:
-        video_id = mobj.group(2)
-
-    t_param = ''
-    mobj = re.search(r', "t": "([^"]+)"', video_webpage)
-    if mobj is None:
-        return None
-    else:
-        t_param = mobj.group(1)
-
-    video_real_url = '%s/get_video?video_id=%s&t=%s' % (host, video_id, t_param)
-
-    # title
+    video_real_url = ''
     video_title = ''
-    mobj = re.search(r'(?im)<title>YouTube - ([^<]*)</title>', video_webpage)
+    mobj = re.search(r"""(?ms)target='_blank'>(.*?)</a></h3><br />.*?<p><a href='(.*?)'""", video_webpage)
     if mobj is not None:
-        video_title = mobj.group(1).decode('utf-8')
-        video_title = re.sub(ur'(?u)&(.+?);', lambda x: unichr(htmlentitydefs.name2codepoint[x.group(1)]), video_title)
-        video_title = video_title.replace(os.sep, u'%')
-
-    # simplified title
-    simple_title_chars = string.ascii_letters.decode('ascii') + string.digits.decode('ascii')
-    simple_title = re.sub(ur'(?u)([^%s]+)' % simple_title_chars, ur'_', video_title)
-    simple_title = simple_title.strip(ur'_')
-
-    return video_real_url, video_title, simple_title
+        video_title = mobj.group(1).decode('utf-8').strip()
+        #video_title = mobj.group(1).strip()
+        video_real_url = mobj.group(2)
+    
+    return video_real_url, video_title
 
 def downloadVideo(url):
     global proxy, work_path
-    
+
     if hasBeenDownloadedBeforeByVideoPageURL(url):
         print "  Video:[" + url+ "] has been downloaded before, pass.\n"
         log("  Video:[" + url+ "] has been downloaded before, pass.\n")
         return
-        
-    video_real_url, video_title, simple_title = getVideoInfo(url) 
-    saveFile(work_path+'\\youtube_videos', '%s.flv'%(video_title), video_real_url);
+    
+    video_real_url, video_title = getVideoInfo(url)
+    saveFile(work_path+'\\videos', '%s.flv'%(video_title), video_real_url, url);
 
 def downloadAllVideos(url):
     global proxy, host, thread_count
-    htmlcontent = getContent(url, proxy)
-
+    print url
+    htmlcontent = getContent(url, None, proxy)
+    
     pool = ThreadPool(thread_count)
 
     video_url_set = set()
-    matched_groups = re.findall('''"(/watch\\?v=.*?)"''', htmlcontent)
+    matched_groups = re.findall('''<a href="(http\://v\.youku\.com/v_show/id_.*?=\.html)"''', htmlcontent)
     for matched in matched_groups:
-        video_url = "%s%s"%(host, matched.strip())
+        #print matched.strip()
+        video_url = matched.strip()
         video_url_set.add(video_url)
 
     for video_url in video_url_set:
@@ -265,15 +257,18 @@ def downloadAllVideos(url):
 
 #--------------------------------------------------------------------------------------
 if __name__ == '__main__':
-    clearLog()
-    #print getVideoInfo('http://www.youtube.com/watch?v=W8xfmFMz1RE')
-    #downloadVideo('http://www.youtube.com/watch?v=W8xfmFMz1RE')
-    search_video_url = 'http://www.youtube.com/results?search_query=%s&search_sort=video_date_uploaded'
-
-    search_words = ['文茜小妹大', '文茜世界周报', '锵锵三人行', '文涛拍案', '有报天天读', '中天骇客赵少康',
-                    '文道非常道', '世界周刊', '新闻周刊', '开卷八分钟']
+    
+    #clearLog()
+    #video_url = 'http://v.youku.com/v_show/id_XNTgzNTkyMTY=.html'
+    #print getVideoInfo(video_url)
+    #downloadVideo(video_url)
+    
+    
+    search_video_url = 'http://so.youku.com/search_video/q_%s/orderby_2'
+    search_words = ['今日观察']
     for word in search_words:
         downloadAllVideos(search_video_url%(urllib.quote_plus(word)))
-
-    convert_flv.convertFlv2Mp4underDir(work_path+'\\youtube_videos')
+    
+    
+    #convert_flv.convertFlv2Mp4underDir(work_path+'\\videos')
 
