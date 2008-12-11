@@ -29,8 +29,8 @@ def convertFlv2Mp4underDir(path):
                 print "  File:[" + mp4_save_path+ "] already exists, pass.\n"
             else:
                 cmd = MP4_CMD%(flv_path, mp4_save_path)
-                print cmd
-                pool.queueTask(run_cmd, (cmd))
+                #print cmd
+                #pool.queueTask(run_cmd, (cmd))
             
             mp3_file_name = file_name[:file_name.rfind('.')]+'.mp3'
             mp3_save_path = path+'/mp3/'+mp3_file_name
