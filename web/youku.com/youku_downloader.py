@@ -362,5 +362,5 @@ if __name__ == '__main__':
     #search_video_url = 'http://so.youku.com/search_video/q_%s/orderby_3'
     #downloadAllPagesVideos(search_video_url%(urllib.quote_plus('哆啦a梦')))
     
-    #convert_flv.convertFlv2Mp4underDir(work_path+'\\videos')
+    convert_flv.convertFlv2Mp4underDir(work_path+'\\videos')
     
