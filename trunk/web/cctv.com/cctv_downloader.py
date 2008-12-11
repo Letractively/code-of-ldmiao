@@ -323,7 +323,29 @@ def downloadProgramVideos(url):
             log(video_url)
         #pool.queueTask(downloadVideoThread, (video_url, video_title))
 
-    #pool.joinAll()
+    #pool.joinAll()    
+
+def downloadFirstVideo(url):
+    global proxy, host, thread_count
+    print url
+    htmlcontent = getContent(url, None, proxy)
+
+    pool = ThreadPool(thread_count)
+
+    matched_groups = re.findall('''class=list>(.*?)</a>&nbsp;<a title=".*?" href="http://www.cctv.com/video/(.*?).shtml" target="_blank">''', htmlcontent)
+    for matched in matched_groups:
+        #print matched.strip()
+        video_title = matched[0].strip()
+        video_url = matched[1].strip()
+        video_url = 'http://v.cctv.com/flash/'+video_url+'.flv'
+        print video_title, '-', video_url
+        log(video_url)
+        pool.queueTask(downloadVideoThread, (video_url, video_title))
+        break
+
+    pool.joinAll()
+    
+
 
 def downloadAllPagesVideos(url):
     global proxy, host, thread_count
@@ -364,7 +386,8 @@ if __name__ == '__main__':
     #downloadSpaceVideos(url)
 
     url = 'http://www.cctv.com/program/sjzk/02/index.shtml'
-    downloadProgramVideos(url)
-
+    #downloadProgramVideos(url)
+    downloadFirstVideo(url)
+    
     #convert_flv.convertFlv2Mp4underDir(work_path+'\\videos')
 
