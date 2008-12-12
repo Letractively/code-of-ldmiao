@@ -32,6 +32,7 @@ proxy = {'http': 'http://web-proxy.hpl.hp.com:8088'}
 
 proxy = None
 
+pool = None
 thread_count = 5
 
 work_path = 'D:\Develop\Others\code-of-ldmiao\web\youtube.com'
@@ -244,10 +245,8 @@ def downloadVideo(url):
     saveFile(work_path+'\\youtube_videos', '%s.flv'%(video_title), video_real_url);
 
 def downloadAllVideos(url):
-    global proxy, host, thread_count
+    global proxy, host, thread_count, pool
     htmlcontent = getContent(url, proxy)
-
-    pool = ThreadPool(thread_count)
 
     video_url_set = set()
     matched_groups = re.findall('''"(/watch\\?v=.*?)"''', htmlcontent)
@@ -259,10 +258,16 @@ def downloadAllVideos(url):
         print video_url
         log(video_url)
         pool.queueTask(downloadVideo, (video_url))
-
+    
+def downloadSearchedVideo(search_words):
+    global pool
+    pool = ThreadPool(thread_count)
+    
+    for word in search_words:
+        downloadAllVideos(search_video_url%(urllib.quote_plus(word)))
+    
     pool.joinAll()
     
-
 #--------------------------------------------------------------------------------------
 if __name__ == '__main__':
     clearLog()
@@ -272,8 +277,7 @@ if __name__ == '__main__':
 
     search_words = ['文茜小妹大', '文茜世界周报', '锵锵三人行', '文涛拍案', '有报天天读', '中天骇客赵少康',
                     '文道非常道', '世界周刊', '新闻周刊', '开卷八分钟']
-    for word in search_words:
-        downloadAllVideos(search_video_url%(urllib.quote_plus(word)))
+    downloadSearchedVideo(search_words)
 
-    #convert_flv.convertFlv2Mp4underDir(work_path+'\\youtube_videos')
+    convert_flv.convertFlv2Mp4underDir(work_path+'\\youtube_videos')
 
