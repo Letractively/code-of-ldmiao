@@ -275,8 +275,10 @@ if __name__ == '__main__':
     #downloadVideo('http://www.youtube.com/watch?v=W8xfmFMz1RE')
     search_video_url = 'http://www.youtube.com/results?search_query=%s&search_sort=video_date_uploaded'
 
-    search_words = ['文茜小妹大', '文茜世界周报', '锵锵三人行', '文涛拍案', '有报天天读', '中天骇客赵少康',
-                    '文道非常道', '世界周刊', '新闻周刊', '开卷八分钟']
+    search_words = ['头脑风暴', '锵锵三人行', '文涛拍案', '有报天天读', 
+                    '新闻今日谈', '金石财经', '时事开讲', 
+                    #'文茜小妹大', '文茜世界周报', '中天骇客赵少康',
+                    '文道非常道', '世界周刊', '新闻周刊']
     downloadSearchedVideo(search_words)
 
     convert_flv.convertFlv2Mp4underDir(work_path+'\\youtube_videos')
