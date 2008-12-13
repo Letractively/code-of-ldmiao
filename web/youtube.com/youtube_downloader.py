@@ -158,13 +158,16 @@ def saveFile(path, name, url):
         else:
             os.makedirs(path)
 
-    save_path = path+'/'+name
+    save_path = path+'\\'+name
     if existFile(save_path):
         print "  File:[" + save_path+ "] already exists, pass.\n"
         log("  File:[" + save_path+ "] already exists, pass.\n")
         addToDownloadedVideoIDSet(url)
         return
-
+    
+    print "  Downloading:[" + save_path+ "] ..."
+    log("  Downloading:[" + save_path+ "] ...\n")
+        
     global proxy
     content = getContent(url, proxy)
     if content:
