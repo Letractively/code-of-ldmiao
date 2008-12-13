@@ -103,7 +103,7 @@ def persistDownloadedVideoIDSet():
             f.write(url+'\n')
             f.flush()
         f.close()
-        
+
 def hasBeenDownloadedBeforeByVideoPageURL(url):
     global downloaded_video_set
     initDownloadedVideoIDSet()
@@ -125,7 +125,7 @@ def hasBeenDownloadedBefore(video_url):
         if video_id in downloaded_video_set:
             return True
     return False
-        
+
 def addToDownloadedVideoIDSet(video_url):
     global downloaded_video_set
     initDownloadedVideoIDSet()
@@ -164,7 +164,7 @@ def saveFile(path, name, url):
         log("  File:[" + save_path+ "] already exists, pass.\n")
         addToDownloadedVideoIDSet(url)
         return
-    
+
     global proxy
     content = getContent(url, proxy)
     if content:
@@ -177,7 +177,7 @@ def saveFile(path, name, url):
     else:
         print " Failed  for:[" + save_path + "]"
         log("  Failed for:[" + url + "]")
-    
+
 
 def log(str):
     global work_path
@@ -235,13 +235,13 @@ def getVideoInfo(url):
 
 def downloadVideo(url):
     global proxy, work_path
-    
+
     if hasBeenDownloadedBeforeByVideoPageURL(url):
         print "  Video:[" + url+ "] has been downloaded before, pass.\n"
         log("  Video:[" + url+ "] has been downloaded before, pass.\n")
         return
-        
-    video_real_url, video_title, simple_title = getVideoInfo(url) 
+
+    video_real_url, video_title, simple_title = getVideoInfo(url)
     saveFile(work_path+'\\youtube_videos', '%s.flv'%(video_title), video_real_url);
 
 def downloadAllVideos(url):
@@ -258,16 +258,16 @@ def downloadAllVideos(url):
         print video_url
         log(video_url)
         pool.queueTask(downloadVideo, (video_url))
-    
+
 def downloadSearchedVideo(search_words):
     global pool
     pool = ThreadPool(thread_count)
-    
+
     for word in search_words:
         downloadAllVideos(search_video_url%(urllib.quote_plus(word)))
-    
+
     pool.joinAll()
-    
+
 #--------------------------------------------------------------------------------------
 if __name__ == '__main__':
     clearLog()
@@ -275,10 +275,20 @@ if __name__ == '__main__':
     #downloadVideo('http://www.youtube.com/watch?v=W8xfmFMz1RE')
     search_video_url = 'http://www.youtube.com/results?search_query=%s&search_sort=video_date_uploaded'
 
-    search_words = ['头脑风暴', '锵锵三人行', '文涛拍案', '有报天天读', 
-                    '新闻今日谈', '金石财经', '时事开讲', 
-                    #'文茜小妹大', '文茜世界周报', '中天骇客赵少康',
-                    '文道非常道', '世界周刊', '新闻周刊']
+    search_words = ['头脑风暴',
+                    #'锵锵三人行',
+                    #'文涛拍案',
+                    #'有报天天读',
+                    #'新闻今日谈',
+                    #'金石财经',
+                    #'时事开讲',
+                    #'文茜小妹大',
+                    #'文茜世界周报',
+                    #'中天骇客赵少康',
+                    #'文道非常道',
+                    #'世界周刊',
+                    #'新闻周刊',
+                    ]
     downloadSearchedVideo(search_words)
 
     convert_flv.convertFlv2Mp4underDir(work_path+'\\youtube_videos')
