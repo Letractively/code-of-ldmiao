@@ -10,8 +10,6 @@ import sys
 import random
 import time
 
-from urllib2 import Request, urlopen, URLError, HTTPError
-
 import htmlentitydefs
 import string
 
@@ -82,12 +80,12 @@ def getContent(url, data=None, proxies=None):
             #print content
             #success = True
             test_time = 0
-        except HTTPError, e:
+        except urllib.HTTPError, e:
             print 'The server couldn\'t fulfill the request.'
             print 'Error code: ', e.code
             content = None
             break
-        except URLError, e:
+        except urllib.URLError, e:
             print 'We failed to reach a server.'
             print 'Reason: ', e.reason
             content = None
