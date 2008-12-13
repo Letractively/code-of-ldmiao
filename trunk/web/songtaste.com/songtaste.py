@@ -29,7 +29,6 @@ thread_count = 5
 
 #--------------------------------------------------------------------------------------
 
-from urllib2 import Request, urlopen, URLError, HTTPError
 #get the HTML Source from url through proxies
 def getContent(url, data=None, proxies=None):
     
@@ -66,12 +65,12 @@ def getContent(url, data=None, proxies=None):
             #print content
             #success = True
             test_time = 0
-        except HTTPError, e:
+        except urllib2.HTTPError, e:
             #print 'The server couldn\'t fullfill the request. Error code: ', e.code
             print "           -> Get:["+url+"] failed, Error code:", e.code
             content = None
             break
-        except URLError, e:
+        except urllib2.URLError, e:
             #print 'We failed to reach a server. Reason: ', e.reason
             print "           -> Get:["+url+"] failed, Reason:", e.reason
             content = None

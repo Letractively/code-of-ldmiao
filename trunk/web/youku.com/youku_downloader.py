@@ -10,7 +10,7 @@ import sys
 import random
 import time
 
-from urllib2 import Request, urlopen, URLError, HTTPError
+
 
 import htmlentitydefs
 import string
@@ -41,8 +41,6 @@ work_path = 'D:\\Develop\\Others\\code-of-ldmiao\\web\\youku.com'
 downloaded_video_set = None
 
 #--------------------------------------------------------------------------------------
-
-
 
 #get the HTML Source from url through proxies
 def getContent(url, data=None, proxies=None):
@@ -82,12 +80,12 @@ def getContent(url, data=None, proxies=None):
             #print content
             #success = True
             test_time = 0
-        except HTTPError, e:
+        except urllib2.HTTPError, e:
             print 'The server couldn\'t fulfill the request.'
             print 'Error code: ', e.code
             content = None
             break
-        except URLError, e:
+        except urllib2.URLError, e:
             print 'We failed to reach a server.'
             print 'Reason: ', e.reason
             content = None

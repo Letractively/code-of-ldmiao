@@ -42,13 +42,21 @@ downloaded_video_set = None
 #--------------------------------------------------------------------------------------
 
 #get the HTML Source from url through proxies
-def getContent(url, proxies = None):
+def getContent(url, data=None, proxies=None):
+    
+    std_headers = {	
+        'User-Agent': 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.1) Gecko/2008070208 Firefox/3.0.1',
+        'Accept-Charset': 'ISO-8859-1,utf-8;q=0.7,*;q=0.7',
+        'Accept': 'text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5',
+        'Accept-Language': 'en-us,en;q=0.5',
+    }
     '''
     if proxies==None:
         print "           -> Get:["+url+"]"
     else:
         print "           -> Get:["+url+"] through " + proxies['http']
     '''
+
     log("Get:["+url+"]")
 
     content = None
@@ -57,21 +65,35 @@ def getContent(url, proxies = None):
     #while(success == False):
     while(test_time>0):
         try:
-            filehandle = None
-            if proxies==None:
-                filehandle = urllib.urlopen(url)
-            else:
-                filehandle = urllib.urlopen(url, proxies=proxies)
-            content = filehandle.read()
+            if data:
+                data = urllib.urlencode(data)
+            if proxies is not None:
+                proxy_support = urllib2.ProxyHandler(proxies)
+                opener = urllib2.build_opener(proxy_support)
+                urllib2.install_opener(opener)
+            
+            request = urllib2.Request(url, data, std_headers)
+            response = urllib2.urlopen(request)
+            content = response.read()
+            
             #print content
             #success = True
             test_time = 0
+        except urllib2.HTTPError, e:
+            print 'The server couldn\'t fulfill the request. Error code: ', e.code
+            content = None
+            break
+        except urllib2.URLError, e:
+            print 'We failed to reach the server. Reason: ', e.reason
+            content = None
+            break
         except:
             #success = False
             test_time = test_time-1
             print "Get:["+url+"] failed, " + str(test_time) + " times left~"
             log("Get:["+url+"] failed, " + str(test_time) + " times left~")
             time.sleep(random.randrange(8,12,1))
+        
     return content
 
 def existFile(filename):
@@ -169,17 +191,17 @@ def saveFile(path, name, url):
     log("  Downloading:[" + save_path+ "] ...\n")
         
     global proxy
-    content = getContent(url, proxy)
+    content = getContent(url, None, proxy)
     if content:
         f = open(save_path,"wb")
         f.write(content)
         f.close()
-        print " File  Saved:[" + save_path + "]"
-        log(" URL  Downloaded:[" + url + "]")
+        print " File   Saved:[" + save_path + "]"
+        log(" URL Downloaded:[" + url + "]")
         addToDownloadedVideoIDSet(url)
     else:
-        print " Failed  for:[" + save_path + "]"
-        log("  Failed for:[" + url + "]")
+        print " Failed   for:[" + save_path + "]"
+        log(" Failed for:[" + url + "]")
 
 
 def log(str):
@@ -201,7 +223,7 @@ def clearLog():
 #--------------------------------------------------------------------------------------
 def getVideoInfo(url):
     global proxy, host
-    video_webpage = getContent(url, proxy)
+    video_webpage = getContent(url, None, proxy)
 
     # Extract video id from URL
     video_id = ''
@@ -249,7 +271,7 @@ def downloadVideo(url):
 
 def downloadAllVideos(url):
     global proxy, host, thread_count, pool
-    htmlcontent = getContent(url, proxy)
+    htmlcontent = getContent(url, None, proxy)
 
     video_url_set = set()
     matched_groups = re.findall('''"(/watch\\?v=.*?)"''', htmlcontent)
@@ -276,7 +298,7 @@ if __name__ == '__main__':
     clearLog()
     #print getVideoInfo('http://www.youtube.com/watch?v=W8xfmFMz1RE')
     #downloadVideo('http://www.youtube.com/watch?v=W8xfmFMz1RE')
-    search_video_url = 'http://www.youtube.com/results?search_query=%s&search_sort=video_date_uploaded'
+    search_video_url = 'http://www.youtube.com/results?search_query=%s&search_sort=video_date_uploaded&page=4'
 
     search_words = ['头脑风暴',
                     #'锵锵三人行',
