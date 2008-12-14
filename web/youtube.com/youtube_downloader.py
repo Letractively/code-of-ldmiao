@@ -298,11 +298,11 @@ if __name__ == '__main__':
     clearLog()
     #print getVideoInfo('http://www.youtube.com/watch?v=W8xfmFMz1RE')
     #downloadVideo('http://www.youtube.com/watch?v=W8xfmFMz1RE')
-    search_video_url = 'http://www.youtube.com/results?search_query=%s&search_sort=video_date_uploaded&page=4'
+    search_video_url = 'http://www.youtube.com/results?search_query=%s&search_sort=video_date_uploaded&page=1'
 
     search_words = ['头脑风暴',
-                    #'锵锵三人行',
-                    #'文涛拍案',
+                    '锵锵三人行',
+                    '文涛拍案',
                     #'有报天天读',
                     #'新闻今日谈',
                     #'金石财经',
