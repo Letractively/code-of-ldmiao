@@ -287,7 +287,8 @@ def downloadAllVideos(url):
 def downloadSearchedVideo(search_words):
     global pool
     pool = ThreadPool(thread_count)
-
+    
+    search_video_url = 'http://www.youtube.com/results?search_query=%s&search_sort=video_date_uploaded&page=1'
     for word in search_words:
         downloadAllVideos(search_video_url%(urllib.quote_plus(word)))
 
@@ -298,8 +299,7 @@ if __name__ == '__main__':
     clearLog()
     #print getVideoInfo('http://www.youtube.com/watch?v=W8xfmFMz1RE')
     #downloadVideo('http://www.youtube.com/watch?v=W8xfmFMz1RE')
-    search_video_url = 'http://www.youtube.com/results?search_query=%s&search_sort=video_date_uploaded&page=1'
-
+    
     search_words = ['头脑风暴',
                     '锵锵三人行',
                     '文涛拍案',
