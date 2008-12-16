@@ -284,14 +284,19 @@ def downloadAllVideos(url):
         log(video_url)
         pool.queueTask(downloadVideo, (video_url))
 
-def downloadSearchedVideo(search_words):
+def downloadSearchedVideo(search_words, allPages=False):
     global pool
     pool = ThreadPool(thread_count)
     
-    search_video_url = 'http://www.youtube.com/results?search_query=%s&search_sort=video_date_uploaded&page=1'
-    for word in search_words:
-        downloadAllVideos(search_video_url%(urllib.quote_plus(word)))
-
+    search_video_url = 'http://www.youtube.com/results?search_query=%s&search_sort=video_date_uploaded&page=%d'
+    if allPages == False:
+        for word in search_words:
+            downloadAllVideos(search_video_url%(urllib.quote_plus(word), 1))
+    else:
+        for word in search_words:
+            for page in range(1, 6):
+                downloadAllVideos(search_video_url%(urllib.quote_plus(word), page))
+    
     pool.joinAll()
 
 #--------------------------------------------------------------------------------------
@@ -300,7 +305,8 @@ if __name__ == '__main__':
     #print getVideoInfo('http://www.youtube.com/watch?v=W8xfmFMz1RE')
     #downloadVideo('http://www.youtube.com/watch?v=W8xfmFMz1RE')
     
-    search_words = ['头脑风暴',
+    search_words = [
+                    '头脑风暴',
                     '锵锵三人行',
                     '文涛拍案',
                     '有报天天读',
@@ -314,7 +320,8 @@ if __name__ == '__main__':
                     '世界周刊',
                     '新闻周刊',
                     ]
-    downloadSearchedVideo(search_words)
-
-    convert_flv.convertFlv2Mp4underDir(work_path+'\\youtube_videos')
+    #downloadSearchedVideo(search_words, allPages=True)
+    downloadSearchedVideo(search_words, allPages=False)
+    
+    #convert_flv.convertFlv2Mp4underDir(work_path+'\\youtube_videos')
 
