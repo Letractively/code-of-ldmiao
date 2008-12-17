@@ -319,6 +319,7 @@ if __name__ == '__main__':
                     '文道非常道',
                     '世界周刊',
                     '新闻周刊',
+                    '世纪大讲堂',
                     ]
     #downloadSearchedVideo(search_words, allPages=True)
     downloadSearchedVideo(search_words, allPages=False)
