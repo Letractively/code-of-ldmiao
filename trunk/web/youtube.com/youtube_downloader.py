@@ -40,7 +40,12 @@ work_path = 'D:\Develop\Others\code-of-ldmiao\web\youtube.com'
 downloaded_video_set = None
 
 #--------------------------------------------------------------------------------------
-
+def getThreadPool():
+    global pool
+    if pool is None:
+        pool = ThreadPool(thread_count)
+    return pool
+#--------------------------------------------------------------------------------------
 #get the HTML Source from url through proxies
 def getContent(url, data=None, proxies=None):
     
@@ -271,6 +276,8 @@ def downloadVideo(url):
 
 def downloadAllVideos(url):
     global proxy, host, thread_count, pool
+    pool = getThreadPool()
+    
     htmlcontent = getContent(url, None, proxy)
 
     video_url_set = set()
@@ -286,7 +293,7 @@ def downloadAllVideos(url):
 
 def downloadSearchedVideo(search_words, allPages=False):
     global pool
-    pool = ThreadPool(thread_count)
+    pool = getThreadPool()
     
     search_video_url = 'http://www.youtube.com/results?search_query=%s&search_sort=video_date_uploaded&page=%d'
     if allPages == False:
