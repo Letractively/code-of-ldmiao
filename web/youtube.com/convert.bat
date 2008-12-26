@@ -1,1 +1,1 @@
-ffmpeg -i "Cohen_s_Football_Corner_Footbo_com-Wf0RnCGwZ7w.flv" -vcodec mpeg4 -b 1200kb -mbd 2 -aic 2 -cmp 2 -subcmp 2 -acodec libfaac -ac 2 -ab 128000 -y "Cohen_s_Football_Corner_Footbo_com-Wf0RnCGwZ7w.mp4"
+python convert_flv.py
