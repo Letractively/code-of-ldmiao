@@ -29,7 +29,7 @@ proxy = {'http': 'http://web-proxy.hpl.hp.com:8088'}
 proxy = None
 
 pool = None
-thread_count = 5
+thread_count = 2
 
 work_path = 'D:\\develop\\code-of-ldmiao\\web\\t8.bjradio.com.cn'
 
@@ -242,7 +242,9 @@ def downloadVideo(url):
         return
 
     video_real_url, video_title = getVideoInfo(url)
-    saveFile(work_path+'\\audio', '%s.wma'%(video_title), video_real_url);
+    video_file_type = video_real_url[video_real_url.rfind('.'):]
+    
+    saveFile(work_path+'\\audio', '%s%s'%(video_title, video_file_type), video_real_url);
 
 def downloadAllVideos(url):
     global proxy, host, thread_count, pool
@@ -250,23 +252,22 @@ def downloadAllVideos(url):
     
     htmlcontent = getContent(url, None, proxy)
 
-    matched_groups = re.findall(r'<a href="(.*?)" title=".*?" class="f01">.*?</a>', htmlcontent)
-    for matched in reversed(matched_groups):
+    matched_groups = re.findall(r'<a href="(/play\?id=\d+)".*?title=".*?"', htmlcontent)
+    for matched in matched_groups:
         video_url = "%s%s"%(host, matched.strip())
         print video_url
         log(video_url)
         pool.queueTask(downloadVideo, (video_url))
     
-    #pool.joinAll()
-    
-def downloadAllPagesVideo():
+def downloadAllPagesVideo(keyword, page_count):
     global pool
+    pool = None
     pool = getThreadPool()
-    downloadAllVideos('http://t8.bjradio.com.cn/list?p=3&uid=84215&special_id=426&sort_by=0')
-    downloadAllVideos('http://t8.bjradio.com.cn/list?p=2&uid=84215&special_id=426&sort_by=0')
-    downloadAllVideos('http://t8.bjradio.com.cn/list?p=1&uid=84215&special_id=426&sort_by=0')
+    for i in range(page_count):
+        downloadAllVideos('http://t8.bjradio.com.cn/search?keyword=%s&p=%d'%(urllib.quote_plus(keyword), i+1))
     pool.joinAll()
 
+    
 #--------------------------------------------------------------------------------------
 if __name__ == '__main__':
     clearLog()
@@ -277,4 +278,14 @@ if __name__ == '__main__':
     #url = 'http://t8.bjradio.com.cn/list?p=2&uid=84215&special_id=0&sort_by=0'
     #downloadAllVideos(url)
     
-    downloadAllPagesVideo()
+    downloadAllPagesVideo('飞舞芳邻', 5)
+    downloadAllPagesVideo('结婚进行曲', 3)
+    downloadAllPagesVideo('婚姻诊所', 3)
+    downloadAllPagesVideo('沉浮-灵与肉', 3)
+    downloadAllPagesVideo('明朝那些事', 26)
+    downloadAllPagesVideo('东坡', 3)
+    downloadAllPagesVideo('唐宋才子的真实生活', 5)
+    downloadAllPagesVideo('清朝那些事儿', 5)
+    downloadAllPagesVideo('左手曾国藩右手胡雪岩', 4)
+    downloadAllPagesVideo('我们仨', 3)
+    downloadAllPagesVideo('清朝那些事儿', 5)
