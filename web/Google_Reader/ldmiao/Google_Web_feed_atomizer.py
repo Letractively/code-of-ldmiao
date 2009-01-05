@@ -77,17 +77,19 @@ class feedconverter(object):
     
 def test():
     feed = "http://blog.sina.com.cn/rss/skyinwell.xml"
-    #feed = "http://feeds.feedburner.com/Betterexplained"
+    feed = "http://feeds.feedburner.com/Betterexplained"
     #feed = "http://blog.ifeng.com/rss/1300174.xml"
     #feed = "http://feeds.feedburner.com/ruanyifeng"
     #feed = "http://blog.sina.com.cn/rss/gongzicaosan.xml"
+    #feed = "http://xieguozhong.blog.sohu.com/rss"
+    #feed = "http://blog.sina.com.cn/rss/jsmedia.xml"
     
     user = "PyGtalkRobot"
     passwd = "PyGtalkRobotByLdmiao"
     fc = feedconverter(user, passwd)
     title, feeds = fc.feeds(feed, 2000)
     
-    f = open(u'skyinwell.html', 'w')
+    f = open(u'Betterexplained.html', 'w')
     
     
     style='''<style>
