@@ -84,13 +84,15 @@ def test():
     #feed = "http://xieguozhong.blog.sohu.com/rss"
     #feed = "http://blog.sina.com.cn/rss/jsmedia.xml"
     #feed = "http://yuanjian.blog.sohu.com/rss"
+    feed = "http://xuxiaonian.blog.sohu.com/rss"
+    feed = "http://lidaokui.blog.sohu.com/rss"
     
     user = "PyGtalkRobot"
     passwd = "PyGtalkRobotByLdmiao"
     fc = feedconverter(user, passwd)
     title, feeds = fc.feeds(feed, 2000)
     
-    f = open(u'skyinwell.html', 'w')
+    f = open(u'lidaokui.html', 'w')
     
     
     style='''<style>
@@ -100,7 +102,7 @@ def test():
         .content {padding: 0 0 0 1em; }\n</style>\n'''
         
     title = unicode(title, 'gbk', 'ignore').encode('utf-8', 'ignore')
-    html_pre = '<html>\n<head>\n<title>%s</title>\n%s\n</head>\n<body>\n'%(title, style)
+    html_pre = '<html>\n<head>\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\n<title>%s</title>\n%s\n</head>\n<body>\n'%(title, style)
     
     f.write(html_pre)
     
