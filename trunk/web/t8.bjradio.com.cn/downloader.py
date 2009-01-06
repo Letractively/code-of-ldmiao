@@ -31,7 +31,7 @@ proxy = None
 pool = None
 thread_count = 2
 
-work_path = 'D:\\develop\\code-of-ldmiao\\web\\t8.bjradio.com.cn'
+work_path = 'E:\\audio'
 
 downloaded_video_set = None
 
@@ -252,14 +252,26 @@ def downloadAllVideos(url):
     
     htmlcontent = getContent(url, None, proxy)
 
+    urlSet = set()
+    
     matched_groups = re.findall(r'<a href="(/play\?id=\d+)".*?title=".*?"', htmlcontent)
     for matched in matched_groups:
         video_url = "%s%s"%(host, matched.strip())
-        print video_url
-        log(video_url)
-        pool.queueTask(downloadVideo, (video_url))
-    
-def downloadAllPagesVideo(keyword, page_count):
+        if video_url not in urlSet:
+            urlSet.add(video_url)
+            print video_url
+            log(video_url)
+            pool.queueTask(downloadVideo, (video_url))
+
+def downloadVideosFromUID(uid, page_count):
+    global pool
+    pool = None
+    pool = getThreadPool()
+    for i in range(page_count):
+        downloadAllVideos('http://t8.bjradio.com.cn/list?uid=%d&special_id=0&sort_by=0&p=%d'%(uid, i+1))
+    pool.joinAll()
+
+def downloadVideosWithKeyword(keyword, page_count):
     global pool
     pool = None
     pool = getThreadPool()
@@ -278,13 +290,26 @@ if __name__ == '__main__':
     #url = 'http://t8.bjradio.com.cn/list?p=2&uid=84215&special_id=0&sort_by=0'
     #downloadAllVideos(url)
     
-    #downloadAllPagesVideo('飞舞芳邻', 5)
-    #downloadAllPagesVideo('结婚进行曲', 3)
-    #downloadAllPagesVideo('婚姻诊所', 3)
-    #downloadAllPagesVideo('沉浮-灵与肉', 3)
-    #downloadAllPagesVideo('东坡', 3)
-    #downloadAllPagesVideo('唐宋才子的真实生活', 5)
-    #downloadAllPagesVideo('左手曾国藩右手胡雪岩', 4)
-    #downloadAllPagesVideo('我们仨', 3)
-    #downloadAllPagesVideo('清朝那些事儿', 5)
-    downloadAllPagesVideo('明朝那些事', 26)
+    #downloadVideosWithKeyword('飞舞芳邻', 5)
+    #downloadVideosWithKeyword('结婚进行曲', 3)
+    #downloadVideosWithKeyword('婚姻诊所', 3)
+    #downloadVideosWithKeyword('沉浮-灵与肉', 3)
+    #downloadVideosWithKeyword('东坡', 3)
+    #downloadVideosWithKeyword('唐宋才子的真实生活', 5)
+    #downloadVideosWithKeyword('左手曾国藩右手胡雪岩', 4)
+    #downloadVideosWithKeyword('我们仨', 3)
+    #downloadVideosWithKeyword('清朝那些事儿', 5)
+    #downloadVideosWithKeyword('明朝那些事', 26)
+    
+    #downloadVideosWithKeyword('大房地产商', 1)
+    #downloadVideosWithKeyword('少年维特的烦恼', 1)
+    #downloadVideosWithKeyword('谢谢你曾经爱过我', 5)
+    #downloadVideosWithKeyword('崇祯王朝', 9)
+    #downloadVideosWithKeyword('婚姻诊所', 3)
+    
+    downloadVideosFromUID(95322, 7)
+    downloadVideosFromUID(84051, 24)
+    downloadVideosFromUID(84631, 25)
+    downloadVideosFromUID(84111, 38)
+    downloadVideosFromUID(84215, 85)
+    downloadVideosFromUID(84080, 480)
