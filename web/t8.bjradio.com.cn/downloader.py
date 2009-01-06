@@ -31,7 +31,7 @@ proxy = None
 pool = None
 thread_count = 2
 
-work_path = 'E:\\audio'
+work_path = 'D:\\Develop\\Others\\code-of-ldmiao\\web\\t8.bjradio.com.cn'
 
 downloaded_video_set = None
 
