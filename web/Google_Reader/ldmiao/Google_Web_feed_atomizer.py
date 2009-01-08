@@ -86,13 +86,14 @@ def test():
     #feed = "http://yuanjian.blog.sohu.com/rss"
     feed = "http://xuxiaonian.blog.sohu.com/rss"
     feed = "http://lidaokui.blog.sohu.com/rss"
+    feed = "http://fangang.blog.sohu.com/rss"
     
     user = "PyGtalkRobot"
     passwd = "PyGtalkRobotByLdmiao"
     fc = feedconverter(user, passwd)
     title, feeds = fc.feeds(feed, 2000)
     
-    f = open(u'lidaokui.html', 'w')
+    f = open(u'fangang.html', 'w')
     
     
     style='''<style>
