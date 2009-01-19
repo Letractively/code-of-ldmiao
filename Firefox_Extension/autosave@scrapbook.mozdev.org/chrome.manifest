@@ -1,0 +1,12 @@
+
+overlay	chrome://browser/content/browser.xul	chrome://sbautosave/content/browserOverlay.xul
+overlay chrome://scrapbook/content/scrapbook.xul	chrome://sbautosave/content/scrapbookOverlay.xul
+content	sbautosave	jar:chrome/sbautosave.jar!/content/sbautosave/
+
+locale	sbautosave	en-US	jar:chrome/sbautosave.jar!/locale/en-US/sbautosave/
+locale	sbautosave	ja-JP	jar:chrome/sbautosave.jar!/locale/ja-JP/sbautosave/
+locale	sbautosave	ru-RU	jar:chrome/sbautosave.jar!/locale/ru-RU/sbautosave/
+locale	sbautosave	fr-FR	jar:chrome/sbautosave.jar!/locale/fr-FR/sbautosave/
+locale	sbautosave	hu-HU	jar:chrome/sbautosave.jar!/locale/hu-HU/sbautosave/
+locale	sbautosave	zh-TW	jar:chrome/sbautosave.jar!/locale/zh-TW/sbautosave/
+
