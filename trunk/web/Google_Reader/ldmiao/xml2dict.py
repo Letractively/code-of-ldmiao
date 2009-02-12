@@ -45,7 +45,7 @@ class XML2Dict(object):
         """
         result = re.compile("\{(.*)\}(.*)").search(tag)
         if result:
-            print tag
+            #print tag
             value.namespace, tag = result.groups()    
         return (tag, value)
 
