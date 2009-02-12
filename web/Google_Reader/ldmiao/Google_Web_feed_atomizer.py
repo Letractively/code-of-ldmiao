@@ -1,4 +1,4 @@
-﻿import sys
+﻿import sys, re, traceback, codecs
 import httplib2
 import urllib, urllib2
 from xml2dict import XML2Dict
@@ -56,7 +56,7 @@ class feedconverter(object):
         r = xml.fromstring(content)
         #from pprint import pprint
         #pprint(r)
-        print r.feed.title.value
+        #print r.feed.title.value
         return r.feed.title.value.encode('utf-8', 'ignore'), r.feed.entry
     
     def saveToGAE(self, feed_name, title, url, content):
@@ -141,7 +141,101 @@ def test():
         idx += 1
     f.write('</body></html>')
     f.close()
-	
+
+def getFileName(name):
+    #--------------------------------------------------------------------------
+    #Replace all the invalid characters
+    #re.sub('''[\\\\/\:\*\?"<>\|]+''', '-', '\\,/,|,",:,*,?,<,>')
+    #re.sub('''[\\\\/\:\*\?"<>\|]+''', '-', '\\/|":*?<>')
+    #Replace '\' and '/' to empty string ''
+    name = re.sub('''[\\\\/]+''', '_', name)
+    #Replace ':', '*', '?', '"', '<', '>', '|' to string '-'
+    name = re.sub('''[\:\*\?"<>\|]+''', '-', name)
+    name = name.strip()
+    #--------------------------------------------------------------------------
+    
+    return name
+
+def saveFeed(feedTitle, feed):
+    #feed = "http://fangang.blog.sohu.com/rss"
+    
+    user = "PyGtalkRobot"
+    passwd = "PyGtalkRobotByLdmiao"
+    fc = feedconverter(user, passwd)
+    title, feeds = fc.feeds(feed, 8000)
+    
+    #f = open(u'ldmiao\\%s.html'%(getFileName(feedTitle)), 'w')
+    f = codecs.open(u'ldmiao\\%s.html'%(getFileName(feedTitle)), "w", "utf-8" )
+    
+    style=u'''<style>
+        * {font-family: Consolas; font-size: 16px;}
+        .feed {margin: 0.8em 1em 0.8em 1em; border: thin solid gray;}
+        .title {padding: 0.3em 0 0.3em 1em; background-color:gray; font-weight:bold; font-size: 20px; text-decoration:none;}
+        .content {padding: 0 0 0 1em; }\n</style>\n'''
+        
+    title = unicode(title, 'utf-8', 'ignore')
+    html_pre = u'<html>\n<head>\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\n<title>%s</title>\n%s\n</head>\n<body>\n'%(title, style)
+    
+    f.write(html_pre)
+    
+    idx = len(feeds)
+    #feeds = reversed(feeds)
+    for feed in feeds:
+        try:
+            print '%03d:'%(idx), feed.title.value
+            #print 'feed source:', feed.source['stream-id'].value
+            #print 'feed content:', feed.summary.value
+        except:
+            pass
+        feed_pre = u'<div class="feed">\n'
+        feed_pre += u'  <div class="title">%d. <a href="%s" target="_blank">%s</a></div>\n'%(idx, feed.link.href, feed.title.value)
+        f.write(feed_pre)
+        
+        content = u''
+        if feed.has_key('content'):
+            content = feed.content.value
+        elif feed.has_key('summary'):
+            content = feed.summary.value
+        #content = content.encode('utf-8', 'ignore')
+		
+        '''
+        f1 = open(u'skyinwell/%03d.html'%(idx), 'w')
+        f1.write(html_pre)
+        f1.write(feed_pre)
+        f1.write('<div class="content">%s</div>\n'%(content));
+        f1.write('</div>\n\n')
+        f1.write('</body></html>')
+        f1.close()
+		'''
+        
+        f.write(u'  <div class="content">%s</div>\n'%(content))
+        f.write(u'</div>\n\n')
+        f.flush()
+        
+        idx -= 1
+    f.write('</body></html>')
+    f.close()
+    
+def archive():
+    #f = open('google-reader-subscriptions.xml', 'r')
+    f = codecs.open( "google-reader-subscriptions.xml", "r", "utf-8" )
+    subscriptions=f.read()
+    f.close()
+    
+    matched_groups = re.findall('''<outline\s+text="(.*?)"\s+title="(.*?)"\s+type="(.*?)"\s+xmlUrl="(.*?)"\s+htmlUrl="(.*?)"/>''', subscriptions)
+    for matched in matched_groups:
+        text = matched[0]
+        title = matched[1]
+        type = matched[2]
+        xmlUrl = matched[3]
+        htmlUrl = matched[4]
+        print type, title.encode('gbk'), xmlUrl
+        try:
+            saveFeed(title, xmlUrl)
+        except:
+            print "Error:", xmlUrl
+            print traceback.format_exc()
+
 def saveFeedToGAE():
     feed = "http://blog.sina.com.cn/rss/skyinwell.xml"
     #feed = "http://feeds.feedburner.com/Betterexplained"
@@ -151,7 +245,7 @@ def saveFeedToGAE():
     user = "PyGtalkRobot"
     passwd = "PyGtalkRobotByLdmiao"
     fc = feedconverter(user, passwd)
-    feed_title, feeds = fc.feeds(feed, 2000)
+    feed_title, feeds = fc.feeds(feed, 8000)
     
     idx = 1
     feeds = reversed(feeds)
@@ -172,7 +266,8 @@ def saveFeedToGAE():
         idx += 1
 		
 if __name__=='__main__':
-    test()
+    #test()
 	#saveFeedToGAE()
-
+    archive()
+    #saveFeed(u"樊纲", "http://fangang.blog.sohu.com/rss")
         
