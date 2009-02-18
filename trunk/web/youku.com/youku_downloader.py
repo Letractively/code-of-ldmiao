@@ -293,7 +293,8 @@ def downloadVideo(url):
     saveFile(work_path+'\\videos', video_title, video_real_url, url);
 
 def downloadAllVideos(url):
-    global proxy, host, thread_count
+    global proxy, host, thread_count, pool
+    
     print url
     htmlcontent = getContent(url, None, proxy)
     
