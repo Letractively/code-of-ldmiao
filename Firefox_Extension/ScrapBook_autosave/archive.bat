@@ -1,0 +1,2 @@
+"C:\Program Files\7-Zip\7z.exe" a -r -tzip .\chrome\sbautosave.jar .\chrome\ -x!*.jar -x!*.bat -x!*.svn*
+"C:\Program Files\7-Zip\7z.exe" a -r -tzip ScrapBook_autosave.xpi .\ -x!*.xpi -x!*.bat -x!*.svn* -x!locale -x!content
