@@ -4,5 +4,7 @@
          xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
 	<script type="application/x-javascript" src="chrome://sbautosave/content/browserOverlay.js" />
-
+    <menupopup id="menu_ToolsPopup">
+        <menuitem id="sbautosave" label="ScrapBook AutoSave Options" oncommand="openDialog('chrome://sbautosave/content/options.xul');"/>
+    </menupopup>
 </overlay>
