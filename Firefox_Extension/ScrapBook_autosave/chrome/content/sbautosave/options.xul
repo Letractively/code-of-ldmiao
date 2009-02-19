@@ -27,13 +27,16 @@
 			<preference id="scrapbook.autosave.script" name="scrapbook.autosave.script" type="bool" />
 		</preferences>
 		<!--UI-->
+        <checkbox id="sbAutoSavePrefEnabled" preference="scrapbook.autosave.enabled" label="Enable ScrapBook AutoSave" style="font-weight:bold;"/>
         <groupbox id="groupbox_config">   
-            <caption label="Config" style="font-weight:bold;"/>
-            <checkbox id="sbAutoSavePrefEnabled" preference="scrapbook.autosave.enabled" label="Enable" />
-            
-            <checkbox preference="scrapbook.autosave.includeRulesEnabled" label="Enable include Rules"/>
+            <caption label="Rules Config" style="font-weight:bold;"/>
+            <checkbox preference="scrapbook.autosave.includeRulesEnabled" label="Enable Including Rules:"/>
             <textbox multiline="true" preference="scrapbook.autosave.includeRules" style="width:340px; height:100px"/>
-            
+            <label style="color:red;font-weight:bold;">* One rule a line</label>
+        </groupbox>
+        
+        <groupbox id="groupbox_content">   
+            <caption label="Download Content" style="font-weight:bold;"/>
             <hbox align="center" flex="1">
                 <checkbox id="sbAutoSavePrefImages" preference="scrapbook.autosave.images" label="&sb.detail.option.images;" />
                 <checkbox id="sbAutoSavePrefStyles" preference="scrapbook.autosave.styles" label="&sb.detail.option.styles;" />
