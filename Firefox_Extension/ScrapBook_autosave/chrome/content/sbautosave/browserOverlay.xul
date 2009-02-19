@@ -4,7 +4,21 @@
          xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
 	<script type="application/x-javascript" src="chrome://sbautosave/content/browserOverlay.js" />
+    <!-- Tools Menu -->
     <menupopup id="menu_ToolsPopup">
         <menuitem id="sbautosave" label="ScrapBook AutoSave Options" oncommand="openDialog('chrome://sbautosave/content/options.xul');"/>
     </menupopup>
+    
+    <!-- Toolbar Menu Button -->
+    <toolbarpalette id="BrowserToolbarPalette">
+        <toolbarbutton id="ScrapBookAutoSave-toolbar-button"
+            label="ScrapBook AutoSave"
+            tooltiptext="ScrapBook AutoSave Options"
+            oncommand="openDialog('chrome://sbautosave/content/options.xul');"
+            style="list-style-image: url('chrome://sbautosave/content/main_24.png');"
+            class="toolbarbutton-1 chromeclass-toolbar-additional"/>
+        <menupopup>
+			<menuitem label="Options" accesskey="O" oncommand="openDialog('chrome://sbautosave/content/options.xul');" />
+        </menupopup>
+    </toolbarpalette>
 </overlay>
