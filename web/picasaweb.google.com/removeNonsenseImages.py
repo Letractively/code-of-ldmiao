@@ -20,9 +20,17 @@ def removeFile(path, minSize, maxSize):
             #print "error:-----------------------------------/"
             pass
 
+def renameImgFile(path):
+    lowerPath = path.rstrip().lower()
+    if lowerPath.endswith('.dat') and not path.endswith('index.dat'):
+        os.rename(path, path+'.jpg')
+        print "rename: " + path + " to " + path+'.jpg'
+        
+    
 def removeImagesInDir(path, minSize, maxSize):
     if os.path.isfile(path):
         lowerPath = path.rstrip().lower()
+        #renameImgFile(path)
         if lowerPath.endswith('.jpg') or lowerPath.endswith('.jpeg') or lowerPath.endswith('.png') or lowerPath.endswith('.gif')  or lowerPath.endswith('.bmp'):
             removeFile(path, minSize, maxSize)
     elif os.path.isdir(path):
@@ -31,10 +39,10 @@ def removeImagesInDir(path, minSize, maxSize):
             removeImagesInDir(childPath, minSize, maxSize)
 if __name__ == '__main__':
     #dirPath = "D:\Documents\Images\images\"
-    #dirPath = "D:\Documents\ScrapBook\data\"
+    dirPath = 'D:\\Documents\\ScrapBook\\data\\'
     #dirPath = "C:\Users\linde\Pictures\Downloaded Albums"
-    removeImagesInDir("./", 40000L, 20000000L)
-    #removeImagesInDir(dirPath, 40000L, 20000000L)
+    #removeImagesInDir("./", 20000L, 20000000L)
+    removeImagesInDir(dirPath, 40000L, 20000000L)
     if raw_input("Press any key to exit..."):
         pass
     
