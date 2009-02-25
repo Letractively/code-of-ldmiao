@@ -1,0 +1,7 @@
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "threading.pyc", line 488, in __bootstrap_inner
+  File "jjwxc.pyw", line 69, in run
+  File "jjwxc.pyw", line 152, in process
+NameError: global name 'novels' is not defined
+
