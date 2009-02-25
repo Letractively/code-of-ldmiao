@@ -205,8 +205,8 @@ def getSongsFromAblum(album_id):
 
 #--------------------------------------------------------------------------------------
 if __name__=="__main__":
-    #getAllRecommendedSongsFromUser('426639')
+    getAllRecommendedSongsFromUser('563470')
     #getSongsFromAblum('136560')
     #getSongsFromURL('http://songtaste.com/music/chart', 'week_order_new');
-    getSongsFromURL('http://songtaste.com/music.php?tag=chart&dt=2008-12-15', 'week_2008-12-15')
+    #getSongsFromURL('http://songtaste.com/music.php?tag=chart&dt=2008-12-15', 'week_2008-12-15')
     #getSongsFromURL('http://songtaste.com/music/lsn', 'lsn');

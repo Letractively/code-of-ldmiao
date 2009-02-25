@@ -3,6 +3,8 @@ import httplib2
 import urllib, urllib2
 from xml2dict import XML2Dict
 
+feed_idx = 1
+
 class feedconverter(object):
     gfeed = "http://www.google.com/reader/atom/feed/%s"
     gfeed_limited = "http://www.google.com/reader/atom/feed/%s?r=n&n=%i"
@@ -52,6 +54,15 @@ class feedconverter(object):
         
     def feeds(self, feed, count=None):
         content = self.feeds_content(feed, count)
+        
+        
+        global feed_idx
+        f1 = open(u'feeds/feed_%02d.xml'%(feed_idx), 'w')
+        feed_idx += 1;
+        f1.write(content)
+        f1.close()
+		
+        
         xml = XML2Dict()
         r = xml.fromstring(content)
         #from pprint import pprint
@@ -162,7 +173,7 @@ def saveFeed(feedTitle, feed):
     user = "PyGtalkRobot"
     passwd = "PyGtalkRobotByLdmiao"
     fc = feedconverter(user, passwd)
-    title, feeds = fc.feeds(feed, 8000)
+    title, feeds = fc.feeds(feed, 1000)
     
     #f = open(u'ldmiao\\%s.html'%(getFileName(feedTitle)), 'w')
     f = codecs.open(u'ldmiao\\%s.html'%(getFileName(feedTitle)), "w", "utf-8" )
