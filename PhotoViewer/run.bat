@@ -1,0 +1,3 @@
+python webserver.py
+
+set /p CMD=Press Enter to Exit...
