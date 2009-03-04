@@ -25,56 +25,74 @@ def getNextFromPath(current_path):
         #namelist = namelist.sort()
         isOK = 0
         for name in namelist:
-            if isOK==1:
+            lowered_name = name.lower()
+            if isOK==1 and os.path.isfile(absolute_current_dir+'/'+name) and (lowered_name.endswith('jpg') or lowered_name.endswith('jpeg') or lowered_name.endswith('png') or lowered_name.endswith('gif')):
                 return current_dir+'/'+name
             if name==current_name:
                 isOK = 1
 
+def getImageViewPage(handler, img_path):
+    head_script = '''
+        var img_path = '%s';
+        function loadNextImg(){
+            setTimeout('gotoNextImage()',2000);
+        }
+        function gotoNextImage(){
+            window.location.href='/?next='+img_path;
+        }
+    '''%(img_path)
+    body = '''<img src="%s"/>'''%(img_path)
+    html = '''<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>%s</title>\n<script>%s</script>\n</head>\n<body onload="loadNextImg()" style="width:320px; height:480px; font-size: 50px">%s</body></html>'''%(img_path, head_script, body)
+    handler.send_response(200)
+    handler.send_header('Content-type', 'text/html')
+    handler.end_headers()
+    handler.wfile.write(html.encode('utf-8'))
+    
 def processGET(handler):
     global photo_dir_path
     try:
         print 'request path:', handler.path
         
-        if handler.path.startswith('/?img='):
-            body = '''<img src="%s"/>'''%(unicode(urllib.unquote(handler.path[len('/?img='):]), 'utf-8','ignore').encode('cp936'))
-            html = '''<html><head></head><body style="width:320px; height:480px; font-size: 50px">%s</body></html>'''%(body)
-            handler.send_response(200)
-            handler.send_header('Content-type', 'text/html')
-            handler.end_headers()
-            handler.wfile.write(html)
+        req_path = handler.path
+        
+        if req_path.startswith('/?img='):
             return
-        elif handler.path.startswith('/?next='):
-            current_img_path = unicode(urllib.unquote(handler.path[len('/?next='):]), 'utf-8','ignore').encode('cp936')
+        elif req_path.startswith('/?img='):
+            getImageViewPage(handler, unicode(urllib.unquote(req_path[len('/?img='):]), 'utf-8','ignore'))
+            return
+        elif req_path.startswith('/?next='):
+            current_img_path = unicode(urllib.unquote(req_path[len('/?next='):]), 'utf-8','ignore')
             next_img_path = getNextFromPath(current_img_path)
-            body = '''<img src="%s"/>'''%(next_img_path)
-            html = '''<html><head></head><body style="width:320px; height:480px; font-size: 50px">%s</body></html>'''%(body)
-            handler.send_response(200)
-            handler.send_header('Content-type', 'text/html')
-            handler.end_headers()
-            handler.wfile.write(html)
-            return
+            if next_img_path:
+                getImageViewPage(handler, next_img_path)
+                return
+            else:
+                lastsep = req_path.rfind('/')
+                req_path = req_path[len('/?next='):lastsep]
         
-        real_path = photo_dir_path + handler.path
-        real_path = unicode(urllib.unquote(real_path), 'utf-8','ignore').encode('cp936')
-        
+        real_path = photo_dir_path + req_path
+        real_path = unicode(urllib.unquote(real_path), 'utf-8','ignore')
+        #print 'real path 1:'+real_path
         if os.path.exists(real_path):
-            #print real_path
+            #print 'real path 2:'+real_path
             if os.path.isdir(real_path):
-                body = '\n<ul>\n'
+                body = u'\n<ul>\n'
                 for name in os.listdir(real_path):
-                    new_path = handler.path+'/'+name
+                    new_path = req_path+'/'+name
                     while new_path.startswith('//'):
                         new_path = new_path[1:]
                     if os.path.isdir(real_path+'/'+name):
-                        body += '''<li><a href="%s">%s</a></li>\n'''%(new_path, name)
+                        body += u'''<li><a href="%s">%s</a></li>\n'''%(new_path, name)
                     else:
-                        body += '''<li><a href="/?img=%s">%s</a> <a href='/?next=%s'>next</a></li>\n'''%(new_path, name, new_path)
-                body += '</ul>\n'
-                html = '''<html><head></head><body style="width:320px; height:480px; font-size: 18pt;">%s</body></html>'''%(body)
+                        lowered_name = name.lower()
+                        if lowered_name.endswith('jpg') or lowered_name.endswith('jpeg') or lowered_name.endswith('png') or lowered_name.endswith('gif'):
+                            body += u'''<li><a href="/?img=%s">%s</a> <a href='/?next=%s'>next</a></li>\n'''%(new_path, name, new_path)
+                body += u'</ul>\n'
+                html = u'''<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head><body style="width:320px; height:480px; font-size: 18pt;">%s</body></html>'''%(body)
                 handler.send_response(200)
                 handler.send_header('Content-type', 'text/html')
                 handler.end_headers()
-                handler.wfile.write(html)
+                handler.wfile.write(html.encode('utf-8'))
             else:
                 tmp_img = Image.open(real_path)
                 if tmp_img.size[0] > tmp_img.size[1]:
@@ -95,7 +113,7 @@ def processGET(handler):
                 f = open('temp_img.jpg', 'rb')
                 
                 content_type = 'image/jpeg'
-                lowered_path = handler.path.lower()
+                lowered_path = req_path.lower()
                 if lowered_path.endswith('png'):
                     content_type = 'image/png'
                 if lowered_path.endswith('gif'):
