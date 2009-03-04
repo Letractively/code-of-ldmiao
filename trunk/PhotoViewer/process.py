@@ -39,9 +39,11 @@ def getImageViewPage(handler, img_path):
         }
         function gotoNextImage(){
             window.location.href='/?next='+img_path;
+            //document.getElementById('image').src = '/?nextimage='+img_path;
+            //setTimeout('gotoNextImage()',2000);
         }
     '''%(img_path)
-    body = '''<img src="%s"/>'''%(img_path)
+    body = '''<img id="image" style="width:580px;" src="%s"/>'''%(img_path)
     html = '''<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>%s</title>\n<script>%s</script>\n</head>\n<body onload="loadNextImg()" style="width:320px; height:480px; font-size: 50px">%s</body></html>'''%(img_path, head_script, body)
     handler.send_response(200)
     handler.send_header('Content-type', 'text/html')
@@ -55,7 +57,7 @@ def processGET(handler):
         
         req_path = handler.path
         
-        if req_path.startswith('/?img='):
+        if req_path.startswith('/favicon.ico'):
             return
         elif req_path.startswith('/?img='):
             getImageViewPage(handler, unicode(urllib.unquote(req_path[len('/?img='):]), 'utf-8','ignore'))
@@ -105,7 +107,7 @@ def processGET(handler):
                 
                 #if tmp_img.size[1] > 480:
                 #    crop_margin = (tmp_img.size[1]-480)/2
-                tmp_img = tmp_img.crop((30, 30, tmp_img.size[0]-60, tmp_img.size[1]-60))
+                tmp_img = tmp_img.crop((30, 30, tmp_img.size[0]-30, tmp_img.size[1]-30))
                 
                 tmp_img.save('temp_img.jpg')
                 
