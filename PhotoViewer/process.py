@@ -35,16 +35,16 @@ def getImageViewPage(handler, img_path):
     head_script = '''
         var img_path = '%s';
         function loadNextImg(){
-            setTimeout('gotoNextImage()',2000);
+            setTimeout('gotoNextImage()',3000);
         }
         function gotoNextImage(){
             window.location.href='/?next='+img_path;
             //document.getElementById('image').src = '/?nextimage='+img_path;
-            //setTimeout('gotoNextImage()',2000);
+            //setTimeout('gotoNextImage()', 3000);
         }
     '''%(img_path)
     body = '''<img id="image" style="" src="%s"/>'''%(img_path)
-    html = '''<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>%s</title>\n<script>%s</script>\n</head>\n<body onload="loadNextImg()" style="width:320px; height:480px; font-size: 50px">%s</body></html>'''%(img_path, head_script, body)
+    html = '''<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>%s</title>\n<script>%s</script>\n</head>\n<body onload="loadNextImg()" style="width:320px; height:480px; font-size: 60px">%s</body></html>'''%(img_path, head_script, body)
     handler.send_response(200)
     handler.send_header('Content-type', 'text/html')
     handler.end_headers()
@@ -78,7 +78,11 @@ def processGET(handler):
         if os.path.exists(real_path):
             #print 'real path 2:'+real_path
             if os.path.isdir(real_path):
-                body = u'\n<ul>\n'
+                lastsep = req_path.rfind('/')
+                parent_path = req_path[:lastsep]
+                if lastsep == 0:
+                    parent_path = '/'
+                body = u'\n<ul style="width:900px;">\n<li><a href="%s">Parent Folders</a></li>'%(parent_path)
                 for name in os.listdir(real_path):
                     new_path = req_path+'/'+name
                     while new_path.startswith('//'):
@@ -89,8 +93,8 @@ def processGET(handler):
                         lowered_name = name.lower()
                         if lowered_name.endswith('jpg') or lowered_name.endswith('jpeg') or lowered_name.endswith('png') or lowered_name.endswith('gif'):
                             body += u'''<li><a href="/?img=%s">%s</a> <a href='/?next=%s'>next</a></li>\n'''%(new_path, name, new_path)
-                body += u'</ul>\n'
-                html = u'''<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head><body style="width:320px; height:480px; font-size: 18pt;">%s</body></html>'''%(body)
+                body += u'<li><a href="%s">Parent Folders</a></li>\n</ul>\n'%(req_path[:req_path.rfind('/')])
+                html = u'''<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head><body style="width:320px; height:480px; font-size: 40pt;">%s</body></html>'''%(body)
                 handler.send_response(200)
                 handler.send_header('Content-type', 'text/html')
                 handler.end_headers()
