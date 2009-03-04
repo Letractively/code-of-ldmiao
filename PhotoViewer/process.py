@@ -43,7 +43,7 @@ def getImageViewPage(handler, img_path):
             //setTimeout('gotoNextImage()',2000);
         }
     '''%(img_path)
-    body = '''<img id="image" style="width:580px;" src="%s"/>'''%(img_path)
+    body = '''<img id="image" style="" src="%s"/>'''%(img_path)
     html = '''<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>%s</title>\n<script>%s</script>\n</head>\n<body onload="loadNextImg()" style="width:320px; height:480px; font-size: 50px">%s</body></html>'''%(img_path, head_script, body)
     handler.send_response(200)
     handler.send_header('Content-type', 'text/html')
@@ -100,14 +100,14 @@ def processGET(handler):
                 if tmp_img.size[0] > tmp_img.size[1]:
                     tmp_img = tmp_img.rotate(270)
                 
-                width = 640
+                width = 900
                 wpercent = (width/float(tmp_img.size[0]))
                 hsize = int((float(tmp_img.size[1])*float(wpercent)))
                 tmp_img = tmp_img.resize((width, hsize), PIL.Image.ANTIALIAS)
                 
                 #if tmp_img.size[1] > 480:
                 #    crop_margin = (tmp_img.size[1]-480)/2
-                tmp_img = tmp_img.crop((30, 30, tmp_img.size[0]-30, tmp_img.size[1]-30))
+                #tmp_img = tmp_img.crop((30, 0, tmp_img.size[0]-30, tmp_img.size[1]))
                 
                 tmp_img.save('temp_img.jpg')
                 
