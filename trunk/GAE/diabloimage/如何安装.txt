@@ -1,0 +1,19 @@
+安装：
+
+1.修改src/app.yaml，将<application id>替换为您的App ID。
+2.使用“appcfg.py update 目录地址”命令，将代码上传到App。
+
+
+常见文件：
+
+1.如何上传App程序
+	见：http://xuming.net/2008/05/google-app-engine-toturial-9.html
+
+2.如何从SVN获取源代码
+	svn checkout http://diabloimage.googlecode.com/svn/trunk/
+
+帮助：
+
+如果有问题或者程序有bug，可以给我发邮件。 ben@119797.com
+
+	
