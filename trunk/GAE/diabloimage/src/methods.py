@@ -1,4 +1,6 @@
 #coding:utf-8
+import logging
+
 from models import Images
 from google.appengine.api import memcache
 from google.appengine.api import images
@@ -25,11 +27,35 @@ def getImage(id):
     id=int(id)
     return Images.get_by_id(id)
 
+def getCrop(image):
+    width = image.width
+    height = image.height
+    lx = 0.0
+    ty = 0.0
+    rx = 1.0
+    by = 1.0
+    
+    if(width>height):
+        ratio = float(float(width)/height - 1)/2
+        lx = ratio
+        rx = 1.0 - ratio
+    elif(height>width):
+        ratio = float(float(height)/width - 1)/2
+        ty = ratio
+        by = 1.0 - ratio
+    
+    return lx, ty, rx, by
+    
 def resizeImage(id,size="image"):
     image=getImage(id)
     if not image:return None
     if size=="image":return image
     img=images.Image(image.bf)
+    
+    lx, ty, rx, by = getCrop(image)
+    #logging.info(str(lx) +","+ str(ty) +","+ str(rx) +","+ str(by))
+    img.crop(lx, ty, rx, by);
+    
     img.resize(width=240, height=240)
     img.im_feeling_lucky()
     image.bf=img.execute_transforms(output_encoding=images.JPEG)
