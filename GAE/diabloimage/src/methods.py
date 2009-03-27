@@ -74,7 +74,7 @@ def resizeImage(id,size="image"):
     #img.crop(lx, ty, rx, by);
     
     width, height = getResize(image, 110)
-    logging.info(str(width) +","+ str(height))
+    #logging.info(str(width) +","+ str(height))
     img.resize(width, height)
     
     img.im_feeling_lucky()
@@ -98,14 +98,14 @@ def delImageByid(id):
     if image:image.delete()
 
 def getAllImages(index=0):
-    return Images.all().order('-created_at').fetch(25,index*24)
+    return Images.all().order('-created_at').fetch(49, index*48)
 
 def getPageing(index,page=0):
     s="/%s/"
     if page==0:
-        if index==25:return (None,"/1/")
+        if index==49:return (None,"/1/")
         else:return (None,None)
-    if index==25:
+    if index==49:
         return ("/",s%(page+1)) if page==1 else (s %(page-1),s%(page+1))
     return ("/",None) if page==1 else (s %(page-1),None)
     

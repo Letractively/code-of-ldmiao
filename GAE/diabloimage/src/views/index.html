@@ -20,8 +20,8 @@ function PreloadImg(){
 
 $(document).ready(function(){
     PreloadImg();
-    $("#img_switch").attr('src', pics[pic_idx++]);
-    $("#next_button").click(function(){
+    //$("#img_switch").attr('src', pics[pic_idx++]);
+    $("#img_switch").click(function(){
         //alert(pics[pic_idx]);
         $("#img_switch").ImageSwitch({Type:'DoubleDoor', 
                                     NewImage:pics[pic_idx++], 
@@ -38,15 +38,15 @@ $(document).ready(function(){
 {% endblock %}
 
 {% block main %}
-<h2>图片列表  <a href="/admin/upload3/" title="上传图片">上传图片</a></h2>
+<h2>图片列表  <a href="/admin/upload2/" title="上传图片">上传图片</a></h2>
 
 <div style="float:none;display:block;width:720px;background-color:#FFF;">
     <img src="" id="img_switch"/>
 </div>
 
-<div style="float:none;display:block;">
-    <input type="button" id="next_button" value="Next" title="Next">
-</div>
+<hr>
+<p>
+</p>
 
 <ul id="album" style="float:none;">
 	{% for image in images %}

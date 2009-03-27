@@ -2,99 +2,55 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>大菠萝多文件上传</title>
-<style type="text/css">
-ul, ol {
-list-style-image:none;
-list-style-position:outside;
-list-style-type:none;
-padding:0;
-}
-
-#fileList{
-	border:1px solid #AFE14C;
-}
-#fileList legend{
-	color:#73B304;
-	font-size:14px;
-}
-
-#uploadPanal{
-	width:40%;
-	float:left;
-}
-#imgPanal{
-	width:59%;
-	float:right;
-}
-
-.filename{
-float:left;
-color:#555555;
-width:300px;
-}
-.filestate{
-float:right;
-font-size:7pt;
-color:#999999;
-}
-#btnUpload{
-clear:both;
-margin-left: 2px; 
-font-size: 8pt; 
-height: 29px;
-width:50px;
-}
-#showResult{
-clear:both;
-}
-#imglist li{
-width:85px;
-height:85px;
-float:left;
-}
-#imglist img{
-height:75px;
-width:75px;
-border:0;}
-</style>
+<title>多文件上传</title>
+<link href="/static/swfupload/default.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="/static/swfupload/swfupload.js"></script>
+<script type="text/javascript" src="/static/swfupload/swfupload.queue.js"></script>
+<script type="text/javascript" src="/static/swfupload/fileprogress.js"></script>
 <script type="text/javascript" src="/static/swfupload/handlers.js"></script>
+
 <script type="text/javascript">
 		var swfu;
 		window.onload = function () {
 			swfu = new SWFUpload({
 				// Backend Settings
-				upload_url: "/admin/upload2/",	// Relative to the SWF file or absolute
+				upload_url: "/admin/upload2/",
 
 				// File Upload Settings
 				file_size_limit : "1 MB",	// 2MB
-				file_types : "*.jpg;*.png;*.gif",
-				file_types_description : "Web Image Files",
+				file_types : "*.jpg;*.jpeg;*.png;*.gif",
+				file_types_description : "Image Files:*.jpg;*.jpeg;*.png;*.gif",
 				file_upload_limit : "0",
 
-				// Event Handler Settings - these functions as defined in Handlers.js
-				//  The handlers are not part of SWFUpload but are part of my website and control how
-				//  my website reacts to the SWFUpload events.
-				file_queued_handler:fileQueued,
+				// Event Handler Settings (all my handlers are in the Handler.js file)
+				file_dialog_start_handler : fileDialogStart,
+				file_queued_handler : fileQueued,
 				file_queue_error_handler : fileQueueError,
 				file_dialog_complete_handler : fileDialogComplete,
+				upload_start_handler : uploadStart,
 				upload_progress_handler : uploadProgress,
 				upload_error_handler : uploadError,
 				upload_success_handler : uploadSuccess,
 				upload_complete_handler : uploadComplete,
 
 				// Button Settings
-				button_image_url: "/static/images/select.png",	// Relative to the Flash file
-				button_width: "61",
-				button_height: "22",
-				button_placeholder_id: "btnSelect",
+				button_image_url: "/static/swfupload/XPButtonUploadText_61x22.png",
+				button_placeholder_id : "spanButtonPlaceholder",
+				button_width: 61,
+				button_height: 22,
 
 				
 				// Flash Settings
 				flash_url : "/static/swfupload/swfupload.swf",
 
-				
+				swfupload_element_id : "flashUI2",		// Setting from graceful degradation plugin
+				degraded_element_id : "degradedUI2",	// Setting from graceful degradation plugin
+
+				custom_settings : {
+					progressTarget : "fsUploadProgress",
+					cancelButtonId : "btnCancel"
+				},
+                
 				// Debug Settings
 				debug: false
 			});
@@ -102,19 +58,18 @@ border:0;}
 	</script>
 </head>
 <body>
-<div id="uploadPanal">
-<form id="uploadForm" action="/">
-<fieldset id="fileList">
-<legend>Upload Queue</legend>
-<ul id="cFileList">
-</ul>
-</fieldset>
-<span id="showResult"></span><br />
-<div style="width: 61px; height: 22px; margin-bottom: 10px;">
-    <span id="btnSelect"></span>
+
+<div>
+    <div class="fieldset flash" id="fsUploadProgress">
+        <span class="legend">点击”Upload“选择图片，可以使用Ctrl或Shift多选</span>
+    </div>
+    <div style="padding-left: 5px;">
+        <span id="spanButtonPlaceholder"></span>
+        <input id="btnCancel" type="button" value="Cancel" onclick="cancelQueue(swfu);" disabled="disabled" style="margin-left: 2px; height: 22px; font-size: 8pt;" />
+        <br />
+    </div>
 </div>
-<p>点击”Upload“选择图片，可以使用Ctrl或Shift多选。</p>
-<p>那位帮忙美化下界面呀!!!联系我邮箱ben###119797.com</p>
+
 </form>
 </div>
 <div id="imgPanal">

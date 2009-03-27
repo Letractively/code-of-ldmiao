@@ -31,7 +31,7 @@ class MainPage(PublicPage):
         index=0 if page=="" else int(page)
         images=methods.getAllImages(index)
         prev,next=methods.getPageing(len(images), index)
-        template_value={"images":images[:24],"prev":prev,"next":next}
+        template_value={"images":images[:48],"prev":prev,"next":next}
         self.render('views/index.html', template_value)
 
 class ShowImage(PublicPage):
