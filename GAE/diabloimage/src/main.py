@@ -34,6 +34,23 @@ class MainPage(PublicPage):
         template_value={"images":images[:48],"prev":prev,"next":next}
         self.render('views/index.html', template_value)
 
+class SlidePage(PublicPage):
+    def get(self):
+        images=methods.getImages()
+        template_value={"images":images}
+        self.render('views/slide.html', template_value)
+
+class CoverFlowPage(PublicPage):
+    def get(self):
+        self.render('views/coverflow.html', {})
+
+class XMLPage(PublicPage):
+    def get(self):
+        images=methods.getImages()
+        template_value={"images":images}
+        self.response.headers['Content-Type'] = "text/xml"
+        self.render('views/xml.html', template_value)
+
 class ShowImage(PublicPage):
     def get(self,id):
         image=methods.getImage(id)
@@ -52,7 +69,7 @@ class GetImage(PublicPage):
         image=methods.downImage(id, size)
         if not image:
             return self.error(404)
-        self.response.headers['Content-Type'] = str(image.mime) 
+        self.response.headers['Content-Type'] = str(image.mime)
         self.response.headers['Cache-Control']="max-age=315360000"
         self.response.headers['Last-Modified']=format_date(image.created_at)
         self.response.out.write(image.bf)
@@ -64,6 +81,9 @@ class Error(PublicPage):
 def main():
     application = webapp.WSGIApplication(
                                        [('/(?P<page>[0-9]*)/?', MainPage),
+                                        (r'/slide/?', SlidePage),
+                                        (r'/coverflow/?', CoverFlowPage),
+                                        (r'/xml/?', XMLPage),
                                         (r'/(?P<size>image)/(?P<id>[0-9]+)/?',GetImage),
                                         (r'/(?P<size>s)/(?P<id>[0-9]+)/?',GetImage),
                                         (r'/show/(?P<id>[0-9]+)/',ShowImage),

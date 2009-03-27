@@ -1,52 +1,9 @@
 {% extends "base.html" %}
 {% block title %}GAE图片分享{% endblock %}
-{% block head %}
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
-<script type="text/javascript" src="/static/Groject.ImageSwitch.min.101.js"></script>
-<script type="text/javascript">
-var pics=new Array();
-var pic_idx = 0;
-function PreloadImg(){
-    var img = null;
-    var img_url = "";
-{% for image in images %}
-    img_url = "/image/{{image.id}}/";
-    img = document.createElement('img');
-    img.src = img_url;
-    
-    pics.push(img_url);
-{% endfor %}
-}
 
-$(document).ready(function(){
-    PreloadImg();
-    //$("#img_switch").attr('src', pics[pic_idx++]);
-    $("#img_switch").click(function(){
-        //alert(pics[pic_idx]);
-        $("#img_switch").ImageSwitch({Type:'DoubleDoor', 
-                                    NewImage:pics[pic_idx++], 
-                                    Direction:"DownTop", 
-                                    EffectOriginal: false
-                                    });
-        if(pic_idx>=pics.length){
-            pic_idx = 0;
-        }
-    });
-    
-});
-</script>
-{% endblock %}
 
 {% block main %}
-<h2>图片列表  <a href="/admin/upload2/" title="上传图片">上传图片</a></h2>
-
-<div style="float:none;display:block;width:720px;background-color:#FFF;">
-    <img src="" id="img_switch"/>
-</div>
-
-<hr>
-<p>
-</p>
+<h2>图片列表 | <a href="/slide/" title="Slide Show">Slide Show</a> | <a href="/admin/upload2/" title="上传图片">上传图片</a></h2>
 
 <ul id="album" style="float:none;">
 	{% for image in images %}

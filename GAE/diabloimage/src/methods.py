@@ -100,6 +100,9 @@ def delImageByid(id):
 def getAllImages(index=0):
     return Images.all().order('-created_at').fetch(49, index*48)
 
+def getImages(count=1000, offset=0):
+    return Images.all().order('-created_at').fetch(count, offset)
+    
 def getPageing(index,page=0):
     s="/%s/"
     if page==0:
