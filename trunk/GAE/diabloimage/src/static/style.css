@@ -57,14 +57,14 @@ width:470px;
 }
 #main{
 margin:0 auto;
-width:760px;
+width:1000px;
 height:auto;
 margin-top:15px;
 margin-bottom:15px;
 background-color:#FFF;
 }
 #album{
-width:720px;
+width:980px;
 }
 #album li{
 width:120px;
@@ -72,6 +72,7 @@ height:120px;
 float:left;
 text-align: center;
 vertical-align: middle;
+border:1px solid #CED7D6;
 }
 #album img{
 /*height:110px;
