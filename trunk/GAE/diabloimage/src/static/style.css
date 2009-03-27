@@ -72,8 +72,8 @@ height:120px;
 float:left;
 }
 #album img{
-height:110px;
-width:110px;}
+/*height:110px;
+width:110px;*/}
 #copyright{
 clear:both;
 padding-top:10px;}

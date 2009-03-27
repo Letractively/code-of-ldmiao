@@ -45,6 +45,23 @@ def getCrop(image):
         by = 1.0 - ratio
     
     return lx, ty, rx, by
+def getResize(image, max_len=240):
+    width = image.width
+    height = image.height
+    
+    w = max_len
+    h = max_len
+    
+    if(width>height):
+        ratio = float(width)/height
+        w = max_len
+        h = int(max_len/ratio)
+    elif(height>width):
+        ratio = float(height)/width
+        h = max_len
+        w = int(max_len/ratio)
+    
+    return w, h
     
 def resizeImage(id,size="image"):
     image=getImage(id)
@@ -52,11 +69,14 @@ def resizeImage(id,size="image"):
     if size=="image":return image
     img=images.Image(image.bf)
     
-    lx, ty, rx, by = getCrop(image)
+    #lx, ty, rx, by = getCrop(image)
     #logging.info(str(lx) +","+ str(ty) +","+ str(rx) +","+ str(by))
-    img.crop(lx, ty, rx, by);
+    #img.crop(lx, ty, rx, by);
     
-    img.resize(width=240, height=240)
+    width, height = getResize(image, 110)
+    logging.info(str(width) +","+ str(height))
+    img.resize(width, height)
+    
     img.im_feeling_lucky()
     image.bf=img.execute_transforms(output_encoding=images.JPEG)
     return image
