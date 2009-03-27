@@ -23,10 +23,12 @@ def requires_admin(method):
     def wrapper(self, *args, **kwargs):
         user = users.get_current_user()
         #if not users.is_current_user_admin() and adminFlag:
-        if not user and user.email()!="ldmiao@gmail.com" and user.email()!="zhaoyong04@gmail.com" and user.email()!="northtree.nk@gmail.com" and adminFlag:
-            self.redirect(users.create_login_url(self.request.uri))
-        else:
-            return method(self, *args, **kwargs)
+        if user and user.email():
+            if user.email()=="ldmiao@gmail.com" or user.email()=="zhaoyong04@gmail.com" or user.email()=="northtree.nk@gmail.com":
+                return method(self, *args, **kwargs)
+            
+        self.redirect(users.create_login_url(self.request.uri))
+        
     return wrapper
 
 class Admin_Upload(AdminControl):
@@ -63,7 +65,24 @@ class Admin_Upload2(AdminControl):
         dit["result"]="ok"
         dit["id"]=image.id
         return self.returnjson(dit)
-        
+
+class Admin_Upload3(AdminControl):
+    @requires_admin
+    def get(self):
+        self.render('views/upload3.html', {})
+    #@requires_admin
+    def post(self):
+        dit={"result":"error"}
+        bf=self.request.get("Filedata")
+        if not bf:
+            return self.returnjson(dit)
+        image=methods.addImage2(bf)
+        if not image:
+             return self.returnjson(dit)
+        dit["result"]="ok"
+        dit["id"]=image.id
+        return self.returnjson(dit)
+
 class Delete_Image(AdminControl):
     @requires_admin
     def get(self,key):
@@ -85,6 +104,7 @@ def main():
     application = webapp.WSGIApplication(
                                        [(r'/admin/upload/', Admin_Upload),
                                         (r'/admin/upload2/', Admin_Upload2),
+                                        (r'/admin/upload3/', Admin_Upload3),
                                         (r'/admin/del/(?P<key>[a-z,A-Z,0-9]+)', Delete_Image),
                                         (r'/admin/delid/(?P<id>[0-9]+)/', Delete_Image_ID),
                                         (r'/admin/', Admin_Login),
