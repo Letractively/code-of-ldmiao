@@ -7,11 +7,6 @@ class gallery(db.Model):
     xml = db.TextProperty()
     update_at = db.DateTimeProperty(auto_now=True)
 
-class ImageBlob(db.Model):
-    image = db.ReferenceProperty(Images)
-    bf = db.BlobProperty() #binary file
-    
-
 class Images(db.Model):
     name = db.StringProperty()
     mime = db.StringProperty()
@@ -39,3 +34,7 @@ class Images(db.Model):
     @property
     def imgurl(self):
         return "http://%s/image/%s/" %(os.environ['HTTP_HOST'],self.key().id())
+        
+class ImageBlob(db.Model):
+    image = db.ReferenceProperty(Images)
+    bf = db.BlobProperty() #binary file
