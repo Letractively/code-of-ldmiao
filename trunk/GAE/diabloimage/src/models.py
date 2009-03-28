@@ -6,7 +6,12 @@ from google.appengine.api import memcache
 class gallery(db.Model):
     xml = db.TextProperty()
     update_at = db.DateTimeProperty(auto_now=True)
+
+class ImageBlob(db.Model):
+    image = db.ReferenceProperty(Images)
+    bf = db.BlobProperty() #binary file
     
+
 class Images(db.Model):
     name = db.StringProperty()
     mime = db.StringProperty()
