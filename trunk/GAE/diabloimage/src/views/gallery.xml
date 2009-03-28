@@ -86,7 +86,7 @@
 		<language>
 			<string id="please wait" value="载入中..." />
 			<string id="loading" value="载入中..." />
-			<string id="previous page" value="前一页" />
+			<string id="previous page" value="上一页" />
 			<string id="page % of %" value="%/%" />
 			<string id="next page" value="下一页" />
 		</language>

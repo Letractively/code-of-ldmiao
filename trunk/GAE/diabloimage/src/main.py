@@ -7,6 +7,8 @@ from google.appengine.api import users
 import methods
 import logging
 
+page = 0
+
 def format_date(dt):
     return dt.strftime('%a, %d %b %Y %H:%M:%S GMT')
 
@@ -43,9 +45,13 @@ class SlidePage(PublicPage):
 
 class FlashPage(PublicPage):
     def get(self):
-        images=methods.getImages()
-        template_value={"images":images}
-        self.render('views/flash.html', template_value)
+        p = self.request.get('page')
+        p=0 if page=="" or page==None else int(p)
+        global page
+        page = p
+        logging.info(page)
+        
+        self.render('views/flash.html', {})
 
 class CoverFlowPage(PublicPage):
     def get(self):
@@ -64,7 +70,14 @@ class XMLPage(PublicPage):
 
 class FlashXML(PublicPage):
     def get(self):
-        images=methods.getImages()
+        #page = self.request.get('page')
+        #index=0 if page=="" or page==None else 100*int(page)
+        
+        global page
+        logging.info(page)
+        index = 100*int(page)
+        
+        images=methods.getImages(offset=index)
         template_value={"images":images}
         self.response.headers['Content-Type'] = "text/xml"
         self.render('views/gallery.xml', template_value)
