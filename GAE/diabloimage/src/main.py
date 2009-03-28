@@ -6,6 +6,7 @@ from google.appengine.ext.webapp import template
 from google.appengine.api import users
 import methods
 import logging
+
 def format_date(dt):
     return dt.strftime('%a, %d %b %Y %H:%M:%S GMT')
 
@@ -40,9 +41,19 @@ class SlidePage(PublicPage):
         template_value={"images":images}
         self.render('views/slide.html', template_value)
 
+class FlashPage(PublicPage):
+    def get(self):
+        images=methods.getImages()
+        template_value={"images":images}
+        self.render('views/flash.html', template_value)
+
 class CoverFlowPage(PublicPage):
     def get(self):
         self.render('views/coverflow.html', {})
+        
+        #images=methods.getImages()
+        #template_value={"images":images}
+        #self.render('views/jscoverflow.html', template_value)
 
 class XMLPage(PublicPage):
     def get(self):
@@ -50,6 +61,13 @@ class XMLPage(PublicPage):
         template_value={"images":images}
         self.response.headers['Content-Type'] = "text/xml"
         self.render('views/xml.html', template_value)
+
+class FlashXML(PublicPage):
+    def get(self):
+        images=methods.getImages()
+        template_value={"images":images}
+        self.response.headers['Content-Type'] = "text/xml"
+        self.render('views/gallery.xml', template_value)
 
 class ShowImage(PublicPage):
     def get(self,id):
@@ -61,6 +79,7 @@ class ShowImage(PublicPage):
     
 class GetImage(PublicPage):
     def get(self,size,id):
+        logging.info("size: %s"%(size))
         dic=self.request.headers
         key=dic.get("If-None-Match")
         self.response.headers['ETag']=size+id
@@ -80,12 +99,14 @@ class Error(PublicPage):
 
 def main():
     application = webapp.WSGIApplication(
-                                       [('/(?P<page>[0-9]*)/?', MainPage),
+                                       [('/(?P<page>[0-9]*)/', MainPage),
                                         (r'/slide/?', SlidePage),
                                         (r'/coverflow/?', CoverFlowPage),
+                                        (r'/flash/?', FlashPage),
+                                        (r'/gallery\.xml', FlashXML),
                                         (r'/xml/?', XMLPage),
-                                        (r'/(?P<size>image)/(?P<id>[0-9]+)/?',GetImage),
-                                        (r'/(?P<size>s)/(?P<id>[0-9]+)/?',GetImage),
+                                        (r'/?/(?P<size>image)/(?P<id>[0-9]+)/?',GetImage),
+                                        (r'/?/(?P<size>s)/(?P<id>[0-9]+)/?',GetImage),
                                         (r'/show/(?P<id>[0-9]+)/',ShowImage),
                                         ('.*',Error)
                                        ], debug=True)
