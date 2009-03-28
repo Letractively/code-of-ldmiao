@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+  <head>
+    <title>CoverFlow</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+    <script type="text/javascript" src="/static/coverflow.js"></script>
+    <style>
+    #__cvfl-coverflow-wrapper canvas{
+		position: absolute;
+	}
+
+	#__cvfl-coverflow{
+		height: 375px;
+		margin: auto;
+		overflow: hidden;
+		position: relative;
+		width: 530px;
+	}
+
+	#__cvfl-coverflow-label{
+		color: #fff;
+		font: 14pt Lucida Grande, Lucida Sans Unicode;
+		line-height: 1.3em;
+		position: relative;
+		text-align: center;
+		top: 273px;
+		z-index: 700;
+	}
+    </style>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        Coverflow.init(
+        [
+            {% for image in images %}
+            {src: '/image/{{image.id}}/', label: {album: 'All That I Am', artist: 'Santana'}},
+            {% endfor %}
+        ], 
+        {
+            createLabel: function(item)
+            {
+                return item.label.album +'<br>'+ item.label.artist;
+            },
+        
+            onSelectCenter: function(item, id)
+            {
+                var img = new Image();
+                img.onload = function()
+                {
+                    Lightbox.show(this.src, id);
+                };
+                img.src = item.src.replace('-lo.jpg', '-hi.jpg');
+            }
+        });
+    });
+    </script>
+  </head>
+  <body>
+    <div id="__cvfl-coverflow">
+		<div id="__cvfl-coverflow-wrapper"></div>
+		<div id="__cvfl-coverflow-label"></div>
+	</div>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+
+<albuminfo>
+		<artLocation><%itemLargeImage%></artLocation>
+		<artist> <%exportDescription%></artist>
+		<albumName><%itemCaption%></albumName>
+		<artistLink><%itemLargeImage%></artistLink>
+		<albumLink><%itemLargeImage%></albumLink>
+	</albuminfo>
+
+
+
