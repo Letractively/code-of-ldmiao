@@ -99,15 +99,15 @@ class Error(PublicPage):
 
 def main():
     application = webapp.WSGIApplication(
-                                       [('/(?P<page>[0-9]*)/', MainPage),
-                                        (r'/slide/?', SlidePage),
+                                       [(r'/slide/?', SlidePage),
                                         (r'/coverflow/?', CoverFlowPage),
                                         (r'/flash/?', FlashPage),
-                                        (r'/gallery\.xml', FlashXML),
+                                        (r'/flash/gallery\.xml', FlashXML),
                                         (r'/xml/?', XMLPage),
-                                        (r'/?/(?P<size>image)/(?P<id>[0-9]+)/?',GetImage),
-                                        (r'/?/(?P<size>s)/(?P<id>[0-9]+)/?',GetImage),
+                                        (r'/(?P<size>image)/(?P<id>[0-9]+)/?',GetImage),
+                                        (r'/(?P<size>s)/(?P<id>[0-9]+)/?',GetImage),
                                         (r'/show/(?P<id>[0-9]+)/',ShowImage),
+                                        (r'/(?P<page>[0-9]*)/?', MainPage),
                                         ('.*',Error)
                                        ], debug=True)
     wsgiref.handlers.CGIHandler().run(application)
