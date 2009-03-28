@@ -2,6 +2,11 @@
 import re,logging,os
 from google.appengine.ext import db
 from google.appengine.api import memcache
+
+class gallery(db.Model):
+    xml = db.TextProperty()
+    update_at = db.DateTimeProperty(auto_now=True)
+    
 class Images(db.Model):
     name = db.StringProperty()
     mime = db.StringProperty()
