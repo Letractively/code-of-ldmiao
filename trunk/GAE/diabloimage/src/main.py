@@ -2,6 +2,7 @@
 import wsgiref.handlers
 import os
 from google.appengine.ext import webapp
+from google.appengine.api import memcache
 from google.appengine.ext.webapp import template
 from google.appengine.api import users
 import methods
@@ -45,10 +46,10 @@ class SlidePage(PublicPage):
 
 class FlashPage(PublicPage):
     def get(self):
-        p = self.request.get('page')
-        p=0 if page=="" or page==None else int(p)
-        global page
-        page = p
+        page = self.request.get('page')
+        p = "0" if page=="" or page==None else page
+        memcache.set("flash_page_key", p, 60)
+        
         logging.info(page)
         
         self.render('views/flash.html', {})
@@ -73,7 +74,12 @@ class FlashXML(PublicPage):
         #page = self.request.get('page')
         #index=0 if page=="" or page==None else 100*int(page)
         
-        global page
+        page = memcache.get("flash_page_key")
+        if page:
+            page = int(page)
+        else:
+            page = 0
+        
         logging.info(page)
         index = 100*int(page)
         
