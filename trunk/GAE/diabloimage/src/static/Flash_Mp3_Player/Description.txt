@@ -1,0 +1,53 @@
+Flabell Flash Mp3 Player
+
+Fully customizable MP3 Player, built with support for multiple Artists and Albums. Everything is XML customizable, including size, colors, speed and transition effects.
+
+This Flash Mp3 Player contains a handful of features and settings. It is easy to use the player in your Flash projects or as an independent Flash mp3 player on your website. It is as easy as moving some actionscript files around, and dragging the movieclip containing the Flash player in your Flash file. We provide precise instructions in the help file that comes with the download.
+
+
+
+Skinning the Mp3 player
+
+Skinning is very simple as well. To edit the file you don't need any Flash experience, as all the settings are loaded from an external XML file, which you can edit with any text editor. You can change the colors of the elements, the speed of the effects, the size of the images, the size of the mp3 player, add or remove features to the player, and much more.
+
+As an example, you can disable the SHARE button in the XML file, and the control bar will automatically resize to fill the empty space on the right of the Flash Mp3 Player.
+
+
+
+Playlists, artists and albums
+
+The playlists are also loaded from an external XML file, so you can add unlimited artists and albums.
+
+
+
+Audio Volume
+
+The user can quickly turn on/off the audio, or change the volume by dragging the volume bar. The music will fade in/out between the values. When the user comes to the player again, the volume is already stored in his cache, and the mp3 player will start from that value.
+
+
+
+Player source code
+
+The code is very well commented, written following the best OOP practices, and the downloaded file comes with all the assets used to create the Flash Mp3 Player such as the fonts, the PSD source files, and the Flash source files.
+
+
+
+Features:
+
+- Streaming – starts playing before the song is fully loaded
+- Seek bar for displaying song progress
+- Shuffle songs
+- Share Mp3 Player
+- Download button with customizable link
+- Buy button with customizable link
+- Volume slider with cache support
+- Mute button
+- Customize auto-play, volume  start value and display text through XML file.
+- Customize playlist through XML file
+- Unlimited number of albums/artists and songs
+- Colors are customizable from XML
+- Speed of effects customizable from XML
+- Size of images customizable from XML
+- Scrolling auto-start customizable from XML
+
+Note: The songs used in this file are samples, under 30 seconds for legal reasons. You can easily update them in the XML file.
