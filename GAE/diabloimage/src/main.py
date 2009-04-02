@@ -82,7 +82,7 @@ class FlashXML(PublicPage):
             page = 0
         
         logging.info(page)
-        index = 100*int(page)
+        index = 300*int(page)
         
         images=methods.getImages(count=300, offset=index)
         template_value={"images":images}
@@ -94,34 +94,18 @@ class FlashXML(PublicPage):
         
 class RSSPage(PublicPage):
     def get(self):
-        #page = self.request.get('page')
-        #index=0 if page=="" or page==None else 100*int(page)
+        images=methods.getImages(count=300)
+        template_value={"images": images}
         
-        page = memcache.get("flash_page_key")
-        if page:
-            page = int(page)
-        else:
-            page = 0
-        
-        logging.info(page)
-        index = 100*int(page)
-        
-        images=methods.getImages(count=300, offset=index)
-        template_value={"images":images}
-        #self.response.headers['Content-Type'] = "text/xml"
-        #self.render('views/gallery.xml', template_value)
-        
-        #self.response.headers['Content-Type'] = "application/json"
-        self.response.headers['Content-Type'] = "text/plain"
-        self.render('views/gallery2.xml', template_value)
-        
+        self.response.headers['Content-Type'] = "application/rss+xml"
+        self.render('views/rss.xml', template_value)
+
 class ShowImage(PublicPage):
     def get(self,id):
         image=methods.getImage(id)
         if not image:return self.error(404)
         template_value={"image":image,"admin":self.is_admin()}
         self.render('views/show.html', template_value)
-    
     
 class GetImage(PublicPage):
     def get(self,size,id):

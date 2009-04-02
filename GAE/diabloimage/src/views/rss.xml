@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+
+        <title>iFashionTaste</title>
+        <link>http://ifashiontaste.appspot.com/</link>
+        <description>Photos of iFashionTaste</description>
+        {% for image in images %}
+        <item>
+                <title>{{image.id}}-分辨率:{{image.width}}*{{image.height}}, 图片大小:{{image.size|filesizeformat}}, 上传时间:{{image.created_at}}</title>
+                <link>/image/{{image.id}}/</link>
+                <guid>img_{{image.id}}/</guid>
+                <media:thumbnail url="/s/{{image.id}}/" />
+                <media:content url="/image/{{image.id}}/" type="image/jpeg" />
+        </item>
+        {% endfor %}
+</channel>
+</rss>
