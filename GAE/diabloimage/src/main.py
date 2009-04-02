@@ -52,7 +52,8 @@ class FlashPage(PublicPage):
         
         logging.info(page)
         
-        self.render('views/flash.html', {})
+        #self.render('views/flash.html', {})
+        self.render('views/flash2.html', {})
 
 class CoverFlowPage(PublicPage):
     def get(self):
@@ -85,9 +86,36 @@ class FlashXML(PublicPage):
         
         images=methods.getImages(offset=index)
         template_value={"images":images}
-        self.response.headers['Content-Type'] = "text/xml"
-        self.render('views/gallery.xml', template_value)
-
+        #self.response.headers['Content-Type'] = "text/xml"
+        #self.render('views/gallery.xml', template_value)
+        
+        #self.response.headers['Content-Type'] = "application/json"
+        self.response.headers['Content-Type'] = "text/plain"
+        self.render('views/gallery2.xml', template_value)
+        
+class RSSPage(PublicPage):
+    def get(self):
+        #page = self.request.get('page')
+        #index=0 if page=="" or page==None else 100*int(page)
+        
+        page = memcache.get("flash_page_key")
+        if page:
+            page = int(page)
+        else:
+            page = 0
+        
+        logging.info(page)
+        index = 100*int(page)
+        
+        images=methods.getImages(offset=index)
+        template_value={"images":images}
+        #self.response.headers['Content-Type'] = "text/xml"
+        #self.render('views/gallery.xml', template_value)
+        
+        #self.response.headers['Content-Type'] = "application/json"
+        self.response.headers['Content-Type'] = "text/plain"
+        self.render('views/gallery2.xml', template_value)
+        
 class ShowImage(PublicPage):
     def get(self,id):
         image=methods.getImage(id)
@@ -121,12 +149,13 @@ def main():
                                        [(r'/slide/?', SlidePage),
                                         (r'/coverflow/?', CoverFlowPage),
                                         (r'/flash/?', FlashPage),
-                                        (r'/flash/gallery\.xml', FlashXML),
+                                        (r'/flash/gallery\..*', FlashXML),
                                         (r'/xml/?', XMLPage),
                                         (r'/(?P<size>image)/(?P<id>[0-9]+)/?',GetImage),
                                         (r'/(?P<size>s)/(?P<id>[0-9]+)/?',GetImage),
                                         (r'/show/(?P<id>[0-9]+)/',ShowImage),
                                         (r'/(?P<page>[0-9]*)/?', MainPage),
+                                        (r'/photos.rss', RSSPage),
                                         ('.*',Error)
                                        ], debug=True)
     wsgiref.handlers.CGIHandler().run(application)

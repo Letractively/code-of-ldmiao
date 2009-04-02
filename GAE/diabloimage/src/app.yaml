@@ -10,6 +10,14 @@ handlers:
   mime_type: image/x-icon
   expiration : "1d"
 
+- url: /cooliris-quick.xml
+  static_files: static/cooliris-quick.xml
+  upload: static/cooliris-quick.xml
+
+- url: /crossdomain.xml
+  static_files: static/crossdomain.xml
+  upload: static/crossdomain.xml
+  
 - url: /robots.txt
   static_files: static/robots.txt
   upload: static/robots.txt
