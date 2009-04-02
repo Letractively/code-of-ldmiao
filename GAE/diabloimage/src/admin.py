@@ -8,6 +8,8 @@ from google.appengine.api import users
 import methods,logging
 from django.utils import simplejson
 
+from google.appengine.ext import db
+
 adminFlag=True
 
 class AdminControl(webapp.RequestHandler):
@@ -99,7 +101,21 @@ class Admin_Login(AdminControl):
     @requires_admin
     def get(self):
         self.redirect('/')
-        
+
+class Admin_Clean(AdminControl):
+    @requires_admin
+    def get(self):
+        action = self.request.get('action')
+        if action=='real':
+            output = "0"
+            images=methods.getImages(count=50)
+            if(len(images)>0):
+                output = str(len(images))
+            db.delete(images)
+            self.response.out.write(output)
+        else:
+            self.render('views/clean.html', {})
+
 def main():
     application = webapp.WSGIApplication(
                                        [(r'/admin/upload/', Admin_Upload),
@@ -107,6 +123,7 @@ def main():
                                         (r'/admin/upload3/', Admin_Upload3),
                                         (r'/admin/del/(?P<key>[a-z,A-Z,0-9]+)', Delete_Image),
                                         (r'/admin/delid/(?P<id>[0-9]+)/', Delete_Image_ID),
+                                        (r'/admin/clean/?', Admin_Clean),
                                         (r'/admin/', Admin_Login),
                                        ], debug=True)
     wsgiref.handlers.CGIHandler().run(application)
