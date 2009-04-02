@@ -52,8 +52,8 @@ class FlashPage(PublicPage):
         
         logging.info(page)
         
-        #self.render('views/flash.html', {})
-        self.render('views/flash2.html', {})
+        self.render('views/flash.html', {})
+        #self.render('views/flash2.html', {})
 
 class CoverFlowPage(PublicPage):
     def get(self):
@@ -84,14 +84,13 @@ class FlashXML(PublicPage):
         logging.info(page)
         index = 100*int(page)
         
-        images=methods.getImages(offset=index)
+        images=methods.getImages(count=300, offset=index)
         template_value={"images":images}
-        #self.response.headers['Content-Type'] = "text/xml"
-        #self.render('views/gallery.xml', template_value)
+        self.response.headers['Content-Type'] = "text/xml"
+        self.render('views/gallery.xml', template_value)
         
-        #self.response.headers['Content-Type'] = "application/json"
-        self.response.headers['Content-Type'] = "text/plain"
-        self.render('views/gallery2.xml', template_value)
+        #self.response.headers['Content-Type'] = "text/plain"
+        #self.render('views/gallery2.xml', template_value)
         
 class RSSPage(PublicPage):
     def get(self):
@@ -107,7 +106,7 @@ class RSSPage(PublicPage):
         logging.info(page)
         index = 100*int(page)
         
-        images=methods.getImages(offset=index)
+        images=methods.getImages(count=300, offset=index)
         template_value={"images":images}
         #self.response.headers['Content-Type'] = "text/xml"
         #self.render('views/gallery.xml', template_value)
