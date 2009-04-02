@@ -44,6 +44,11 @@ class SlidePage(PublicPage):
         template_value={"images":images}
         self.render('views/slide.html', template_value)
 
+
+class CoolirisPage(PublicPage):
+    def get(self):
+        self.render('views/cooliris.html', {})
+        
 class FlashPage(PublicPage):
     def get(self):
         page = self.request.get('page')
@@ -131,6 +136,7 @@ def main():
     application = webapp.WSGIApplication(
                                        [(r'/slide/?', SlidePage),
                                         (r'/coverflow/?', CoverFlowPage),
+                                        (r'/cooliris/?', CoolirisPage),
                                         (r'/flash/?', FlashPage),
                                         (r'/flash/gallery\..*', FlashXML),
                                         (r'/xml/?', XMLPage),
