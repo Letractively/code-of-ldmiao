@@ -1,26 +1,33 @@
 #coding:utf-8
 import logging
 
-from models import Images
+from models import Images, ImageBlob
 from google.appengine.api import memcache
 from google.appengine.api import images
 from getimageinfo import getImageInfo
+from google.appengine.ext import db
 
 def addImage(mime,description,bf):
     'Add Image'
-    image=Images(mime=mime,description=description,bf=bf)
+    image=Images(mime=mime,description=description)
     image.size=len(image.bf)
     image.filetype,image.width,image.height=getImageInfo(bf)
     image.put()
+    
+    imageblob = ImageBlob(image=image, bf=bf)
+    imageblob.put()
     return image
 
 def addImage2(bf):
-    image=Images(bf=bf)
+    image=Images()
     image.size=len(bf)
     image.filetype,image.width,image.height=getImageInfo(bf)
     if not image.filetype:return None
     image.mime=image.filetype
     image.put()
+    
+    imageblob = ImageBlob(image=image, bf=bf)
+    imageblob.put()
     return image
 
 def getImage(id):
@@ -45,6 +52,7 @@ def getCrop(image):
         by = 1.0 - ratio
     
     return lx, ty, rx, by
+
 def getResize(image, max_len=240):
     width = image.width
     height = image.height
@@ -66,7 +74,12 @@ def getResize(image, max_len=240):
 def resizeImage(id,size="image"):
     image=getImage(id)
     if not image:return None
+    
+    imageblob = db.GqlQuery("SELECT * FROM ImageBlob WHERE image = :1", image).get()
+    image.bf = imageblob.bf
+    
     if size=="image":return image
+    
     img=images.Image(image.bf)
     
     #lx, ty, rx, by = getCrop(image)
@@ -91,11 +104,19 @@ def downImage(id,size="image"):
 
 def delImage(key):
     image=Images.get(key)
-    if image:image.delete()
+    if image:
+        imageblob = db.GqlQuery("SELECT * FROM ImageBlob WHERE image = :1", image).get()
+        if imageblob:
+            imageblob.delete()
+        image.delete()
 
 def delImageByid(id):
     image=Images.get_by_id(int(id))
-    if image:image.delete()
+    if image:
+        imageblob = db.GqlQuery("SELECT * FROM ImageBlob WHERE image = :1", image).get()
+        if imageblob:
+            imageblob.delete()
+        image.delete()
 
 def getAllImages(index=0):
     return Images.all().order('-created_at').fetch(49, index*48)
