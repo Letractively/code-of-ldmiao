@@ -1,6 +1,9 @@
 {% extends "base.html" %}
 {% block title %}GAE图片分享{% endblock %}
 
+{% block head %}
+<link rel="alternate" type="application/x-cooliris-quick" href="http://ifashiontaste.appspot.com/cooliris-quick.xml" />
+{% endblock %}
 
 {% block main %}
 <h2>图片列表 | <a href="/flash/" title="Flash Gallery">Gallery</a> | <a href="/slide/" title="Slide Show">Slide Show</a> | <a href="/admin/upload2/" title="上传图片">上传图片</a></h2>
@@ -12,6 +15,21 @@
 </ul>
 
 <h2 id="page">{% if prev %}<a href="{{prev}}">上一页</a>{% endif%}  {%if next%}<a href="{{next}}">下一页</a>{% endif %}</h2>
+
+<object id="o" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+    width="760" height="450">
+    <param name="movie" 
+        value="http://apps.cooliris.com/embed/cooliris.swf" />
+    <param name="flashvars"
+        value="feed=http://ifashiontaste.appspot.com/photos.rss" />
+    <param name="allowFullScreen" value="true" />
+    <param name="allowScriptAccess" value="always" />
+    <embed type="application/x-shockwave-flash" 
+        src="http://apps.cooliris.com/embed/cooliris.swf" 
+        width="760" height="450" 
+        flashvars="feed=http://ifashiontaste.appspot.com/photos.rss" 
+        allowFullScreen="true" allowScriptAccess="always"></embed>
+</object>
 
 {% endblock %}
 </body>
