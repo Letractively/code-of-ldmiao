@@ -12,6 +12,8 @@ from google.appengine.ext import db
 
 adminFlag=True
 
+admin_emails = set(['ldmiao@gmail.com'])
+
 class AdminControl(webapp.RequestHandler):
     def render(self,template_file,template_value):
         path=os.path.join(os.path.dirname(__file__),template_file)
@@ -23,10 +25,11 @@ class AdminControl(webapp.RequestHandler):
 def requires_admin(method):
     @wraps(method)
     def wrapper(self, *args, **kwargs):
+        global admin_emails
         user = users.get_current_user()
         #if not users.is_current_user_admin() and adminFlag:
         if user and user.email():
-            if user.email()=="ldmiao@gmail.com" or user.email()=="zhaoyong04@gmail.com" or user.email()=="northtree.nk@gmail.com":
+            if user.email() in admin_emails:
                 return method(self, *args, **kwargs)
             
         self.redirect(users.create_login_url(self.request.uri))
@@ -84,6 +87,23 @@ class Admin_Upload3(AdminControl):
         dit["result"]="ok"
         dit["id"]=image.id
         return self.returnjson(dit)
+        
+class Admin_UploadByURL(AdminControl):
+    @requires_admin
+    def get(self):
+        self.render('views/upload3.html', {})
+    #@requires_admin
+    def post(self):
+        dit={"result":"error"}
+        bf=self.request.get("Filedata")
+        if not bf:
+            return self.returnjson(dit)
+        image=methods.addImage2(bf)
+        if not image:
+             return self.returnjson(dit)
+        dit["result"]="ok"
+        dit["id"]=image.id
+        return self.returnjson(dit)
 
 class Delete_Image(AdminControl):
     @requires_admin
@@ -121,6 +141,7 @@ def main():
                                        [(r'/admin/upload/', Admin_Upload),
                                         (r'/admin/upload2/', Admin_Upload2),
                                         (r'/admin/upload3/', Admin_Upload3),
+                                        (r'/admin/saveurl/', Admin_UploadByURL),
                                         (r'/admin/del/(?P<key>[a-z,A-Z,0-9]+)', Delete_Image),
                                         (r'/admin/delid/(?P<id>[0-9]+)/', Delete_Image_ID),
                                         (r'/admin/clean/?', Admin_Clean),
