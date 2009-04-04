@@ -96,14 +96,20 @@ class FlashXML(PublicPage):
         
         #self.response.headers['Content-Type'] = "text/plain"
         #self.render('views/gallery2.xml', template_value)
-        
+
 class RSSPage(PublicPage):
     def get(self):
-        images=methods.getImages(count=300)
-        template_value={"images": images}
+        rss = methods.getRSSItemsString()
+        if rss:
+            pass
+        else:
+            images=methods.getImages(count=300)
+            rss = methods.generateRSSItems(images)
         
         self.response.headers['Content-Type'] = "application/rss+xml"
-        self.render('views/rss.xml', template_value)
+        #self.response.headers['Content-Type'] = "text/xml"
+        rss_template = methods.get_rss_template()
+        self.response.out.write(rss_template%(rss))
 
 class ShowImage(PublicPage):
     def get(self,id):
