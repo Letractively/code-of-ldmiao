@@ -3,6 +3,7 @@ import wsgiref.handlers
 import os
 from functools import wraps
 from google.appengine.ext import webapp
+from google.appengine.api import memcache
 from google.appengine.ext.webapp import template
 from google.appengine.api import users
 import methods,logging
@@ -122,19 +123,64 @@ class Admin_Login(AdminControl):
     def get(self):
         self.redirect('/')
 
-class Admin_Clean(AdminControl):
+class Admin_Page(AdminControl):
+        
     @requires_admin
     def get(self):
         action = self.request.get('action')
-        if action=='real':
-            output = "0"
+        
+        output = "0"
+        if action=='clear':
             images=methods.getImages(count=50)
             if(len(images)>0):
                 output = str(len(images))
             db.delete(images)
             self.response.out.write(output)
+        elif action=='getrss':
+            rss_template = methods.get_rss_template()
+            rss = memcache.get("rss_content")
+            if rss:
+                #self.response.headers['Content-Type'] = "application/rss+xml"
+                self.response.headers['Content-Type'] = "text/xml"
+                self.response.out.write(rss_template%(rss))
+            else:
+                self.response.out.write('not right!')
+        elif action=='regeneraterss':
+            generate = memcache.get("rss_generate")
+            rss = memcache.get("rss_content")
+            lastImage_date = memcache.get("rss_lastImage_date")
+            
+            if generate=='create':
+                memcache.delete('rss_content')
+                memcache.delete('rss_lastImage_date')
+                memcache.set("rss_generate", 'not_create')
+                logging.info('set rss_generate to not_create')
+                lastImage_date = None
+                rss = ''
+                
+            if rss and lastImage_date:
+                pass
+            else:
+                lastImage_date = None
+                rss = ''
+            
+            images=methods.getImagesBefore(count=50, lastImage_date=lastImage_date)
+            if(len(images)>0):
+                rss += methods.generateRSSItems(images)
+                length = len(images)
+                lastImage_date = images[length-1].created_at
+                output = str(length)
+                memcache.set('rss_content', rss)
+                memcache.set('rss_lastImage_date', lastImage_date)
+                
+            else:
+                methods.persistRSS()
+                memcache.set("rss_generate", 'create')
+                logging.info('set rss_generate to create')
+            
+            self.response.out.write(output)
         else:
-            self.render('views/clean.html', {})
+            self.render('views/admin.html', {})
 
 def main():
     application = webapp.WSGIApplication(
@@ -144,8 +190,7 @@ def main():
                                         (r'/admin/saveurl/', Admin_UploadByURL),
                                         (r'/admin/del/(?P<key>[a-z,A-Z,0-9]+)', Delete_Image),
                                         (r'/admin/delid/(?P<id>[0-9]+)/', Delete_Image_ID),
-                                        (r'/admin/clean/?', Admin_Clean),
-                                        (r'/admin/', Admin_Login),
+                                        (r'/admin/', Admin_Page),
                                        ], debug=True)
     wsgiref.handlers.CGIHandler().run(application)
 

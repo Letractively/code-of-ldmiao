@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block title %}Admin Page{% endblock %}
+{% block head %}
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    function doaction(action){
+        $.get("/admin/?action="+action,
+            function(data){
+                if(data && parseInt(data)>0){
+                    $('#log').append('<li>' + action + ' ' + data + ' records!</li>')
+                    doaction(action);
+                }else{
+                    $('#log').append('<li>done!</li>')
+                }
+            }
+        );
+    }
+    $('input[type="button"]').click(function(){
+        doaction($(this).attr('id'));
+        //alert($(this).attr('id'))
+    });
+});
+</script>
+{% endblock %}
+
+{% block main %}
+    <div>
+        <ul>
+            <li><input type="button" id="clear" value="Clear All Data" title="Clear All Data"/></li>
+            <li><input type="button" id="regeneraterss" value="Re-generate RSS" title="Re-generate RSS"/></li>
+            
+        </ul>
+    </div>
+    <div>
+    <ul id="log">
+    </ul>
+    </div>
+{% endblock %}
+</body>
+</html>

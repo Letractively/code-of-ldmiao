@@ -3,6 +3,7 @@ import os, re
 
 files = [
             ('app.yaml', r'application\:\s+(.*)'),
+            ('methods.py', r'http\://(.*?).appspot.com/'),
             ('views/cooliris.html', r'http\://(.*?).appspot.com/'),
             ('views/rss.xml', r'http\://(.*?).appspot.com/'),
         ]
@@ -19,10 +20,11 @@ def changToAPPID(app_id):
         match = re.search(re_str, file_content)
         if match:
             print match.start(1), match.end(1), match.group(1)
-            file_content = file_content[:match.start(1)]+app_id+file_content[match.end(1):]
-            f = open(file, 'w')
-            f.write(file_content)
-            f.close()
+            if str(match.group(1))!=app_id:
+                file_content = file_content[:match.start(1)]+app_id+file_content[match.end(1):]
+                f = open(file, 'w')
+                f.write(file_content)
+                f.close()
 
 def setAdmin(admin_emails_set=['ldmiao@gmail.com']):
     file = 'admin.py'

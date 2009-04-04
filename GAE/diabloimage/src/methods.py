@@ -1,11 +1,76 @@
 #coding:utf-8
 import logging
 
-from models import Images, ImageBlob
+from models import Images, ImageBlob, Gallery
 from google.appengine.api import memcache
 from google.appengine.api import images
 from getimageinfo import getImageInfo
 from google.appengine.ext import db
+
+
+rss_template = """<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+        <title>GAE Images</title>
+        <link>http://newsmth.appspot.com/</link>
+        <description>GAE Images</description>
+        %s
+</channel>
+</rss>
+"""
+rss_item_template = """
+        <item>
+                <title>%s</title>
+                <link>/image/%s/</link>
+                <guid>img_%s/</guid>
+                <media:thumbnail url="/s/%s/" />
+                <media:content url="/image/%s/" type="image/jpeg" />
+        </item>
+"""
+
+def get_rss_template():
+    global rss_template
+    return rss_template
+
+def generateRSSItems(images):
+    global rss_item_template
+    rss_items = ""
+    for image in images:
+        image_id = image.key().id()
+        rss_items += rss_item_template%(image_id,image_id,image_id,image_id,image_id)
+    return rss_items
+
+def prependToRSS(images):
+    rss_string = generateRSSItems(images)
+    rss = memcache.get("rss_content")
+    if rss:
+        rss = rss_string + rss
+    else:
+        rss = rss_string
+    
+    memcache.set("rss_content", rss)
+
+def persistRSS():
+    rss = memcache.get("rss_content")
+    if rss:
+        gallery = Gallery.all().order('-updated_at').get()
+        if gallery is None:
+            gallery = Gallery(name="all")
+        gallery.xml = rss
+        gallery.put()
+
+def getRSSItemsString():
+    rss = memcache.get("rss_content")
+    if rss:
+        return rss
+    else:
+        gallery = Gallery.all().order('-updated_at').get()
+        if gallery:
+            rss = gallery.xml
+            memcache.set("rss_content", rss)
+            return rss
+    return ""
+    
 
 def addImage(mime,description,bf):
     'Add Image'
@@ -16,6 +81,9 @@ def addImage(mime,description,bf):
     
     imageblob = ImageBlob(image=image, bf=bf)
     imageblob.put()
+    
+    prependToRSS([image])
+    
     return image
 
 def addImage2(bf):
@@ -28,6 +96,9 @@ def addImage2(bf):
     
     imageblob = ImageBlob(image=image, bf=bf)
     imageblob.put()
+    
+    prependToRSS([image])
+    
     return image
 
 def getImage(id):
@@ -123,6 +194,12 @@ def getAllImages(index=0):
 
 def getImages(count=100, offset=0):
     return Images.all().order('-created_at').fetch(count, offset)
+    
+def getImagesBefore(count=100, lastImage_date=None):
+    if lastImage_date:
+        return db.GqlQuery("SELECT * FROM Images WHERE created_at < :1 ORDER BY created_at DESC", lastImage_date).fetch(count)
+    else:
+        return Images.all().order('-created_at').fetch(count)
     
 def getPageing(index,page=0):
     s="/%s/"
