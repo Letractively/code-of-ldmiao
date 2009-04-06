@@ -29,6 +29,8 @@ def requires_admin(method):
         global admin_emails
         user = users.get_current_user()
         #if not users.is_current_user_admin() and adminFlag:
+        logging.info(user)
+        logging.info(user.email())
         if user and user.email():
             if user.email() in admin_emails:
                 return method(self, *args, **kwargs)

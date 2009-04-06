@@ -5,6 +5,7 @@
 <title>多文件上传</title>
 <link href="/static/swfupload/default.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="/static/swfupload/swfupload.js"></script>
+<script type="text/javascript" src="/static/swfupload/swfupload.cookies.js"></script>
 <script type="text/javascript" src="/static/swfupload/swfupload.queue.js"></script>
 <script type="text/javascript" src="/static/swfupload/fileprogress.js"></script>
 <script type="text/javascript" src="/static/swfupload/handlers.js"></script>
@@ -52,8 +53,9 @@
 				},
                 
 				// Debug Settings
-				debug: false
+				debug: true
 			});
+            //swfu.refreshCookies(true);
 		};
 	</script>
 </head>
