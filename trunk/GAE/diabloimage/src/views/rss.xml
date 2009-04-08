@@ -3,7 +3,7 @@
 <channel>
 
         <title>GAE Images</title>
-        <link>http://ifashionshow.appspot.com/</link>
+        <link>http://ifashionsecret.appspot.com/</link>
         <description>GAE Images</description>
         {% for image in images %}
         <item>
