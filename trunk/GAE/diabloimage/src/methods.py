@@ -12,7 +12,7 @@ rss_template = """<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <rss version="2.0" xmlns:media="http://search.yahoo.com/mrss" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
         <title>GAE Images</title>
-        <link>http://ifashionsecret.appspot.com/</link>
+        <link>http://newsmth.appspot.com/</link>
         <description>GAE Images</description>
         %s
 </channel>
