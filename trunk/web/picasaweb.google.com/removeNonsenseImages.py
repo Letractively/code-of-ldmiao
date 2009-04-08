@@ -30,7 +30,7 @@ def renameImgFile(path):
 def removeImagesInDir(path, minSize, maxSize):
     if os.path.isfile(path):
         lowerPath = path.rstrip().lower()
-        #renameImgFile(path)
+        renameImgFile(path)
         if lowerPath.endswith('.jpg') or lowerPath.endswith('.jpeg') or lowerPath.endswith('.png') or lowerPath.endswith('.gif')  or lowerPath.endswith('.bmp'):
             removeFile(path, minSize, maxSize)
     elif os.path.isdir(path):
