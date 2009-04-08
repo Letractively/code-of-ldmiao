@@ -32,9 +32,12 @@ def getNextFromPath(current_path):
                 isOK = 1
 
 def getImageViewPage(handler, img_path):
+    next_img_path = getNextFromPath(img_path)
     head_script = '''
         var img_path = '%s';
         function loadNextImg(){
+            //var nextImg = document.createElement('IMG');
+            //nextImg.src = "%s";
             setTimeout('gotoNextImage()',3000);
         }
         function gotoNextImage(){
@@ -42,7 +45,7 @@ def getImageViewPage(handler, img_path):
             //document.getElementById('image').src = '/?nextimage='+img_path;
             //setTimeout('gotoNextImage()', 3000);
         }
-    '''%(img_path)
+    '''%(img_path, next_img_path)
     body = '''<img id="image" style="" src="%s"/>'''%(img_path)
     html = '''<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>%s</title>\n<script>%s</script>\n</head>\n<body onload="loadNextImg()" style="width:320px; height:480px; font-size: 60px">%s</body></html>'''%(img_path, head_script, body)
     handler.send_response(200)
@@ -53,6 +56,7 @@ def getImageViewPage(handler, img_path):
 def processGET(handler):
     global photo_dir_path
     try:
+        print '\n------------------------------------------------------------------'
         print 'request path:', handler.path
         
         req_path = handler.path
