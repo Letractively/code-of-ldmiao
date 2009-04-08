@@ -31,6 +31,6 @@ def upload_all_apps(apps):
         upload()
     
 if __name__ == '__main__':
-    #app_ids = [('fashion-secret', ['ldmiao@gmail.com'])]
+    #app_ids = [('newsmth', ['ldmiao@gmail.com'])]
     upload_all_apps(app_ids)
     
