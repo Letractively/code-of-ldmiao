@@ -28,9 +28,9 @@ import convert_flv
 host = 'http://www.youtube.com'
 
 #proxy = {'http': 'http://beiwebcache1.core.hp.com:8080'}
-proxy = {'http': 'http://web-proxy.hpl.hp.com:8088'}
+proxy = {'http': 'http://web-proxy.hpl.hp.com:8080'}
 
-proxy = None
+#proxy = None
 
 pool = None
 thread_count = 5
@@ -85,6 +85,7 @@ def getContent(url, data=None, proxies=None):
             #success = True
             test_time = 0
         except urllib2.HTTPError, e:
+            print url
             print 'The server couldn\'t fulfill the request. Error code: ', e.code
             content = None
             break
@@ -317,16 +318,16 @@ if __name__ == '__main__':
                     '"锵锵三人行"',
                     '"文涛拍案"',
                     '"有报天天读邱震海"',
-                    '"名人面对面"',
-                    '"中国记忆"',
-                    '"问答神州"',
-                    '"新闻大破解"',
-                    '"社会能见度"',
+                    #'"名人面对面"',
+                    #'"中国记忆"',
+                    #'"问答神州"',
+                    #'"新闻大破解"',
+                    #'"社会能见度"',
                     #'"新闻今日谈"',
                     #'"金石财经"',
                     #'"时事开讲"',
                     #'"文茜小妹大"',
-                    '"文茜世界周报"',
+                    #'"文茜世界周报"',
                     #'中天骇客赵少康"',
                     '"文道非常道"',
                     '"世界周刊"',
