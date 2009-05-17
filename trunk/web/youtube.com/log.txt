@@ -1,753 +1,534 @@
-[2009-03-23 14:30:12] Get:[http://www.youtube.com/results?search_query=%22%E5%A4%B4%E8%84%91%E9%A3%8E%E6%9A%B4%22&search_sort=video_date_uploaded&page=1]
-[2009-03-23 14:30:19] http://www.youtube.com/watch?v=MMaI3J8eMqk
-[2009-03-23 14:30:19] http://www.youtube.com/watch?v=Ad-WL5JMpvk
-[2009-03-23 14:30:19] http://www.youtube.com/watch?v=EhoEDiwBFD4
-[2009-03-23 14:30:19] http://www.youtube.com/watch?v=NUEXIboS8LU
-[2009-03-23 14:30:19] http://www.youtube.com/watch?v=YSZuIYrAE30
-[2009-03-23 14:30:19] http://www.youtube.com/watch?v=xhG36f62I-E
-[2009-03-23 14:30:19] http://www.youtube.com/watch?v=DyAEulAD0k8
-[2009-03-23 14:30:19] http://www.youtube.com/watch?v=TgofMqWPFhA
-[2009-03-23 14:30:19] http://www.youtube.com/watch?v=kdCu0_ijxOA
-[2009-03-23 14:30:19] http://www.youtube.com/watch?v=hEXmh5ZQcH4
-[2009-03-23 14:30:19] http://www.youtube.com/watch?v=K34gJkoJx_E
-[2009-03-23 14:30:19] http://www.youtube.com/watch?v=N8l9I_guw3U
-[2009-03-23 14:30:19] http://www.youtube.com/watch?v=_mx_qlrx21M
-[2009-03-23 14:30:19] http://www.youtube.com/watch?v=riLSKIiULSk
-[2009-03-23 14:30:19] http://www.youtube.com/watch?v=lm5NgJe3xmU
-[2009-03-23 14:30:19] http://www.youtube.com/watch?v=X7HItS9X_wM
-[2009-03-23 14:30:19] http://www.youtube.com/watch?v=UcaW3gvXK7Q
-[2009-03-23 14:30:19] http://www.youtube.com/watch?v=qa1wbJSJtc8
-[2009-03-23 14:30:19] http://www.youtube.com/watch?v=IlGZKamQ3t4
-[2009-03-23 14:30:19] http://www.youtube.com/watch?v=z5dQD9ktTCc
-[2009-03-23 14:30:19] Get:[http://www.youtube.com/results?search_query=%22%E9%94%B5%E9%94%B5%E4%B8%89%E4%BA%BA%E8%A1%8C%22&search_sort=video_date_uploaded&page=1]
-[2009-03-23 14:30:19] Get:[http://www.youtube.com/watch?v=EhoEDiwBFD4]
-[2009-03-23 14:30:19] Get:[http://www.youtube.com/watch?v=Ad-WL5JMpvk]
-[2009-03-23 14:30:19] Get:[http://www.youtube.com/watch?v=NUEXIboS8LU]
-[2009-03-23 14:30:19] Get:[http://www.youtube.com/watch?v=YSZuIYrAE30]
-[2009-03-23 14:30:19]   Video:[http://www.youtube.com/watch?v=MMaI3J8eMqk] has been downloaded before, pass.
-
-[2009-03-23 14:30:19]   Video:[http://www.youtube.com/watch?v=xhG36f62I-E] has been downloaded before, pass.
-
-[2009-03-23 14:30:19]   Video:[http://www.youtube.com/watch?v=DyAEulAD0k8] has been downloaded before, pass.
-
-[2009-03-23 14:30:19]   Video:[http://www.youtube.com/watch?v=TgofMqWPFhA] has been downloaded before, pass.
-
-[2009-03-23 14:30:19]   Video:[http://www.youtube.com/watch?v=kdCu0_ijxOA] has been downloaded before, pass.
-
-[2009-03-23 14:30:19]   Video:[http://www.youtube.com/watch?v=hEXmh5ZQcH4] has been downloaded before, pass.
-
-[2009-03-23 14:30:19]   Video:[http://www.youtube.com/watch?v=K34gJkoJx_E] has been downloaded before, pass.
-
-[2009-03-23 14:30:19]   Video:[http://www.youtube.com/watch?v=N8l9I_guw3U] has been downloaded before, pass.
-
-[2009-03-23 14:30:19]   Video:[http://www.youtube.com/watch?v=_mx_qlrx21M] has been downloaded before, pass.
-
-[2009-03-23 14:30:19]   Video:[http://www.youtube.com/watch?v=riLSKIiULSk] has been downloaded before, pass.
-
-[2009-03-23 14:30:19]   Video:[http://www.youtube.com/watch?v=lm5NgJe3xmU] has been downloaded before, pass.
-
-[2009-03-23 14:30:19]   Video:[http://www.youtube.com/watch?v=X7HItS9X_wM] has been downloaded before, pass.
-
-[2009-03-23 14:30:19]   Video:[http://www.youtube.com/watch?v=UcaW3gvXK7Q] has been downloaded before, pass.
-
-[2009-03-23 14:30:19]   Video:[http://www.youtube.com/watch?v=qa1wbJSJtc8] has been downloaded before, pass.
-
-[2009-03-23 14:30:19]   Video:[http://www.youtube.com/watch?v=IlGZKamQ3t4] has been downloaded before, pass.
-
-[2009-03-23 14:30:19]   Video:[http://www.youtube.com/watch?v=z5dQD9ktTCc] has been downloaded before, pass.
-
-[2009-03-23 14:30:40] http://www.youtube.com/watch?v=IshFBJooOMo
-[2009-03-23 14:30:40] http://www.youtube.com/watch?v=bkgJfHlzQLY
-[2009-03-23 14:30:40] http://www.youtube.com/watch?v=zchIjnj8y4g
-[2009-03-23 14:30:40] http://www.youtube.com/watch?v=GnM4N7nIFvU
-[2009-03-23 14:30:40] http://www.youtube.com/watch?v=-bby7woM6Mw
-[2009-03-23 14:30:40] http://www.youtube.com/watch?v=Zx7oDIZts9s
-[2009-03-23 14:30:40] http://www.youtube.com/watch?v=ItJf8iDnK6A
-[2009-03-23 14:30:40] http://www.youtube.com/watch?v=X9rDrc4n3BE
-[2009-03-23 14:30:40] http://www.youtube.com/watch?v=MDJLQh8bxtY
-[2009-03-23 14:30:40] http://www.youtube.com/watch?v=XbRmi0U64b0
-[2009-03-23 14:30:40] http://www.youtube.com/watch?v=Ur5QOCITl7I
-[2009-03-23 14:30:40] http://www.youtube.com/watch?v=xDv3KlNrNls
-[2009-03-23 14:30:40]   Video:[http://www.youtube.com/watch?v=IshFBJooOMo] has been downloaded before, pass.
-
-[2009-03-23 14:30:40] http://www.youtube.com/watch?v=cZuaPTBdsiY
-[2009-03-23 14:30:40]   Video:[http://www.youtube.com/watch?v=bkgJfHlzQLY] has been downloaded before, pass.
-
-[2009-03-23 14:30:40] http://www.youtube.com/watch?v=7RlMr2M0s5k
-[2009-03-23 14:30:40]   Video:[http://www.youtube.com/watch?v=zchIjnj8y4g] has been downloaded before, pass.
-
-[2009-03-23 14:30:40] http://www.youtube.com/watch?v=GLbOQz0gCzg
-[2009-03-23 14:30:40]   Video:[http://www.youtube.com/watch?v=GnM4N7nIFvU] has been downloaded before, pass.
-
-[2009-03-23 14:30:40] http://www.youtube.com/watch?v=aUBvNNFq6I8
-[2009-03-23 14:30:40]   Video:[http://www.youtube.com/watch?v=-bby7woM6Mw] has been downloaded before, pass.
-
-[2009-03-23 14:30:40] http://www.youtube.com/watch?v=LDr0EUXHdRo
-[2009-03-23 14:30:40]   Video:[http://www.youtube.com/watch?v=Zx7oDIZts9s] has been downloaded before, pass.
-
-[2009-03-23 14:30:40] http://www.youtube.com/watch?v=4Ipa0XiukJc
-[2009-03-23 14:30:40]   Video:[http://www.youtube.com/watch?v=ItJf8iDnK6A] has been downloaded before, pass.
-
-[2009-03-23 14:30:40] http://www.youtube.com/watch?v=fc5Gy-8U8vk
-[2009-03-23 14:30:40]   Video:[http://www.youtube.com/watch?v=X9rDrc4n3BE] has been downloaded before, pass.
-
-[2009-03-23 14:30:40] http://www.youtube.com/watch?v=1wq0PWCH5h4
-[2009-03-23 14:30:40]   Video:[http://www.youtube.com/watch?v=MDJLQh8bxtY] has been downloaded before, pass.
-
-[2009-03-23 14:30:40] Get:[http://www.youtube.com/results?search_query=%22%E6%96%87%E6%B6%9B%E6%8B%8D%E6%A1%88%22&search_sort=video_date_uploaded&page=1]
-[2009-03-23 14:30:40]   Video:[http://www.youtube.com/watch?v=XbRmi0U64b0] has been downloaded before, pass.
-
-[2009-03-23 14:30:40]   Video:[http://www.youtube.com/watch?v=Ur5QOCITl7I] has been downloaded before, pass.
-
-[2009-03-23 14:30:40]   Video:[http://www.youtube.com/watch?v=xDv3KlNrNls] has been downloaded before, pass.
-
-[2009-03-23 14:30:40]   Video:[http://www.youtube.com/watch?v=cZuaPTBdsiY] has been downloaded before, pass.
-
-[2009-03-23 14:30:40]   Video:[http://www.youtube.com/watch?v=7RlMr2M0s5k] has been downloaded before, pass.
-
-[2009-03-23 14:30:40]   Video:[http://www.youtube.com/watch?v=GLbOQz0gCzg] has been downloaded before, pass.
-
-[2009-03-23 14:30:40]   Video:[http://www.youtube.com/watch?v=aUBvNNFq6I8] has been downloaded before, pass.
-
-[2009-03-23 14:30:40]   Video:[http://www.youtube.com/watch?v=LDr0EUXHdRo] has been downloaded before, pass.
-
-[2009-03-23 14:30:40]   Video:[http://www.youtube.com/watch?v=4Ipa0XiukJc] has been downloaded before, pass.
-
-[2009-03-23 14:30:40]   Video:[http://www.youtube.com/watch?v=fc5Gy-8U8vk] has been downloaded before, pass.
-
-[2009-03-23 14:30:40]   Video:[http://www.youtube.com/watch?v=1wq0PWCH5h4] has been downloaded before, pass.
-
-[2009-03-23 14:30:46] http://www.youtube.com/watch?v=-5rbqtrReg8
-[2009-03-23 14:30:46] http://www.youtube.com/watch?v=a9p84laCRZY
-[2009-03-23 14:30:46] http://www.youtube.com/watch?v=EpvAvxNTYRs
-[2009-03-23 14:30:46] http://www.youtube.com/watch?v=U_ScAr1VKRA
-[2009-03-23 14:30:46]   Video:[http://www.youtube.com/watch?v=-5rbqtrReg8] has been downloaded before, pass.
-
-[2009-03-23 14:30:46] http://www.youtube.com/watch?v=zIUlaRrxUyA
-[2009-03-23 14:30:46]   Video:[http://www.youtube.com/watch?v=a9p84laCRZY] has been downloaded before, pass.
-
-[2009-03-23 14:30:46] http://www.youtube.com/watch?v=aImkudeuJS0
-[2009-03-23 14:30:46]   Video:[http://www.youtube.com/watch?v=EpvAvxNTYRs] has been downloaded before, pass.
-
-[2009-03-23 14:30:46] http://www.youtube.com/watch?v=M8ZNF3eTOo0
-[2009-03-23 14:30:46]   Video:[http://www.youtube.com/watch?v=U_ScAr1VKRA] has been downloaded before, pass.
-
-[2009-03-23 14:30:46] http://www.youtube.com/watch?v=Jh7lDVxUHkc
-[2009-03-23 14:30:46]   Video:[http://www.youtube.com/watch?v=zIUlaRrxUyA] has been downloaded before, pass.
-
-[2009-03-23 14:30:46] http://www.youtube.com/watch?v=W2nr1LtAmjs
-[2009-03-23 14:30:46]   Video:[http://www.youtube.com/watch?v=aImkudeuJS0] has been downloaded before, pass.
-
-[2009-03-23 14:30:46] http://www.youtube.com/watch?v=72FYCV5QEf4
-[2009-03-23 14:30:46]   Video:[http://www.youtube.com/watch?v=M8ZNF3eTOo0] has been downloaded before, pass.
-
-[2009-03-23 14:30:46] http://www.youtube.com/watch?v=lSoHS-Ug7F8
-[2009-03-23 14:30:46]   Video:[http://www.youtube.com/watch?v=Jh7lDVxUHkc] has been downloaded before, pass.
-
-[2009-03-23 14:30:46] http://www.youtube.com/watch?v=pdWWQBawgeU
-[2009-03-23 14:30:46]   Video:[http://www.youtube.com/watch?v=W2nr1LtAmjs] has been downloaded before, pass.
-
-[2009-03-23 14:30:46] http://www.youtube.com/watch?v=IpjYl6BLpPs
-[2009-03-23 14:30:46]   Video:[http://www.youtube.com/watch?v=72FYCV5QEf4] has been downloaded before, pass.
-
-[2009-03-23 14:30:46] http://www.youtube.com/watch?v=JEV80jUQplE
-[2009-03-23 14:30:46]   Video:[http://www.youtube.com/watch?v=lSoHS-Ug7F8] has been downloaded before, pass.
-
-[2009-03-23 14:30:46] http://www.youtube.com/watch?v=HQH-bwT4d8U
-[2009-03-23 14:30:46]   Video:[http://www.youtube.com/watch?v=pdWWQBawgeU] has been downloaded before, pass.
-
-[2009-03-23 14:30:46] http://www.youtube.com/watch?v=xyAPI4lpLFA
-[2009-03-23 14:30:46]   Video:[http://www.youtube.com/watch?v=IpjYl6BLpPs] has been downloaded before, pass.
-
-[2009-03-23 14:30:46] http://www.youtube.com/watch?v=WnbmBhqxlM0
-[2009-03-23 14:30:46]   Video:[http://www.youtube.com/watch?v=JEV80jUQplE] has been downloaded before, pass.
-
-[2009-03-23 14:30:46] http://www.youtube.com/watch?v=N6XWrezbFzE
-[2009-03-23 14:30:46]   Video:[http://www.youtube.com/watch?v=HQH-bwT4d8U] has been downloaded before, pass.
-
-[2009-03-23 14:30:46] http://www.youtube.com/watch?v=eU4Mq9l4aXE
-[2009-03-23 14:30:46]   Video:[http://www.youtube.com/watch?v=xyAPI4lpLFA] has been downloaded before, pass.
-
-[2009-03-23 14:30:46] http://www.youtube.com/watch?v=lxfa1LBq_sg
-[2009-03-23 14:30:46]   Video:[http://www.youtube.com/watch?v=WnbmBhqxlM0] has been downloaded before, pass.
-
-[2009-03-23 14:30:46] Get:[http://www.youtube.com/results?search_query=%22%E6%9C%89%E6%8A%A5%E5%A4%A9%E5%A4%A9%E8%AF%BB%E9%82%B1%E9%9C%87%E6%B5%B7%22&search_sort=video_date_uploaded&page=1]
-[2009-03-23 14:30:46]   Video:[http://www.youtube.com/watch?v=N6XWrezbFzE] has been downloaded before, pass.
-
-[2009-03-23 14:30:46]   Video:[http://www.youtube.com/watch?v=eU4Mq9l4aXE] has been downloaded before, pass.
-
-[2009-03-23 14:30:46]   Video:[http://www.youtube.com/watch?v=lxfa1LBq_sg] has been downloaded before, pass.
-
-[2009-03-23 14:30:49] http://www.youtube.com/watch?v=rUIYxUdLCEw
-[2009-03-23 14:30:49] http://www.youtube.com/watch?v=ixasosKLt9c
-[2009-03-23 14:30:49] http://www.youtube.com/watch?v=270V4NayA0o
-[2009-03-23 14:30:49] http://www.youtube.com/watch?v=AWMzqeYSO-A
-[2009-03-23 14:30:49] http://www.youtube.com/watch?v=VvV1vKtJ2vs
-[2009-03-23 14:30:49] http://www.youtube.com/watch?v=0MgRLVSoBQE
-[2009-03-23 14:30:49] http://www.youtube.com/watch?v=YU4vaBi82OI
-[2009-03-23 14:30:49] http://www.youtube.com/watch?v=TXCOdxt6TYQ
-[2009-03-23 14:30:49] http://www.youtube.com/watch?v=w_ANLodVBDA
-[2009-03-23 14:30:49] http://www.youtube.com/watch?v=sDyhqSKHqQw
-[2009-03-23 14:30:49] http://www.youtube.com/watch?v=Sm-yr4Itptw
-[2009-03-23 14:30:49]   Video:[http://www.youtube.com/watch?v=rUIYxUdLCEw] has been downloaded before, pass.
-
-[2009-03-23 14:30:49] http://www.youtube.com/watch?v=7VBD-VGMmk4
-[2009-03-23 14:30:49]   Video:[http://www.youtube.com/watch?v=ixasosKLt9c] has been downloaded before, pass.
-
-[2009-03-23 14:30:49] http://www.youtube.com/watch?v=2UbruQ9xmEI
-[2009-03-23 14:30:49]   Video:[http://www.youtube.com/watch?v=270V4NayA0o] has been downloaded before, pass.
-
-[2009-03-23 14:30:49]   Video:[http://www.youtube.com/watch?v=AWMzqeYSO-A] has been downloaded before, pass.
-
-[2009-03-23 14:30:49]   Video:[http://www.youtube.com/watch?v=VvV1vKtJ2vs] has been downloaded before, pass.
-
-[2009-03-23 14:30:49] http://www.youtube.com/watch?v=IGh4f48RpL8
-[2009-03-23 14:30:49]   Video:[http://www.youtube.com/watch?v=0MgRLVSoBQE] has been downloaded before, pass.
-
-[2009-03-23 14:30:49]   Video:[http://www.youtube.com/watch?v=TXCOdxt6TYQ] has been downloaded before, pass.
-
-[2009-03-23 14:30:49] Get:[http://www.youtube.com/results?search_query=%22%E5%90%8D%E4%BA%BA%E9%9D%A2%E5%AF%B9%E9%9D%A2%22&search_sort=video_date_uploaded&page=1]
-[2009-03-23 14:30:49]   Video:[http://www.youtube.com/watch?v=sDyhqSKHqQw] has been downloaded before, pass.
-
-[2009-03-23 14:30:49]   Video:[http://www.youtube.com/watch?v=Sm-yr4Itptw] has been downloaded before, pass.
-
-[2009-03-23 14:30:49]   Video:[http://www.youtube.com/watch?v=7VBD-VGMmk4] has been downloaded before, pass.
-
-[2009-03-23 14:30:49]   Video:[http://www.youtube.com/watch?v=2UbruQ9xmEI] has been downloaded before, pass.
-
-[2009-03-23 14:30:49]   Video:[http://www.youtube.com/watch?v=IGh4f48RpL8] has been downloaded before, pass.
-
-[2009-03-23 14:30:52] http://www.youtube.com/watch?v=rytWX_5gNgE
-[2009-03-23 14:30:52] http://www.youtube.com/watch?v=6feAAysfN1g
-[2009-03-23 14:30:52] http://www.youtube.com/watch?v=YrARPiXYZVs
-[2009-03-23 14:30:52]   Video:[http://www.youtube.com/watch?v=rytWX_5gNgE] has been downloaded before, pass.
-
-[2009-03-23 14:30:52] http://www.youtube.com/watch?v=aCkABkTRwQU
-[2009-03-23 14:30:52]   Video:[http://www.youtube.com/watch?v=6feAAysfN1g] has been downloaded before, pass.
-
-[2009-03-23 14:30:52]   Video:[http://www.youtube.com/watch?v=YrARPiXYZVs] has been downloaded before, pass.
-
-[2009-03-23 14:30:52] http://www.youtube.com/watch?v=9GNEV1rjqtI
-[2009-03-23 14:30:52]   Video:[http://www.youtube.com/watch?v=aCkABkTRwQU] has been downloaded before, pass.
-
-[2009-03-23 14:30:52] http://www.youtube.com/watch?v=FQZi7h2PdG4
-[2009-03-23 14:30:52]   Video:[http://www.youtube.com/watch?v=9GNEV1rjqtI] has been downloaded before, pass.
-
-[2009-03-23 14:30:52] http://www.youtube.com/watch?v=5oKyUGThtrM
-[2009-03-23 14:30:52]   Video:[http://www.youtube.com/watch?v=FQZi7h2PdG4] has been downloaded before, pass.
-
-[2009-03-23 14:30:52] http://www.youtube.com/watch?v=sef-QY78R2Q
-[2009-03-23 14:30:52]   Video:[http://www.youtube.com/watch?v=5oKyUGThtrM] has been downloaded before, pass.
-
-[2009-03-23 14:30:52] http://www.youtube.com/watch?v=o_wt1pQ1F3Y
-[2009-03-23 14:30:52]   Video:[http://www.youtube.com/watch?v=sef-QY78R2Q] has been downloaded before, pass.
-
-[2009-03-23 14:30:52] http://www.youtube.com/watch?v=iaJ9myRX4tE
-[2009-03-23 14:30:52]   Video:[http://www.youtube.com/watch?v=o_wt1pQ1F3Y] has been downloaded before, pass.
-
-[2009-03-23 14:30:52] http://www.youtube.com/watch?v=_HoQ-Ly2msc
-[2009-03-23 14:30:52]   Video:[http://www.youtube.com/watch?v=iaJ9myRX4tE] has been downloaded before, pass.
-
-[2009-03-23 14:30:52] http://www.youtube.com/watch?v=RoXILOJauFc
-[2009-03-23 14:30:52]   Video:[http://www.youtube.com/watch?v=_HoQ-Ly2msc] has been downloaded before, pass.
-
-[2009-03-23 14:30:52] http://www.youtube.com/watch?v=zi84tuBNfGk
-[2009-03-23 14:30:52]   Video:[http://www.youtube.com/watch?v=RoXILOJauFc] has been downloaded before, pass.
-
-[2009-03-23 14:30:52] http://www.youtube.com/watch?v=Xe9_lMIutA4
-[2009-03-23 14:30:52]   Video:[http://www.youtube.com/watch?v=zi84tuBNfGk] has been downloaded before, pass.
-
-[2009-03-23 14:30:52] http://www.youtube.com/watch?v=JfUtg2ToG60
-[2009-03-23 14:30:52]   Video:[http://www.youtube.com/watch?v=Xe9_lMIutA4] has been downloaded before, pass.
-
-[2009-03-23 14:30:52] http://www.youtube.com/watch?v=PwLpWLM_SIY
-[2009-03-23 14:30:52]   Video:[http://www.youtube.com/watch?v=JfUtg2ToG60] has been downloaded before, pass.
-
-[2009-03-23 14:30:52] http://www.youtube.com/watch?v=egRGoiO7tLo
-[2009-03-23 14:30:52]   Video:[http://www.youtube.com/watch?v=PwLpWLM_SIY] has been downloaded before, pass.
-
-[2009-03-23 14:30:52] http://www.youtube.com/watch?v=N-Q1L3MywJ8
-[2009-03-23 14:30:52]   Video:[http://www.youtube.com/watch?v=egRGoiO7tLo] has been downloaded before, pass.
-
-[2009-03-23 14:30:52] http://www.youtube.com/watch?v=fVMRPAF-0ZM
-[2009-03-23 14:30:52]   Video:[http://www.youtube.com/watch?v=N-Q1L3MywJ8] has been downloaded before, pass.
-
-[2009-03-23 14:30:52] http://www.youtube.com/watch?v=EW-7SF3-Yp4
-[2009-03-23 14:30:52]   Video:[http://www.youtube.com/watch?v=fVMRPAF-0ZM] has been downloaded before, pass.
-
-[2009-03-23 14:30:52] Get:[http://www.youtube.com/results?search_query=%22%E4%B8%AD%E5%9B%BD%E8%AE%B0%E5%BF%86%22&search_sort=video_date_uploaded&page=1]
-[2009-03-23 14:30:52]   Video:[http://www.youtube.com/watch?v=EW-7SF3-Yp4] has been downloaded before, pass.
-
-[2009-03-23 14:30:57] http://www.youtube.com/watch?v=4IwJLW2kNtg
-[2009-03-23 14:30:57] http://www.youtube.com/watch?v=Tfdwxxw88vc
-[2009-03-23 14:30:57] http://www.youtube.com/watch?v=wMRe0bNzLVE
-[2009-03-23 14:30:57] http://www.youtube.com/watch?v=z04VD49DnRw
-[2009-03-23 14:30:57] http://www.youtube.com/watch?v=jnQIivgj0dE
-[2009-03-23 14:30:57] http://www.youtube.com/watch?v=etwJ_t8VFzc
-[2009-03-23 14:30:57] http://www.youtube.com/watch?v=7hwV0Hgyj5g
-[2009-03-23 14:30:57] http://www.youtube.com/watch?v=OQhM2uFA9JQ
-[2009-03-23 14:30:57] http://www.youtube.com/watch?v=BvzTQYe5jko
-[2009-03-23 14:30:57] http://www.youtube.com/watch?v=D1e5v8NeLlY
-[2009-03-23 14:30:57] http://www.youtube.com/watch?v=DKx27fasYWc
-[2009-03-23 14:30:57] http://www.youtube.com/watch?v=1AQTkoxLwbs
-[2009-03-23 14:30:57] http://www.youtube.com/watch?v=fleOOISyD7U
-[2009-03-23 14:30:57] http://www.youtube.com/watch?v=FVMcOQdyX1A
-[2009-03-23 14:30:57]   Video:[http://www.youtube.com/watch?v=4IwJLW2kNtg] has been downloaded before, pass.
-
-[2009-03-23 14:30:57]   Video:[http://www.youtube.com/watch?v=Tfdwxxw88vc] has been downloaded before, pass.
-
-[2009-03-23 14:30:57] http://www.youtube.com/watch?v=TJ6UlIQl8H0
-[2009-03-23 14:30:57]   Video:[http://www.youtube.com/watch?v=wMRe0bNzLVE] has been downloaded before, pass.
-
-[2009-03-23 14:30:57]   Video:[http://www.youtube.com/watch?v=z04VD49DnRw] has been downloaded before, pass.
-
-[2009-03-23 14:30:57]   Video:[http://www.youtube.com/watch?v=jnQIivgj0dE] has been downloaded before, pass.
-
-[2009-03-23 14:30:57]   Video:[http://www.youtube.com/watch?v=etwJ_t8VFzc] has been downloaded before, pass.
-
-[2009-03-23 14:30:57]   Video:[http://www.youtube.com/watch?v=7hwV0Hgyj5g] has been downloaded before, pass.
-
-[2009-03-23 14:30:57]   Video:[http://www.youtube.com/watch?v=OQhM2uFA9JQ] has been downloaded before, pass.
-
-[2009-03-23 14:30:57]   Video:[http://www.youtube.com/watch?v=BvzTQYe5jko] has been downloaded before, pass.
-
-[2009-03-23 14:30:57]   Video:[http://www.youtube.com/watch?v=D1e5v8NeLlY] has been downloaded before, pass.
-
-[2009-03-23 14:30:57]   Video:[http://www.youtube.com/watch?v=DKx27fasYWc] has been downloaded before, pass.
-
-[2009-03-23 14:30:57]   Video:[http://www.youtube.com/watch?v=1AQTkoxLwbs] has been downloaded before, pass.
-
-[2009-03-23 14:30:57]   Video:[http://www.youtube.com/watch?v=fleOOISyD7U] has been downloaded before, pass.
-
-[2009-03-23 14:30:57]   Video:[http://www.youtube.com/watch?v=FVMcOQdyX1A] has been downloaded before, pass.
-
-[2009-03-23 14:30:57]   Video:[http://www.youtube.com/watch?v=TJ6UlIQl8H0] has been downloaded before, pass.
-
-[2009-03-23 14:30:57]   Video:[http://www.youtube.com/watch?v=toPc20ENBmQ] has been downloaded before, pass.
-
-[2009-03-23 14:30:57]   Video:[http://www.youtube.com/watch?v=RO_mNfWTURc] has been downloaded before, pass.
-
-[2009-03-23 14:30:57] http://www.youtube.com/watch?v=83rwt8cLkRU
-[2009-03-23 14:30:57]   Video:[http://www.youtube.com/watch?v=TsFkR1IOXXY] has been downloaded before, pass.
-
-[2009-03-23 14:30:57] http://www.youtube.com/watch?v=uXNkz6dwjRs
-[2009-03-23 14:30:57] Get:[http://www.youtube.com/watch?v=83rwt8cLkRU]
-[2009-03-23 14:30:57] Get:[http://www.youtube.com/results?search_query=%22%E9%97%AE%E7%AD%94%E7%A5%9E%E5%B7%9E%22&search_sort=video_date_uploaded&page=1]
-[2009-03-23 14:30:57]   Video:[http://www.youtube.com/watch?v=uXNkz6dwjRs] has been downloaded before, pass.
-
-[2009-03-23 14:30:59] Get:[http://www.youtube.com/get_video?video_id=83rwt8cLkRU&t=vjVQa1PpcFOS25NdhqYO-TrGfp0fw8AEzaqbbeecjC4=]
-[2009-03-23 14:31:00] http://www.youtube.com/watch?v=lfSCNPnPwcE
-[2009-03-23 14:31:00] http://www.youtube.com/watch?v=Js7VB2LYyV8
-[2009-03-23 14:31:00] http://www.youtube.com/watch?v=BCOVvzf2qr4
-[2009-03-23 14:31:00] http://www.youtube.com/watch?v=HyX1kIBCR_8
-[2009-03-23 14:31:00] http://www.youtube.com/watch?v=u4xKAt7I1Q4
-[2009-03-23 14:31:00] http://www.youtube.com/watch?v=NjtLNSrq32U
-[2009-03-23 14:31:00] http://www.youtube.com/watch?v=-tARKJsk_ns
-[2009-03-23 14:31:00] http://www.youtube.com/watch?v=uIl-pGeDGcE
-[2009-03-23 14:31:00] http://www.youtube.com/watch?v=tgOBAg4ML98
-[2009-03-23 14:31:00] http://www.youtube.com/watch?v=OXJUpsotE4o
-[2009-03-23 14:31:00] http://www.youtube.com/watch?v=nacEAKtDunM
-[2009-03-23 14:31:00] http://www.youtube.com/watch?v=gx2cPbX98ys
-[2009-03-23 14:31:00] http://www.youtube.com/watch?v=NQcr9frJaeA
-[2009-03-23 14:31:00] http://www.youtube.com/watch?v=0Y88EJi2Bwk
-[2009-03-23 14:31:00] http://www.youtube.com/watch?v=bsl9h6M_MDg
-[2009-03-23 14:31:00] http://www.youtube.com/watch?v=PU1HO3Dr3Aw
-[2009-03-23 14:31:00] http://www.youtube.com/watch?v=yEvHppRXrYs
-[2009-03-23 14:31:00] http://www.youtube.com/watch?v=qo2lXLUPnIM
-[2009-03-23 14:31:00] http://www.youtube.com/watch?v=-_mM9TG6_sE
-[2009-03-23 14:31:00] http://www.youtube.com/watch?v=6y13GzkIdls
-[2009-03-23 14:31:00] Get:[http://www.youtube.com/results?search_query=%22%E6%96%B0%E9%97%BB%E5%A4%A7%E7%A0%B4%E8%A7%A3%22&search_sort=video_date_uploaded&page=1]
-[2009-03-23 14:31:01]   Video:[http://www.youtube.com/watch?v=lfSCNPnPwcE] has been downloaded before, pass.
-
-[2009-03-23 14:31:01]   Video:[http://www.youtube.com/watch?v=Js7VB2LYyV8] has been downloaded before, pass.
-
-[2009-03-23 14:31:01]   Video:[http://www.youtube.com/watch?v=BCOVvzf2qr4] has been downloaded before, pass.
-
-[2009-03-23 14:31:01]   Video:[http://www.youtube.com/watch?v=HyX1kIBCR_8] has been downloaded before, pass.
-
-[2009-03-23 14:31:01]   Video:[http://www.youtube.com/watch?v=u4xKAt7I1Q4] has been downloaded before, pass.
-
-[2009-03-23 14:31:01]   Video:[http://www.youtube.com/watch?v=NjtLNSrq32U] has been downloaded before, pass.
-
-[2009-03-23 14:31:01]   Video:[http://www.youtube.com/watch?v=-tARKJsk_ns] has been downloaded before, pass.
-
-[2009-03-23 14:31:01]   Video:[http://www.youtube.com/watch?v=uIl-pGeDGcE] has been downloaded before, pass.
-
-[2009-03-23 14:31:01]   Video:[http://www.youtube.com/watch?v=tgOBAg4ML98] has been downloaded before, pass.
-
-[2009-03-23 14:31:01]   Video:[http://www.youtube.com/watch?v=OXJUpsotE4o] has been downloaded before, pass.
-
-[2009-03-23 14:31:01]   Video:[http://www.youtube.com/watch?v=nacEAKtDunM] has been downloaded before, pass.
-
-[2009-03-23 14:31:01]   Video:[http://www.youtube.com/watch?v=gx2cPbX98ys] has been downloaded before, pass.
-
-[2009-03-23 14:31:01]   Video:[http://www.youtube.com/watch?v=NQcr9frJaeA] has been downloaded before, pass.
-
-[2009-03-23 14:31:01]   Video:[http://www.youtube.com/watch?v=0Y88EJi2Bwk] has been downloaded before, pass.
-
-[2009-03-23 14:31:01]   Video:[http://www.youtube.com/watch?v=bsl9h6M_MDg] has been downloaded before, pass.
-
-[2009-03-23 14:31:01]   Video:[http://www.youtube.com/watch?v=PU1HO3Dr3Aw] has been downloaded before, pass.
-
-[2009-03-23 14:31:01]   Video:[http://www.youtube.com/watch?v=yEvHppRXrYs] has been downloaded before, pass.
-
-[2009-03-23 14:31:01]   Video:[http://www.youtube.com/watch?v=qo2lXLUPnIM] has been downloaded before, pass.
-
-[2009-03-23 14:31:01]   Video:[http://www.youtube.com/watch?v=-_mM9TG6_sE] has been downloaded before, pass.
-
-[2009-03-23 14:31:01]   Video:[http://www.youtube.com/watch?v=6y13GzkIdls] has been downloaded before, pass.
-
-[2009-03-23 14:31:07] http://www.youtube.com/watch?v=gaJC4MyTG9w
-[2009-03-23 14:31:07] http://www.youtube.com/watch?v=6w6P5smf00E
-[2009-03-23 14:31:07] http://www.youtube.com/watch?v=Qw2v1yZDhDQ
-[2009-03-23 14:31:07] http://www.youtube.com/watch?v=MTSWyMcd3zA
-[2009-03-23 14:31:07] http://www.youtube.com/watch?v=OjxsOBRDcfk
-[2009-03-23 14:31:07] http://www.youtube.com/watch?v=4kK_1eoCyag
-[2009-03-23 14:31:07] http://www.youtube.com/watch?v=qY6YPGp144Y
-[2009-03-23 14:31:07] http://www.youtube.com/watch?v=m_vxH9KJTRY
-[2009-03-23 14:31:07] http://www.youtube.com/watch?v=E3vN6u_1QP8
-[2009-03-23 14:31:07] http://www.youtube.com/watch?v=JqJjSNaCvo8
-[2009-03-23 14:31:07] http://www.youtube.com/watch?v=f20VBDPlq6M
-[2009-03-23 14:31:07] http://www.youtube.com/watch?v=LMLIVEX1-f4
-[2009-03-23 14:31:07] http://www.youtube.com/watch?v=r3Ma1-3Umac
-[2009-03-23 14:31:07] http://www.youtube.com/watch?v=roiLKGKOqhQ
-[2009-03-23 14:31:07] http://www.youtube.com/watch?v=M8-pBQshS5g
-[2009-03-23 14:31:07] http://www.youtube.com/watch?v=I2cHJuef27M
-[2009-03-23 14:31:07] http://www.youtube.com/watch?v=_YXHAjCMKrg
-[2009-03-23 14:31:07] http://www.youtube.com/watch?v=xQIji_fpJXg
-[2009-03-23 14:31:07] http://www.youtube.com/watch?v=ripQM7UsKCQ
-[2009-03-23 14:31:07] http://www.youtube.com/watch?v=uNotAZYQxKI
-[2009-03-23 14:31:07] Get:[http://www.youtube.com/results?search_query=%22%E7%A4%BE%E4%BC%9A%E8%83%BD%E8%A7%81%E5%BA%A6%22&search_sort=video_date_uploaded&page=1]
-[2009-03-23 14:31:07]   Video:[http://www.youtube.com/watch?v=gaJC4MyTG9w] has been downloaded before, pass.
-
-[2009-03-23 14:31:07]   Video:[http://www.youtube.com/watch?v=6w6P5smf00E] has been downloaded before, pass.
-
-[2009-03-23 14:31:07]   Video:[http://www.youtube.com/watch?v=Qw2v1yZDhDQ] has been downloaded before, pass.
-
-[2009-03-23 14:31:07]   Video:[http://www.youtube.com/watch?v=MTSWyMcd3zA] has been downloaded before, pass.
-
-[2009-03-23 14:31:07]   Video:[http://www.youtube.com/watch?v=OjxsOBRDcfk] has been downloaded before, pass.
-
-[2009-03-23 14:31:07]   Video:[http://www.youtube.com/watch?v=4kK_1eoCyag] has been downloaded before, pass.
-
-[2009-03-23 14:31:07]   Video:[http://www.youtube.com/watch?v=qY6YPGp144Y] has been downloaded before, pass.
-
-[2009-03-23 14:31:07]   Video:[http://www.youtube.com/watch?v=m_vxH9KJTRY] has been downloaded before, pass.
-
-[2009-03-23 14:31:07]   Video:[http://www.youtube.com/watch?v=E3vN6u_1QP8] has been downloaded before, pass.
-
-[2009-03-23 14:31:07]   Video:[http://www.youtube.com/watch?v=JqJjSNaCvo8] has been downloaded before, pass.
-
-[2009-03-23 14:31:07]   Video:[http://www.youtube.com/watch?v=f20VBDPlq6M] has been downloaded before, pass.
-
-[2009-03-23 14:31:07]   Video:[http://www.youtube.com/watch?v=LMLIVEX1-f4] has been downloaded before, pass.
-
-[2009-03-23 14:31:07]   Video:[http://www.youtube.com/watch?v=r3Ma1-3Umac] has been downloaded before, pass.
-
-[2009-03-23 14:31:07]   Video:[http://www.youtube.com/watch?v=roiLKGKOqhQ] has been downloaded before, pass.
-
-[2009-03-23 14:31:07]   Video:[http://www.youtube.com/watch?v=M8-pBQshS5g] has been downloaded before, pass.
-
-[2009-03-23 14:31:07]   Video:[http://www.youtube.com/watch?v=I2cHJuef27M] has been downloaded before, pass.
-
-[2009-03-23 14:31:07]   Video:[http://www.youtube.com/watch?v=xQIji_fpJXg] has been downloaded before, pass.
-
-[2009-03-23 14:31:07]   Video:[http://www.youtube.com/watch?v=_YXHAjCMKrg] has been downloaded before, pass.
-
-[2009-03-23 14:31:07]   Video:[http://www.youtube.com/watch?v=ripQM7UsKCQ] has been downloaded before, pass.
-
-[2009-03-23 14:31:07]   Video:[http://www.youtube.com/watch?v=uNotAZYQxKI] has been downloaded before, pass.
-
-[2009-03-23 14:31:20] http://www.youtube.com/watch?v=P49i6l6AGhE
-[2009-03-23 14:31:20] http://www.youtube.com/watch?v=Xrtg_cB5BKE
-[2009-03-23 14:31:20] http://www.youtube.com/watch?v=Zz5InCCRlhM
-[2009-03-23 14:31:20] http://www.youtube.com/watch?v=lUEP5IpsjfY
-[2009-03-23 14:31:20] http://www.youtube.com/watch?v=pdo1mTcdPbo
-[2009-03-23 14:31:20] http://www.youtube.com/watch?v=Cr5Y8qIG210
-[2009-03-23 14:31:20] http://www.youtube.com/watch?v=1AH4ouX8Cs0
-[2009-03-23 14:31:20] http://www.youtube.com/watch?v=z7Rzv_DbTRo
-[2009-03-23 14:31:20] http://www.youtube.com/watch?v=_YYH05WMLy0
-[2009-03-23 14:31:20] http://www.youtube.com/watch?v=3CdY2h9D-BI
-[2009-03-23 14:31:20] http://www.youtube.com/watch?v=_1ZkY1fMYe0
-[2009-03-23 14:31:20] http://www.youtube.com/watch?v=TB7ZYd9tlVU
-[2009-03-23 14:31:20] http://www.youtube.com/watch?v=fxCUo8O2LLc
-[2009-03-23 14:31:20] http://www.youtube.com/watch?v=UtqeERanwvg
-[2009-03-23 14:31:20] http://www.youtube.com/watch?v=ITxfZPsF2oc
-[2009-03-23 14:31:20] http://www.youtube.com/watch?v=91H7S7F11wo
-[2009-03-23 14:31:20] http://www.youtube.com/watch?v=FdwCtvOMSEc
-[2009-03-23 14:31:20] http://www.youtube.com/watch?v=aHnTC433jvQ
-[2009-03-23 14:31:20] http://www.youtube.com/watch?v=FnMx9YH2gh0
-[2009-03-23 14:31:20] http://www.youtube.com/watch?v=0zURVU6HyZE
-[2009-03-23 14:31:20] Get:[http://www.youtube.com/results?search_query=%22%E6%96%87%E8%8C%9C%E4%B8%96%E7%95%8C%E5%91%A8%E6%8A%A5%22&search_sort=video_date_uploaded&page=1]
-[2009-03-23 14:31:20]   Video:[http://www.youtube.com/watch?v=P49i6l6AGhE] has been downloaded before, pass.
-
-[2009-03-23 14:31:20]   Video:[http://www.youtube.com/watch?v=Xrtg_cB5BKE] has been downloaded before, pass.
-
-[2009-03-23 14:31:20]   Video:[http://www.youtube.com/watch?v=Zz5InCCRlhM] has been downloaded before, pass.
-
-[2009-03-23 14:31:20]   Video:[http://www.youtube.com/watch?v=lUEP5IpsjfY] has been downloaded before, pass.
-
-[2009-03-23 14:31:20]   Video:[http://www.youtube.com/watch?v=pdo1mTcdPbo] has been downloaded before, pass.
-
-[2009-03-23 14:31:20]   Video:[http://www.youtube.com/watch?v=Cr5Y8qIG210] has been downloaded before, pass.
-
-[2009-03-23 14:31:20]   Video:[http://www.youtube.com/watch?v=z7Rzv_DbTRo] has been downloaded before, pass.
-
-[2009-03-23 14:31:20]   Video:[http://www.youtube.com/watch?v=_YYH05WMLy0] has been downloaded before, pass.
-
-[2009-03-23 14:31:20]   Video:[http://www.youtube.com/watch?v=3CdY2h9D-BI] has been downloaded before, pass.
-
-[2009-03-23 14:31:20]   Video:[http://www.youtube.com/watch?v=_1ZkY1fMYe0] has been downloaded before, pass.
-
-[2009-03-23 14:31:20]   Video:[http://www.youtube.com/watch?v=fxCUo8O2LLc] has been downloaded before, pass.
-
-[2009-03-23 14:31:20]   Video:[http://www.youtube.com/watch?v=UtqeERanwvg] has been downloaded before, pass.
-
-[2009-03-23 14:31:20]   Video:[http://www.youtube.com/watch?v=91H7S7F11wo] has been downloaded before, pass.
-
-[2009-03-23 14:31:20]   Video:[http://www.youtube.com/watch?v=FdwCtvOMSEc] has been downloaded before, pass.
-
-[2009-03-23 14:31:20]   Video:[http://www.youtube.com/watch?v=aHnTC433jvQ] has been downloaded before, pass.
-
-[2009-03-23 14:31:20]   Video:[http://www.youtube.com/watch?v=FnMx9YH2gh0] has been downloaded before, pass.
-
-[2009-03-23 14:31:20]   Video:[http://www.youtube.com/watch?v=0zURVU6HyZE] has been downloaded before, pass.
-
-[2009-03-23 14:31:31] http://www.youtube.com/watch?v=Cn9dEncCuDo
-[2009-03-23 14:31:31] http://www.youtube.com/watch?v=HczvzXmd3DY
-[2009-03-23 14:31:31] http://www.youtube.com/watch?v=6Gv77KBMzMQ
-[2009-03-23 14:31:31] http://www.youtube.com/watch?v=rom8Id4zg0w
-[2009-03-23 14:31:31] http://www.youtube.com/watch?v=-mTjkmoQgMQ
-[2009-03-23 14:31:31] http://www.youtube.com/watch?v=bACaisUwIaA
-[2009-03-23 14:31:31]   Video:[http://www.youtube.com/watch?v=Cn9dEncCuDo] has been downloaded before, pass.
-
-[2009-03-23 14:31:31]   Video:[http://www.youtube.com/watch?v=HczvzXmd3DY] has been downloaded before, pass.
-
-[2009-03-23 14:31:31] http://www.youtube.com/watch?v=YZOixBGRr8I
-[2009-03-23 14:31:31]   Video:[http://www.youtube.com/watch?v=6Gv77KBMzMQ] has been downloaded before, pass.
-
-[2009-03-23 14:31:31]   Video:[http://www.youtube.com/watch?v=rom8Id4zg0w] has been downloaded before, pass.
-
-[2009-03-23 14:31:31]   Video:[http://www.youtube.com/watch?v=-mTjkmoQgMQ] has been downloaded before, pass.
-
-[2009-03-23 14:31:31]   Video:[http://www.youtube.com/watch?v=bACaisUwIaA] has been downloaded before, pass.
-
-[2009-03-23 14:31:31] http://www.youtube.com/watch?v=A9yTMNhfMs4
-[2009-03-23 14:31:31]   Video:[http://www.youtube.com/watch?v=YZOixBGRr8I] has been downloaded before, pass.
-
-[2009-03-23 14:31:31] http://www.youtube.com/watch?v=NXNiKnZRcdQ
-[2009-03-23 14:31:31]   Video:[http://www.youtube.com/watch?v=A9yTMNhfMs4] has been downloaded before, pass.
-
-[2009-03-23 14:31:31] http://www.youtube.com/watch?v=XiUIm4-e9lM
-[2009-03-23 14:31:31]   Video:[http://www.youtube.com/watch?v=NXNiKnZRcdQ] has been downloaded before, pass.
-
-[2009-03-23 14:31:31] http://www.youtube.com/watch?v=s_u6HLRCOcQ
-[2009-03-23 14:31:31]   Video:[http://www.youtube.com/watch?v=XiUIm4-e9lM] has been downloaded before, pass.
-
-[2009-03-23 14:31:31] http://www.youtube.com/watch?v=-l-dnvCZeow
-[2009-03-23 14:31:31]   Video:[http://www.youtube.com/watch?v=s_u6HLRCOcQ] has been downloaded before, pass.
-
-[2009-03-23 14:31:31] http://www.youtube.com/watch?v=YiluWFNrNNs
-[2009-03-23 14:31:31]   Video:[http://www.youtube.com/watch?v=-l-dnvCZeow] has been downloaded before, pass.
-
-[2009-03-23 14:31:31] http://www.youtube.com/watch?v=cTYVoB5fmjU
-[2009-03-23 14:31:31]   Video:[http://www.youtube.com/watch?v=YiluWFNrNNs] has been downloaded before, pass.
-
-[2009-03-23 14:31:31] http://www.youtube.com/watch?v=B91ju-D_TIA
-[2009-03-23 14:31:31]   Video:[http://www.youtube.com/watch?v=cTYVoB5fmjU] has been downloaded before, pass.
-
-[2009-03-23 14:31:31] http://www.youtube.com/watch?v=1w8PGReuSdE
-[2009-03-23 14:31:31]   Video:[http://www.youtube.com/watch?v=B91ju-D_TIA] has been downloaded before, pass.
-
-[2009-03-23 14:31:31] http://www.youtube.com/watch?v=oYvLG-gnjgg
-[2009-03-23 14:31:31]   Video:[http://www.youtube.com/watch?v=1w8PGReuSdE] has been downloaded before, pass.
-
-[2009-03-23 14:31:31] http://www.youtube.com/watch?v=ds_q_iJwyvw
-[2009-03-23 14:31:31]   Video:[http://www.youtube.com/watch?v=oYvLG-gnjgg] has been downloaded before, pass.
-
-[2009-03-23 14:31:31] http://www.youtube.com/watch?v=QUyw6JcroXQ
-[2009-03-23 14:31:31]   Video:[http://www.youtube.com/watch?v=ds_q_iJwyvw] has been downloaded before, pass.
-
-[2009-03-23 14:31:31] http://www.youtube.com/watch?v=pFBIciGQesg
-[2009-03-23 14:31:31]   Video:[http://www.youtube.com/watch?v=QUyw6JcroXQ] has been downloaded before, pass.
-
-[2009-03-23 14:31:31] Get:[http://www.youtube.com/results?search_query=%22%E6%96%87%E9%81%93%E9%9D%9E%E5%B8%B8%E9%81%93%22&search_sort=video_date_uploaded&page=1]
-[2009-03-23 14:31:31]   Video:[http://www.youtube.com/watch?v=pFBIciGQesg] has been downloaded before, pass.
-
-[2009-03-23 14:31:34] http://www.youtube.com/watch?v=Y8M96jT6s7A
-[2009-03-23 14:31:34] http://www.youtube.com/watch?v=7oQDd89O3L4
-[2009-03-23 14:31:34] http://www.youtube.com/watch?v=FAPX3Z04gHE
-[2009-03-23 14:31:34] http://www.youtube.com/watch?v=58rM36ck2nM
-[2009-03-23 14:31:34] http://www.youtube.com/watch?v=m4Imid30ozo
-[2009-03-23 14:31:34] http://www.youtube.com/watch?v=JzBsqjVDlsw
-[2009-03-23 14:31:34] http://www.youtube.com/watch?v=c6ZZ2nGBhP0
-[2009-03-23 14:31:34] http://www.youtube.com/watch?v=gVGokfADphc
-[2009-03-23 14:31:34] http://www.youtube.com/watch?v=9d4MNboTGHg
-[2009-03-23 14:31:34] http://www.youtube.com/watch?v=YvvlUgQAgEc
-[2009-03-23 14:31:34] http://www.youtube.com/watch?v=aIwYOTM5pS0
-[2009-03-23 14:31:34] http://www.youtube.com/watch?v=RBBAK0KtQjc
-[2009-03-23 14:31:34] http://www.youtube.com/watch?v=Dy-WcrijeDc
-[2009-03-23 14:31:34] http://www.youtube.com/watch?v=0ZHhUb_XxM0
-[2009-03-23 14:31:34] http://www.youtube.com/watch?v=NtwEKOXbYlk
-[2009-03-23 14:31:34] http://www.youtube.com/watch?v=QBIloemfzak
-[2009-03-23 14:31:34] http://www.youtube.com/watch?v=8a8HDjcjk9M
-[2009-03-23 14:31:34] http://www.youtube.com/watch?v=4xk4AaLQiH4
-[2009-03-23 14:31:34] http://www.youtube.com/watch?v=no_ACWNXxj4
-[2009-03-23 14:31:34] http://www.youtube.com/watch?v=8hK80FBfX1k
-[2009-03-23 14:31:34] Get:[http://www.youtube.com/results?search_query=%22%E4%B8%96%E7%95%8C%E5%91%A8%E5%88%8A%22&search_sort=video_date_uploaded&page=1]
-[2009-03-23 14:31:34]   Video:[http://www.youtube.com/watch?v=Y8M96jT6s7A] has been downloaded before, pass.
-
-[2009-03-23 14:31:34]   Video:[http://www.youtube.com/watch?v=7oQDd89O3L4] has been downloaded before, pass.
-
-[2009-03-23 14:31:34]   Video:[http://www.youtube.com/watch?v=FAPX3Z04gHE] has been downloaded before, pass.
-
-[2009-03-23 14:31:34]   Video:[http://www.youtube.com/watch?v=58rM36ck2nM] has been downloaded before, pass.
-
-[2009-03-23 14:31:34]   Video:[http://www.youtube.com/watch?v=m4Imid30ozo] has been downloaded before, pass.
-
-[2009-03-23 14:31:34]   Video:[http://www.youtube.com/watch?v=c6ZZ2nGBhP0] has been downloaded before, pass.
-
-[2009-03-23 14:31:34]   Video:[http://www.youtube.com/watch?v=9d4MNboTGHg] has been downloaded before, pass.
-
-[2009-03-23 14:31:34]   Video:[http://www.youtube.com/watch?v=gVGokfADphc] has been downloaded before, pass.
-
-[2009-03-23 14:31:34]   Video:[http://www.youtube.com/watch?v=YvvlUgQAgEc] has been downloaded before, pass.
-
-[2009-03-23 14:31:34]   Video:[http://www.youtube.com/watch?v=aIwYOTM5pS0] has been downloaded before, pass.
-
-[2009-03-23 14:31:34]   Video:[http://www.youtube.com/watch?v=Dy-WcrijeDc] has been downloaded before, pass.
-
-[2009-03-23 14:31:34]   Video:[http://www.youtube.com/watch?v=RBBAK0KtQjc] has been downloaded before, pass.
-
-[2009-03-23 14:31:34]   Video:[http://www.youtube.com/watch?v=0ZHhUb_XxM0] has been downloaded before, pass.
-
-[2009-03-23 14:31:34]   Video:[http://www.youtube.com/watch?v=NtwEKOXbYlk] has been downloaded before, pass.
-
-[2009-03-23 14:31:34]   Video:[http://www.youtube.com/watch?v=8a8HDjcjk9M] has been downloaded before, pass.
-
-[2009-03-23 14:31:34]   Video:[http://www.youtube.com/watch?v=QBIloemfzak] has been downloaded before, pass.
-
-[2009-03-23 14:31:34]   Video:[http://www.youtube.com/watch?v=4xk4AaLQiH4] has been downloaded before, pass.
-
-[2009-03-23 14:31:34]   Video:[http://www.youtube.com/watch?v=no_ACWNXxj4] has been downloaded before, pass.
-
-[2009-03-23 14:31:34]   Video:[http://www.youtube.com/watch?v=8hK80FBfX1k] has been downloaded before, pass.
-
-[2009-03-23 14:31:37] http://www.youtube.com/watch?v=EwtCGUy4O7s
-[2009-03-23 14:31:37] http://www.youtube.com/watch?v=mvn_H95rBF4
-[2009-03-23 14:31:37] http://www.youtube.com/watch?v=gIinf5TS36M
-[2009-03-23 14:31:37] http://www.youtube.com/watch?v=SOR-Ubecau4
-[2009-03-23 14:31:37] http://www.youtube.com/watch?v=Dh87_ub7sPQ
-[2009-03-23 14:31:37] http://www.youtube.com/watch?v=o8zv8yoDRa0
-[2009-03-23 14:31:37] http://www.youtube.com/watch?v=ETQzYi1AYFk
-[2009-03-23 14:31:37] http://www.youtube.com/watch?v=6xdjtjlErJE
-[2009-03-23 14:31:37] http://www.youtube.com/watch?v=8dQfWtO6bmE
-[2009-03-23 14:31:37] http://www.youtube.com/watch?v=c_9zskITTa8
-[2009-03-23 14:31:37] http://www.youtube.com/watch?v=LWF2Qel2YnI
-[2009-03-23 14:31:37] http://www.youtube.com/watch?v=UQQ63lBq778
-[2009-03-23 14:31:37] http://www.youtube.com/watch?v=xWYCedRHr8o
-[2009-03-23 14:31:37] http://www.youtube.com/watch?v=ej9Gp1NuScU
-[2009-03-23 14:31:37] http://www.youtube.com/watch?v=K0-ZtmIj-hs
-[2009-03-23 14:31:37] http://www.youtube.com/watch?v=EgA4MebnSHk
-[2009-03-23 14:31:37] http://www.youtube.com/watch?v=Q0d2wE8hoCk
-[2009-03-23 14:31:37] http://www.youtube.com/watch?v=8CgpEZQb23g
-[2009-03-23 14:31:37] http://www.youtube.com/watch?v=SiXl0s62l_Q
-[2009-03-23 14:31:37] http://www.youtube.com/watch?v=Iei-TwEdxwY
-[2009-03-23 14:31:37] Get:[http://www.youtube.com/results?search_query=%22%E4%B8%96%E7%BA%AA%E5%A4%A7%E8%AE%B2%E5%A0%82%22&search_sort=video_date_uploaded&page=1]
-[2009-03-23 14:31:37]   Video:[http://www.youtube.com/watch?v=EwtCGUy4O7s] has been downloaded before, pass.
-
-[2009-03-23 14:31:37]   Video:[http://www.youtube.com/watch?v=mvn_H95rBF4] has been downloaded before, pass.
-
-[2009-03-23 14:31:37]   Video:[http://www.youtube.com/watch?v=gIinf5TS36M] has been downloaded before, pass.
-
-[2009-03-23 14:31:37]   Video:[http://www.youtube.com/watch?v=SOR-Ubecau4] has been downloaded before, pass.
-
-[2009-03-23 14:31:37]   Video:[http://www.youtube.com/watch?v=Dh87_ub7sPQ] has been downloaded before, pass.
-
-[2009-03-23 14:31:37]   Video:[http://www.youtube.com/watch?v=o8zv8yoDRa0] has been downloaded before, pass.
-
-[2009-03-23 14:31:37]   Video:[http://www.youtube.com/watch?v=ETQzYi1AYFk] has been downloaded before, pass.
-
-[2009-03-23 14:31:37]   Video:[http://www.youtube.com/watch?v=6xdjtjlErJE] has been downloaded before, pass.
-
-[2009-03-23 14:31:37]   Video:[http://www.youtube.com/watch?v=8dQfWtO6bmE] has been downloaded before, pass.
-
-[2009-03-23 14:31:37]   Video:[http://www.youtube.com/watch?v=c_9zskITTa8] has been downloaded before, pass.
-
-[2009-03-23 14:31:37]   Video:[http://www.youtube.com/watch?v=UQQ63lBq778] has been downloaded before, pass.
-
-[2009-03-23 14:31:37]   Video:[http://www.youtube.com/watch?v=ej9Gp1NuScU] has been downloaded before, pass.
-
-[2009-03-23 14:31:37]   Video:[http://www.youtube.com/watch?v=xWYCedRHr8o] has been downloaded before, pass.
-
-[2009-03-23 14:31:37]   Video:[http://www.youtube.com/watch?v=K0-ZtmIj-hs] has been downloaded before, pass.
-
-[2009-03-23 14:31:37]   Video:[http://www.youtube.com/watch?v=EgA4MebnSHk] has been downloaded before, pass.
-
-[2009-03-23 14:31:37]   Video:[http://www.youtube.com/watch?v=Q0d2wE8hoCk] has been downloaded before, pass.
-
-[2009-03-23 14:31:37]   Video:[http://www.youtube.com/watch?v=8CgpEZQb23g] has been downloaded before, pass.
-
-[2009-03-23 14:31:37]   Video:[http://www.youtube.com/watch?v=SiXl0s62l_Q] has been downloaded before, pass.
-
-[2009-03-23 14:31:37]   Video:[http://www.youtube.com/watch?v=Iei-TwEdxwY] has been downloaded before, pass.
-
-[2009-03-23 14:31:41] http://www.youtube.com/watch?v=PoGt7UUit08
-[2009-03-23 14:31:41] http://www.youtube.com/watch?v=EuHnOp-OiLg
-[2009-03-23 14:31:41] http://www.youtube.com/watch?v=8ez6KQ4Ydyk
-[2009-03-23 14:31:41] http://www.youtube.com/watch?v=cbSMNfMsbxA
-[2009-03-23 14:31:41] http://www.youtube.com/watch?v=WBeCUpHKipQ
-[2009-03-23 14:31:41] http://www.youtube.com/watch?v=rZDsyT1WbqM
-[2009-03-23 14:31:41] http://www.youtube.com/watch?v=_Kv9qbIop0c
-[2009-03-23 14:31:41]   Video:[http://www.youtube.com/watch?v=PoGt7UUit08] has been downloaded before, pass.
-
-[2009-03-23 14:31:41] http://www.youtube.com/watch?v=ULGy_hQPeak
-[2009-03-23 14:31:41]   Video:[http://www.youtube.com/watch?v=cbSMNfMsbxA] has been downloaded before, pass.
-
-[2009-03-23 14:31:41]   Video:[http://www.youtube.com/watch?v=8ez6KQ4Ydyk] has been downloaded before, pass.
-
-[2009-03-23 14:31:41]   Video:[http://www.youtube.com/watch?v=WBeCUpHKipQ] has been downloaded before, pass.
-
-[2009-03-23 14:31:41] http://www.youtube.com/watch?v=2u9_cGW31c0
-[2009-03-23 14:31:41]   Video:[http://www.youtube.com/watch?v=_Kv9qbIop0c] has been downloaded before, pass.
-
-[2009-03-23 14:31:41]   Video:[http://www.youtube.com/watch?v=rZDsyT1WbqM] has been downloaded before, pass.
-
-[2009-03-23 14:31:41]   Video:[http://www.youtube.com/watch?v=ULGy_hQPeak] has been downloaded before, pass.
-
-[2009-03-23 14:31:41] http://www.youtube.com/watch?v=An00lt8CiNI
-[2009-03-23 14:31:41]   Video:[http://www.youtube.com/watch?v=2u9_cGW31c0] has been downloaded before, pass.
-
-[2009-03-23 14:31:41] http://www.youtube.com/watch?v=EEPKNngh8OI
-[2009-03-23 14:31:41]   Video:[http://www.youtube.com/watch?v=An00lt8CiNI] has been downloaded before, pass.
-
-[2009-03-23 14:31:41] http://www.youtube.com/watch?v=djrva_UzuIs
-[2009-03-23 14:31:41]   Video:[http://www.youtube.com/watch?v=EEPKNngh8OI] has been downloaded before, pass.
-
-[2009-03-23 14:31:41] http://www.youtube.com/watch?v=bPoWK06X99E
-[2009-03-23 14:31:41]   Video:[http://www.youtube.com/watch?v=djrva_UzuIs] has been downloaded before, pass.
-
-[2009-03-23 14:31:41] http://www.youtube.com/watch?v=m9Sd22hg4Sw
-[2009-03-23 14:31:41]   Video:[http://www.youtube.com/watch?v=bPoWK06X99E] has been downloaded before, pass.
-
-[2009-03-23 14:31:41] http://www.youtube.com/watch?v=k65C959FUJM
-[2009-03-23 14:31:41]   Video:[http://www.youtube.com/watch?v=m9Sd22hg4Sw] has been downloaded before, pass.
-
-[2009-03-23 14:31:41] http://www.youtube.com/watch?v=69eyojc6xyk
-[2009-03-23 14:31:41]   Video:[http://www.youtube.com/watch?v=k65C959FUJM] has been downloaded before, pass.
-
-[2009-03-23 14:31:41] http://www.youtube.com/watch?v=5rZUIFwMkcM
-[2009-03-23 14:31:41]   Video:[http://www.youtube.com/watch?v=69eyojc6xyk] has been downloaded before, pass.
-
-[2009-03-23 14:31:41] http://www.youtube.com/watch?v=R-JYtRwHhG4
-[2009-03-23 14:31:41]   Video:[http://www.youtube.com/watch?v=5rZUIFwMkcM] has been downloaded before, pass.
-
-[2009-03-23 14:31:41] http://www.youtube.com/watch?v=h2Z3RabIkf8
-[2009-03-23 14:31:41]   Video:[http://www.youtube.com/watch?v=R-JYtRwHhG4] has been downloaded before, pass.
-
-[2009-03-23 14:31:41] http://www.youtube.com/watch?v=GE5neZS_6T4
-[2009-03-23 14:31:41]   Video:[http://www.youtube.com/watch?v=h2Z3RabIkf8] has been downloaded before, pass.
-
-[2009-03-23 14:31:41]   Video:[http://www.youtube.com/watch?v=GE5neZS_6T4] has been downloaded before, pass.
-
-[2009-03-23 15:00:50]  URL Downloaded:[http://www.youtube.com/get_video?video_id=83rwt8cLkRU&t=vjVQa1PpcFOS25NdhqYO-TrGfp0fw8AEzaqbbeecjC4=]
+[2009-05-15 15:40:58] Get:[http://www.youtube.com/results?search_query=%22%E5%A4%B4%E8%84%91%E9%A3%8E%E6%9A%B4%22&search_sort=video_date_uploaded&page=1]
+[2009-05-15 15:41:11] http://www.youtube.com/watch?v=x49JCHwTjUI
+[2009-05-15 15:41:11] http://www.youtube.com/watch?v=XLNjztgBAw8
+[2009-05-15 15:41:11] http://www.youtube.com/watch?v=MR5-yA9GXjg
+[2009-05-15 15:41:11] http://www.youtube.com/watch?v=6kIzHCfn5cE
+[2009-05-15 15:41:11] http://www.youtube.com/watch?v=LNQkGM1DGUc
+[2009-05-15 15:41:11] http://www.youtube.com/watch?v=rJ_qZzGrF2U
+[2009-05-15 15:41:11] http://www.youtube.com/watch?v=Wxi6914idRs
+[2009-05-15 15:41:11] http://www.youtube.com/watch?v=ws4QDtS0VFU
+[2009-05-15 15:41:11] http://www.youtube.com/watch?v=Wla1zy_Ifts
+[2009-05-15 15:41:11] http://www.youtube.com/watch?v=k1y33vPcv_k
+[2009-05-15 15:41:11] http://www.youtube.com/watch?v=Y6Td29zDJeo
+[2009-05-15 15:41:11] http://www.youtube.com/watch?v=vOSLr6Qc7iI
+[2009-05-15 15:41:11] http://www.youtube.com/watch?v=CHhpWuowwSc
+[2009-05-15 15:41:11] http://www.youtube.com/watch?v=OkgljlnRamA
+[2009-05-15 15:41:11] http://www.youtube.com/watch?v=gYzAdzjh4_8
+[2009-05-15 15:41:11] http://www.youtube.com/watch?v=Ic90yLACy9Y
+[2009-05-15 15:41:11] http://www.youtube.com/watch?v=6z4cVf8GSTo
+[2009-05-15 15:41:11] http://www.youtube.com/watch?v=9sBnSdJ-PCo
+[2009-05-15 15:41:11] http://www.youtube.com/watch?v=4AU36iLAxck
+[2009-05-15 15:41:11] http://www.youtube.com/watch?v=LrZbxyjWSo0
+[2009-05-15 15:41:11] Get:[http://www.youtube.com/results?search_query=%22%E9%94%B5%E9%94%B5%E4%B8%89%E4%BA%BA%E8%A1%8C%22&search_sort=video_date_uploaded&page=1]
+[2009-05-15 15:41:11] Get:[http://www.youtube.com/watch?v=XLNjztgBAw8]
+[2009-05-15 15:41:11] Get:[http://www.youtube.com/watch?v=MR5-yA9GXjg]
+[2009-05-15 15:41:11] Get:[http://www.youtube.com/watch?v=6kIzHCfn5cE]
+[2009-05-15 15:41:11] Get:[http://www.youtube.com/watch?v=LNQkGM1DGUc]
+[2009-05-15 15:41:11] Get:[http://www.youtube.com/watch?v=x49JCHwTjUI]
+[2009-05-15 15:41:14] Get:[http://www.youtube.com/get_video?video_id=MR5-yA9GXjg&t=vjVQa1PpcFNk9mlkHgqRnw8Uy0nV6EvV1cv1IqBBG8M=]
+[2009-05-15 15:41:22] http://www.youtube.com/watch?v=KXCIfzTpKu0
+[2009-05-15 15:41:22] http://www.youtube.com/watch?v=qz8BfX6qnxs
+[2009-05-15 15:41:22] http://www.youtube.com/watch?v=zSjwBwVYJHY
+[2009-05-15 15:41:22] http://www.youtube.com/watch?v=GxojiOBOFgI
+[2009-05-15 15:41:22] http://www.youtube.com/watch?v=l4V0x-9U3YU
+[2009-05-15 15:41:22] http://www.youtube.com/watch?v=BDfQCXtmVG8
+[2009-05-15 15:41:22] http://www.youtube.com/watch?v=-sb0hebToGk
+[2009-05-15 15:41:22] http://www.youtube.com/watch?v=kESl5tClY84
+[2009-05-15 15:41:22] http://www.youtube.com/watch?v=igjrN2EWJ_Q
+[2009-05-15 15:41:22] http://www.youtube.com/watch?v=R3-6V04kAU4
+[2009-05-15 15:41:22] http://www.youtube.com/watch?v=iZsjDDUW2VQ
+[2009-05-15 15:41:22] http://www.youtube.com/watch?v=f7zbsWfLBwA&feature=fvsr
+[2009-05-15 15:41:22] http://www.youtube.com/watch?v=3Sb_O0Wo3_g
+[2009-05-15 15:41:22] http://www.youtube.com/watch?v=8ZKthmjHpyY
+[2009-05-15 15:41:22] http://www.youtube.com/watch?v=dU96CiaDiJE
+[2009-05-15 15:41:22] http://www.youtube.com/watch?v=b-N1rmxf2gw
+[2009-05-15 15:41:22] http://www.youtube.com/watch?v=HdxpyEjNhTg
+[2009-05-15 15:41:22] http://www.youtube.com/watch?v=t-1ATvoJvBA
+[2009-05-15 15:41:22] http://www.youtube.com/watch?v=urB741vfaVA
+[2009-05-15 15:41:22] http://www.youtube.com/watch?v=q1Y7srBLRwk
+[2009-05-15 15:41:22] http://www.youtube.com/watch?v=h-Gmuw1AmRg
+[2009-05-15 15:41:22] Get:[http://www.youtube.com/results?search_query=%22%E6%96%87%E6%B6%9B%E6%8B%8D%E6%A1%88%22&search_sort=video_date_uploaded&page=1]
+[2009-05-15 15:41:25] Get:[http://www.youtube.com/get_video?video_id=LNQkGM1DGUc&t=vjVQa1PpcFOomF83BIqiqckWMwezHE0xqm9ZnU0Q37s=]
+[2009-05-15 15:41:30] Get:[http://www.youtube.com/get_video?video_id=x49JCHwTjUI&t=vjVQa1PpcFMVWwTxTQWbNXhBOahe5wkhmI02vAZ6FP8=]
+[2009-05-15 15:41:34] http://www.youtube.com/watch?v=ObXqQgKr1XE
+[2009-05-15 15:41:34] http://www.youtube.com/watch?v=mD3ImXHZ8ZM
+[2009-05-15 15:41:34] http://www.youtube.com/watch?v=QLMfhcOUxIw
+[2009-05-15 15:41:34] http://www.youtube.com/watch?v=YEG7IFLoG6M
+[2009-05-15 15:41:34] http://www.youtube.com/watch?v=bq_GAzxP68U
+[2009-05-15 15:41:34] http://www.youtube.com/watch?v=qmwwIYJxLZY
+[2009-05-15 15:41:34] http://www.youtube.com/watch?v=0v5MX17tjOY&feature=fvsr
+[2009-05-15 15:41:34] http://www.youtube.com/watch?v=g0i7RLBdJFg
+[2009-05-15 15:41:34] http://www.youtube.com/watch?v=qqjjQZxwdE4
+[2009-05-15 15:41:34] http://www.youtube.com/watch?v=kXmS58_lEuA
+[2009-05-15 15:41:34] http://www.youtube.com/watch?v=IvyL63K_lOM
+[2009-05-15 15:41:34] http://www.youtube.com/watch?v=vg3PqgHjhPg
+[2009-05-15 15:41:34] http://www.youtube.com/watch?v=yQBzq8f6tyc
+[2009-05-15 15:41:34] http://www.youtube.com/watch?v=YNLFt58dd4g
+[2009-05-15 15:41:34] http://www.youtube.com/watch?v=fB6r_HWrTlY
+[2009-05-15 15:41:34] http://www.youtube.com/watch?v=Ja9LFceUIK0&feature=fvsr
+[2009-05-15 15:41:34] http://www.youtube.com/watch?v=0R__n6nJRfA
+[2009-05-15 15:41:34] http://www.youtube.com/watch?v=HoiUlyRtTKc
+[2009-05-15 15:41:34] http://www.youtube.com/watch?v=6qAw51HmBVk
+[2009-05-15 15:41:34] http://www.youtube.com/watch?v=xcFqBZEbCSo
+[2009-05-15 15:41:34] http://www.youtube.com/watch?v=NloVSRJH9U8
+[2009-05-15 15:41:34] http://www.youtube.com/watch?v=DHcALFnzyl8&feature=fvsr
+[2009-05-15 15:41:34] http://www.youtube.com/watch?v=dvUr7oU2H48
+[2009-05-15 15:41:34] http://www.youtube.com/watch?v=WGHLF-XRoYs&feature=fvsr
+[2009-05-15 15:41:34] Get:[http://www.youtube.com/results?search_query=%22%E6%9C%89%E6%8A%A5%E5%A4%A9%E5%A4%A9%E8%AF%BB%E9%82%B1%E9%9C%87%E6%B5%B7%22&search_sort=video_date_uploaded&page=1]
+[2009-05-15 15:41:37] Get:[http://www.youtube.com/get_video?video_id=XLNjztgBAw8&t=vjVQa1PpcFOy-sShycMb_UqY8MDIS570g8CDD77UQBw=]
+[2009-05-15 15:41:37] http://www.youtube.com/watch?v=rUIYxUdLCEw
+[2009-05-15 15:41:37] http://www.youtube.com/watch?v=ixasosKLt9c
+[2009-05-15 15:41:37] http://www.youtube.com/watch?v=270V4NayA0o
+[2009-05-15 15:41:37] http://www.youtube.com/watch?v=AWMzqeYSO-A
+[2009-05-15 15:41:37] http://www.youtube.com/watch?v=VvV1vKtJ2vs
+[2009-05-15 15:41:37] http://www.youtube.com/watch?v=0MgRLVSoBQE
+[2009-05-15 15:41:37] http://www.youtube.com/watch?v=YU4vaBi82OI
+[2009-05-15 15:41:37] http://www.youtube.com/watch?v=TXCOdxt6TYQ
+[2009-05-15 15:41:37] http://www.youtube.com/watch?v=w_ANLodVBDA
+[2009-05-15 15:41:37] http://www.youtube.com/watch?v=sDyhqSKHqQw
+[2009-05-15 15:41:37] http://www.youtube.com/watch?v=Sm-yr4Itptw
+[2009-05-15 15:41:37] http://www.youtube.com/watch?v=7VBD-VGMmk4
+[2009-05-15 15:41:37] http://www.youtube.com/watch?v=2UbruQ9xmEI
+[2009-05-15 15:41:37] http://www.youtube.com/watch?v=IGh4f48RpL8
+[2009-05-15 15:41:37] http://www.youtube.com/watch?v=byEgwoW1Jk0
+[2009-05-15 15:41:37] Get:[http://www.youtube.com/results?search_query=%22%E6%96%87%E9%81%93%E9%9D%9E%E5%B8%B8%E9%81%93%22&search_sort=video_date_uploaded&page=1]
+[2009-05-15 15:41:38] Get:[http://www.youtube.com/get_video?video_id=6kIzHCfn5cE&t=vjVQa1PpcFOafkvFBcxCtzWej5UexNeiSa3YEkSso_s=]
+[2009-05-15 15:41:42] http://www.youtube.com/watch?v=Y8M96jT6s7A
+[2009-05-15 15:41:42] http://www.youtube.com/watch?v=FAPX3Z04gHE
+[2009-05-15 15:41:42] http://www.youtube.com/watch?v=Vj5Zl7O1x-0
+[2009-05-15 15:41:42] http://www.youtube.com/watch?v=58rM36ck2nM
+[2009-05-15 15:41:42] http://www.youtube.com/watch?v=m4Imid30ozo
+[2009-05-15 15:41:42] http://www.youtube.com/watch?v=JzBsqjVDlsw
+[2009-05-15 15:41:42] http://www.youtube.com/watch?v=c6ZZ2nGBhP0
+[2009-05-15 15:41:42] http://www.youtube.com/watch?v=gVGokfADphc
+[2009-05-15 15:41:42] http://www.youtube.com/watch?v=9d4MNboTGHg
+[2009-05-15 15:41:42] http://www.youtube.com/watch?v=YvvlUgQAgEc
+[2009-05-15 15:41:42] http://www.youtube.com/watch?v=aIwYOTM5pS0
+[2009-05-15 15:41:42] http://www.youtube.com/watch?v=RBBAK0KtQjc
+[2009-05-15 15:41:42] http://www.youtube.com/watch?v=Dy-WcrijeDc
+[2009-05-15 15:41:42] http://www.youtube.com/watch?v=0ZHhUb_XxM0
+[2009-05-15 15:41:42] http://www.youtube.com/watch?v=NtwEKOXbYlk
+[2009-05-15 15:41:42] http://www.youtube.com/watch?v=QBIloemfzak
+[2009-05-15 15:41:42] http://www.youtube.com/watch?v=8a8HDjcjk9M
+[2009-05-15 15:41:42] http://www.youtube.com/watch?v=4xk4AaLQiH4
+[2009-05-15 15:41:42] http://www.youtube.com/watch?v=no_ACWNXxj4
+[2009-05-15 15:41:42] http://www.youtube.com/watch?v=8hK80FBfX1k
+[2009-05-15 15:41:42] Get:[http://www.youtube.com/results?search_query=%22%E4%B8%96%E7%95%8C%E5%91%A8%E5%88%8A%22&search_sort=video_date_uploaded&page=1]
+[2009-05-15 15:41:53] http://www.youtube.com/watch?v=YJsaTrgI1JI
+[2009-05-15 15:41:53] http://www.youtube.com/watch?v=l3oY4iUX2vo
+[2009-05-15 15:41:53] http://www.youtube.com/watch?v=uznxMgYZLdw
+[2009-05-15 15:41:53] http://www.youtube.com/watch?v=4bMT4u_mNTo
+[2009-05-15 15:41:53] http://www.youtube.com/watch?v=fc2ViBNh0tM
+[2009-05-15 15:41:53] http://www.youtube.com/watch?v=jkRkioHcZfg
+[2009-05-15 15:41:53] http://www.youtube.com/watch?v=i7StUiq_dAc
+[2009-05-15 15:41:53] http://www.youtube.com/watch?v=uGRzJp3op_M
+[2009-05-15 15:41:53] http://www.youtube.com/watch?v=9cSpox6sZ7k
+[2009-05-15 15:41:53] http://www.youtube.com/watch?v=GhNeNmuAGvQ
+[2009-05-15 15:41:53] http://www.youtube.com/watch?v=cYkYZGGpVoc
+[2009-05-15 15:41:53] http://www.youtube.com/watch?v=rW10Ye2s1Z8
+[2009-05-15 15:41:53] http://www.youtube.com/watch?v=8QJ_rrOUGYA
+[2009-05-15 15:41:53] http://www.youtube.com/watch?v=tS_SGFxsieI
+[2009-05-15 15:41:53] http://www.youtube.com/watch?v=Fnq1rSu7qKs
+[2009-05-15 15:41:53] http://www.youtube.com/watch?v=_X6KjQSjv8o
+[2009-05-15 15:41:53] http://www.youtube.com/watch?v=EA1KXIgiNvI
+[2009-05-15 15:41:53] http://www.youtube.com/watch?v=8QJ_rrOUGYA&feature=fvsr
+[2009-05-15 15:41:53] http://www.youtube.com/watch?v=KYChK1a9qKI
+[2009-05-15 15:41:53] http://www.youtube.com/watch?v=3ltpgkBv_bs
+[2009-05-15 15:41:53] http://www.youtube.com/watch?v=blXngqZdfAM
+[2009-05-15 15:41:53] Get:[http://www.youtube.com/results?search_query=%22%E4%B8%96%E7%BA%AA%E5%A4%A7%E8%AE%B2%E5%A0%82%22&search_sort=video_date_uploaded&page=1]
+[2009-05-15 15:41:57] http://www.youtube.com/watch?v=Oc-8RsUmVWY
+[2009-05-15 15:41:57] http://www.youtube.com/watch?v=nBBAZd-8qNQ
+[2009-05-15 15:41:57] http://www.youtube.com/watch?v=TjTtZt8Q3XQ
+[2009-05-15 15:41:57] http://www.youtube.com/watch?v=OpDfMFTs-sc
+[2009-05-15 15:41:57] http://www.youtube.com/watch?v=30sSUlyCLyI
+[2009-05-15 15:41:57] http://www.youtube.com/watch?v=6AmdLP_BhuY
+[2009-05-15 15:41:57] http://www.youtube.com/watch?v=P1E4t7olQM0
+[2009-05-15 15:41:57] http://www.youtube.com/watch?v=qhwkesMutj8
+[2009-05-15 15:41:57] http://www.youtube.com/watch?v=tChKsWQucLA
+[2009-05-15 15:41:57] http://www.youtube.com/watch?v=wVvii-norkw
+[2009-05-15 15:41:57] http://www.youtube.com/watch?v=CFjL_zRSlzs
+[2009-05-15 15:41:57] http://www.youtube.com/watch?v=bGIY07DWDS0
+[2009-05-15 15:41:57] http://www.youtube.com/watch?v=kK-Qgzz6PA0
+[2009-05-15 15:41:57] http://www.youtube.com/watch?v=5155LI4s-SY
+[2009-05-15 15:41:57] http://www.youtube.com/watch?v=NvAvMNt9Nsg
+[2009-05-15 15:41:57] http://www.youtube.com/watch?v=PR52H6YS5Q8
+[2009-05-15 15:41:57] http://www.youtube.com/watch?v=-1l_vnINKYo
+[2009-05-15 15:41:57] http://www.youtube.com/watch?v=8H3Kj6Cnets
+[2009-05-15 15:41:57] http://www.youtube.com/watch?v=UDJGD5tosm4
+[2009-05-15 15:41:57] http://www.youtube.com/watch?v=Bupca1hExv8
+[2009-05-15 16:02:33]  URL Downloaded:[http://www.youtube.com/get_video?video_id=XLNjztgBAw8&t=vjVQa1PpcFOy-sShycMb_UqY8MDIS570g8CDD77UQBw=]
+[2009-05-15 16:02:33] Get:[http://www.youtube.com/watch?v=rJ_qZzGrF2U]
+[2009-05-15 16:02:38] Get:[http://www.youtube.com/get_video?video_id=rJ_qZzGrF2U&t=vjVQa1PpcFO2N1wx3vl_Hsmgm3iNof_-5Pd7vlqngfY=]
+[2009-05-15 16:02:40]  URL Downloaded:[http://www.youtube.com/get_video?video_id=MR5-yA9GXjg&t=vjVQa1PpcFNk9mlkHgqRnw8Uy0nV6EvV1cv1IqBBG8M=]
+[2009-05-15 16:02:40] Get:[http://www.youtube.com/watch?v=Wxi6914idRs]
+[2009-05-15 16:02:46] Get:[http://www.youtube.com/get_video?video_id=Wxi6914idRs&t=vjVQa1PpcFOU8NRN8nYHANTy_TyCWtDJ-Be0yZwm1JA=]
+[2009-05-15 16:04:23]  URL Downloaded:[http://www.youtube.com/get_video?video_id=x49JCHwTjUI&t=vjVQa1PpcFMVWwTxTQWbNXhBOahe5wkhmI02vAZ6FP8=]
+[2009-05-15 16:04:23] Get:[http://www.youtube.com/watch?v=ws4QDtS0VFU]
+[2009-05-15 16:04:31] Get:[http://www.youtube.com/get_video?video_id=ws4QDtS0VFU&t=vjVQa1PpcFN1r4Gf6sR4OSqYSSt_Kz5RD2cmxxL0P_c=]
+[2009-05-15 16:07:55]  URL Downloaded:[http://www.youtube.com/get_video?video_id=LNQkGM1DGUc&t=vjVQa1PpcFOomF83BIqiqckWMwezHE0xqm9ZnU0Q37s=]
+[2009-05-15 16:07:55] Get:[http://www.youtube.com/watch?v=Wla1zy_Ifts]
+[2009-05-15 16:07:58] Get:[http://www.youtube.com/get_video?video_id=Wla1zy_Ifts&t=vjVQa1PpcFO9yJl2K5eMOATqjid0l8t02IVJeTpMtZc=]
+[2009-05-15 16:10:44]  URL Downloaded:[http://www.youtube.com/get_video?video_id=6kIzHCfn5cE&t=vjVQa1PpcFOafkvFBcxCtzWej5UexNeiSa3YEkSso_s=]
+[2009-05-15 16:10:44] Get:[http://www.youtube.com/watch?v=k1y33vPcv_k]
+[2009-05-15 16:10:56] Get:[http://www.youtube.com/get_video?video_id=k1y33vPcv_k&t=vjVQa1PpcFMj_etRIwcso-hsxS6Cb1v16qdlLfvovyQ=]
+[2009-05-15 16:29:51]  URL Downloaded:[http://www.youtube.com/get_video?video_id=ws4QDtS0VFU&t=vjVQa1PpcFN1r4Gf6sR4OSqYSSt_Kz5RD2cmxxL0P_c=]
+[2009-05-15 16:29:51] Get:[http://www.youtube.com/watch?v=Y6Td29zDJeo]
+[2009-05-15 16:29:57] Get:[http://www.youtube.com/get_video?video_id=Y6Td29zDJeo&t=vjVQa1PpcFOsicFcPoO-HookelrSxOmc5_qUCPEq6SE=]
+[2009-05-15 16:30:40]  URL Downloaded:[http://www.youtube.com/get_video?video_id=Wxi6914idRs&t=vjVQa1PpcFOU8NRN8nYHANTy_TyCWtDJ-Be0yZwm1JA=]
+[2009-05-15 16:30:40] Get:[http://www.youtube.com/watch?v=vOSLr6Qc7iI]
+[2009-05-15 16:30:43] Get:[http://www.youtube.com/get_video?video_id=vOSLr6Qc7iI&t=vjVQa1PpcFMgeoQaHhwCUMiVjsZ37YJZG7wKvSL-4tA=]
+[2009-05-15 16:30:54]  URL Downloaded:[http://www.youtube.com/get_video?video_id=rJ_qZzGrF2U&t=vjVQa1PpcFO2N1wx3vl_Hsmgm3iNof_-5Pd7vlqngfY=]
+[2009-05-15 16:30:54] Get:[http://www.youtube.com/watch?v=CHhpWuowwSc]
+[2009-05-15 16:30:57] Get:[http://www.youtube.com/get_video?video_id=CHhpWuowwSc&t=vjVQa1PpcFPS5xi2Hyo9braSfpBnYXfsqWYVl9b__94=]
+[2009-05-15 16:35:27]  URL Downloaded:[http://www.youtube.com/get_video?video_id=Wla1zy_Ifts&t=vjVQa1PpcFO9yJl2K5eMOATqjid0l8t02IVJeTpMtZc=]
+[2009-05-15 16:35:27] Get:[http://www.youtube.com/watch?v=OkgljlnRamA]
+[2009-05-15 16:35:38] Get:[http://www.youtube.com/get_video?video_id=OkgljlnRamA&t=vjVQa1PpcFPTh4WkP8yRUeJ9dirzSZ8hB8pkza-f2Qk=]
+[2009-05-15 16:37:06]  URL Downloaded:[http://www.youtube.com/get_video?video_id=k1y33vPcv_k&t=vjVQa1PpcFMj_etRIwcso-hsxS6Cb1v16qdlLfvovyQ=]
+[2009-05-15 16:37:06] Get:[http://www.youtube.com/watch?v=gYzAdzjh4_8]
+[2009-05-15 16:37:10] Get:[http://www.youtube.com/get_video?video_id=gYzAdzjh4_8&t=vjVQa1PpcFPUSylej4gOV2xvOyMVY1llNNyd3ZNRNyU=]
+[2009-05-15 16:51:19]  URL Downloaded:[http://www.youtube.com/get_video?video_id=Y6Td29zDJeo&t=vjVQa1PpcFOsicFcPoO-HookelrSxOmc5_qUCPEq6SE=]
+[2009-05-15 16:51:19] Get:[http://www.youtube.com/watch?v=Ic90yLACy9Y]
+[2009-05-15 16:51:23] Get:[http://www.youtube.com/get_video?video_id=Ic90yLACy9Y&t=vjVQa1PpcFPaadCWXBrncNNE6wu_QkH4OYXpspuTwug=]
+[2009-05-15 16:53:29]  URL Downloaded:[http://www.youtube.com/get_video?video_id=CHhpWuowwSc&t=vjVQa1PpcFPS5xi2Hyo9braSfpBnYXfsqWYVl9b__94=]
+[2009-05-15 16:53:29] Get:[http://www.youtube.com/watch?v=6z4cVf8GSTo]
+[2009-05-15 16:53:36] Get:[http://www.youtube.com/get_video?video_id=6z4cVf8GSTo&t=vjVQa1PpcFNYkmv6XHScFcvaTx37nluVMOqjLIFZgFM=]
+[2009-05-15 16:54:35]  URL Downloaded:[http://www.youtube.com/get_video?video_id=vOSLr6Qc7iI&t=vjVQa1PpcFMgeoQaHhwCUMiVjsZ37YJZG7wKvSL-4tA=]
+[2009-05-15 16:54:35] Get:[http://www.youtube.com/watch?v=9sBnSdJ-PCo]
+[2009-05-15 16:54:43] Get:[http://www.youtube.com/get_video?video_id=9sBnSdJ-PCo&t=vjVQa1PpcFM9om5dMwsKb63MZwXCWQuF9aCLqKgAlOQ=]
+[2009-05-15 17:01:09]  URL Downloaded:[http://www.youtube.com/get_video?video_id=gYzAdzjh4_8&t=vjVQa1PpcFPUSylej4gOV2xvOyMVY1llNNyd3ZNRNyU=]
+[2009-05-15 17:01:09] Get:[http://www.youtube.com/watch?v=4AU36iLAxck]
+[2009-05-15 17:01:13] Get:[http://www.youtube.com/get_video?video_id=4AU36iLAxck&t=vjVQa1PpcFPtyq90jtPvEpaYKcJhrJZ9a_zQ-8zxn1k=]
+[2009-05-15 17:01:39]  URL Downloaded:[http://www.youtube.com/get_video?video_id=OkgljlnRamA&t=vjVQa1PpcFPTh4WkP8yRUeJ9dirzSZ8hB8pkza-f2Qk=]
+[2009-05-15 17:01:39] Get:[http://www.youtube.com/watch?v=LrZbxyjWSo0]
+[2009-05-15 17:01:42] Get:[http://www.youtube.com/get_video?video_id=LrZbxyjWSo0&t=vjVQa1PpcFMDweVM39yBcEcb_4WZIVZkIeYxujeIvSw=]
+[2009-05-15 17:08:50]  URL Downloaded:[http://www.youtube.com/get_video?video_id=Ic90yLACy9Y&t=vjVQa1PpcFPaadCWXBrncNNE6wu_QkH4OYXpspuTwug=]
+[2009-05-15 17:08:50] Get:[http://www.youtube.com/watch?v=KXCIfzTpKu0]
+[2009-05-15 17:08:58] Get:[http://www.youtube.com/get_video?video_id=KXCIfzTpKu0&t=vjVQa1PpcFOpCae6KcW-xHFb7XM7YrVeDHDoiyugehE=]
+[2009-05-15 17:13:12]  URL Downloaded:[http://www.youtube.com/get_video?video_id=6z4cVf8GSTo&t=vjVQa1PpcFNYkmv6XHScFcvaTx37nluVMOqjLIFZgFM=]
+[2009-05-15 17:13:12] Get:[http://www.youtube.com/watch?v=qz8BfX6qnxs]
+[2009-05-15 17:13:16] Get:[http://www.youtube.com/get_video?video_id=qz8BfX6qnxs&t=vjVQa1PpcFNEkE1LASdJ0ioru3JM5W8246u94GDRO1I=]
+[2009-05-15 17:15:09]  URL Downloaded:[http://www.youtube.com/get_video?video_id=9sBnSdJ-PCo&t=vjVQa1PpcFM9om5dMwsKb63MZwXCWQuF9aCLqKgAlOQ=]
+[2009-05-15 17:15:09] Get:[http://www.youtube.com/watch?v=zSjwBwVYJHY]
+[2009-05-15 17:15:14] Get:[http://www.youtube.com/get_video?video_id=zSjwBwVYJHY&t=vjVQa1PpcFMxAVPnsP03IYvBI1Dndabp4HqzNoMmju4=]
+[2009-05-15 17:21:04]  URL Downloaded:[http://www.youtube.com/get_video?video_id=LrZbxyjWSo0&t=vjVQa1PpcFMDweVM39yBcEcb_4WZIVZkIeYxujeIvSw=]
+[2009-05-15 17:21:04] Get:[http://www.youtube.com/watch?v=GxojiOBOFgI]
+[2009-05-15 17:21:09] Get:[http://www.youtube.com/get_video?video_id=GxojiOBOFgI&t=vjVQa1PpcFOZCMDK1ySjtD3xemyFdZ5JcWbWAtQyGiM=]
+[2009-05-15 17:22:19]  URL Downloaded:[http://www.youtube.com/get_video?video_id=4AU36iLAxck&t=vjVQa1PpcFPtyq90jtPvEpaYKcJhrJZ9a_zQ-8zxn1k=]
+[2009-05-15 17:22:19] Get:[http://www.youtube.com/watch?v=l4V0x-9U3YU]
+[2009-05-15 17:22:22] Get:[http://www.youtube.com/get_video?video_id=l4V0x-9U3YU&t=vjVQa1PpcFNEneAjxuVu-Ht15fVyGHPEo2yIQNmmra4=]
+[2009-05-15 17:23:17]  URL Downloaded:[http://www.youtube.com/get_video?video_id=KXCIfzTpKu0&t=vjVQa1PpcFOpCae6KcW-xHFb7XM7YrVeDHDoiyugehE=]
+[2009-05-15 17:23:17] Get:[http://www.youtube.com/watch?v=BDfQCXtmVG8]
+[2009-05-15 17:23:19] Get:[http://www.youtube.com/get_video?video_id=BDfQCXtmVG8&t=vjVQa1PpcFNGrNrD_gJHKTx3wk199-Eyrm9k9rJ8-Lk=]
+[2009-05-15 17:24:43]  URL Downloaded:[http://www.youtube.com/get_video?video_id=qz8BfX6qnxs&t=vjVQa1PpcFNEkE1LASdJ0ioru3JM5W8246u94GDRO1I=]
+[2009-05-15 17:24:43] Get:[http://www.youtube.com/watch?v=-sb0hebToGk]
+[2009-05-15 17:24:46] Get:[http://www.youtube.com/get_video?video_id=-sb0hebToGk&t=vjVQa1PpcFMIlmaa_emK_aSYf-NJo_faOo3aawh_SvQ=]
+[2009-05-15 17:28:52]  URL Downloaded:[http://www.youtube.com/get_video?video_id=zSjwBwVYJHY&t=vjVQa1PpcFMxAVPnsP03IYvBI1Dndabp4HqzNoMmju4=]
+[2009-05-15 17:28:52] Get:[http://www.youtube.com/watch?v=kESl5tClY84]
+[2009-05-15 17:29:02] Get:[http://www.youtube.com/get_video?video_id=kESl5tClY84&t=vjVQa1PpcFOu0Jh1JJsYEe6XrL91fnqGJRMKNjBDUa0=]
+[2009-05-15 17:37:34]  URL Downloaded:[http://www.youtube.com/get_video?video_id=GxojiOBOFgI&t=vjVQa1PpcFOZCMDK1ySjtD3xemyFdZ5JcWbWAtQyGiM=]
+[2009-05-15 17:37:34] Get:[http://www.youtube.com/watch?v=igjrN2EWJ_Q]
+[2009-05-15 17:37:42] Get:[http://www.youtube.com/get_video?video_id=igjrN2EWJ_Q&t=vjVQa1PpcFMjxVOX2DPqJHaS8W74OLoK_M8scDA0lrQ=]
+[2009-05-15 17:38:25]  URL Downloaded:[http://www.youtube.com/get_video?video_id=-sb0hebToGk&t=vjVQa1PpcFMIlmaa_emK_aSYf-NJo_faOo3aawh_SvQ=]
+[2009-05-15 17:38:25] Get:[http://www.youtube.com/watch?v=R3-6V04kAU4]
+[2009-05-15 17:38:27] Get:[http://www.youtube.com/get_video?video_id=R3-6V04kAU4&t=vjVQa1PpcFP4RasfEK3v17pagkEQ-rkl56Ase9OSbPI=]
+[2009-05-15 17:41:59]  URL Downloaded:[http://www.youtube.com/get_video?video_id=l4V0x-9U3YU&t=vjVQa1PpcFNEneAjxuVu-Ht15fVyGHPEo2yIQNmmra4=]
+[2009-05-15 17:41:59] Get:[http://www.youtube.com/watch?v=iZsjDDUW2VQ]
+[2009-05-15 17:42:06] Get:[http://www.youtube.com/get_video?video_id=iZsjDDUW2VQ&t=vjVQa1PpcFOBJ8A9Qt0UP6rQ0DV7aqTHV_tROQIOZd8=]
+[2009-05-15 17:42:13]  URL Downloaded:[http://www.youtube.com/get_video?video_id=BDfQCXtmVG8&t=vjVQa1PpcFNGrNrD_gJHKTx3wk199-Eyrm9k9rJ8-Lk=]
+[2009-05-15 17:42:13] Get:[http://www.youtube.com/watch?v=f7zbsWfLBwA&feature=fvsr]
+[2009-05-15 17:42:16] Get:[http://www.youtube.com/get_video?video_id=f7zbsWfLBwA&t=vjVQa1PpcFPuF_Uo3dfX_mnPdyhlB73YGnFpMaL4irw=]
+[2009-05-15 17:44:35]  URL Downloaded:[http://www.youtube.com/get_video?video_id=kESl5tClY84&t=vjVQa1PpcFOu0Jh1JJsYEe6XrL91fnqGJRMKNjBDUa0=]
+[2009-05-15 17:44:35] Get:[http://www.youtube.com/watch?v=3Sb_O0Wo3_g]
+[2009-05-15 17:44:45] Get:[http://www.youtube.com/get_video?video_id=3Sb_O0Wo3_g&t=vjVQa1PpcFN4Gh7Mnz7mu_IsdJX7JvVPa2GpJf-LHLc=]
+[2009-05-15 17:51:12]  URL Downloaded:[http://www.youtube.com/get_video?video_id=iZsjDDUW2VQ&t=vjVQa1PpcFOBJ8A9Qt0UP6rQ0DV7aqTHV_tROQIOZd8=]
+[2009-05-15 17:51:12] Get:[http://www.youtube.com/watch?v=8ZKthmjHpyY]
+[2009-05-15 17:51:25] Get:[http://www.youtube.com/get_video?video_id=8ZKthmjHpyY&t=vjVQa1PpcFMnty56EqPu305hnbbxxkYq7BajAYJTFt0=]
+[2009-05-15 17:51:36]  URL Downloaded:[http://www.youtube.com/get_video?video_id=R3-6V04kAU4&t=vjVQa1PpcFP4RasfEK3v17pagkEQ-rkl56Ase9OSbPI=]
+[2009-05-15 17:51:36] Get:[http://www.youtube.com/watch?v=dU96CiaDiJE]
+[2009-05-15 17:51:39] Get:[http://www.youtube.com/get_video?video_id=dU96CiaDiJE&t=vjVQa1PpcFPdyj0rNHzDcXVFta3s1RfkSF6bRDp4juU=]
+[2009-05-15 17:52:14]  URL Downloaded:[http://www.youtube.com/get_video?video_id=igjrN2EWJ_Q&t=vjVQa1PpcFMjxVOX2DPqJHaS8W74OLoK_M8scDA0lrQ=]
+[2009-05-15 17:52:14] Get:[http://www.youtube.com/watch?v=b-N1rmxf2gw]
+[2009-05-15 17:52:22] Get:[http://www.youtube.com/get_video?video_id=b-N1rmxf2gw&t=vjVQa1PpcFP-ny-5ZGnpOyWxGak9qTsWM8uYtUKr5L0=]
+[2009-05-15 17:57:32]  URL Downloaded:[http://www.youtube.com/get_video?video_id=f7zbsWfLBwA&t=vjVQa1PpcFPuF_Uo3dfX_mnPdyhlB73YGnFpMaL4irw=]
+[2009-05-15 17:57:32] Get:[http://www.youtube.com/watch?v=HdxpyEjNhTg]
+[2009-05-15 17:57:41] Get:[http://www.youtube.com/get_video?video_id=HdxpyEjNhTg&t=vjVQa1PpcFPh57I_ZeaJAIX7CkiwSMEA-umhC6dLzt8=]
+[2009-05-15 18:00:12]  URL Downloaded:[http://www.youtube.com/get_video?video_id=3Sb_O0Wo3_g&t=vjVQa1PpcFN4Gh7Mnz7mu_IsdJX7JvVPa2GpJf-LHLc=]
+[2009-05-15 18:00:12] Get:[http://www.youtube.com/watch?v=t-1ATvoJvBA]
+[2009-05-15 18:00:16] Get:[http://www.youtube.com/get_video?video_id=t-1ATvoJvBA&t=vjVQa1PpcFPKlG4eOJuerWD3YUaQxk2VbdAz3njeb5I=]
+[2009-05-15 18:05:39]  URL Downloaded:[http://www.youtube.com/get_video?video_id=b-N1rmxf2gw&t=vjVQa1PpcFP-ny-5ZGnpOyWxGak9qTsWM8uYtUKr5L0=]
+[2009-05-15 18:05:39] Get:[http://www.youtube.com/watch?v=urB741vfaVA]
+[2009-05-15 18:05:43] Get:[http://www.youtube.com/get_video?video_id=urB741vfaVA&t=vjVQa1PpcFMDiBi9tKNrSK2GcrjFvR4bfvSVSkTqKxk=]
+[2009-05-15 18:07:07]  URL Downloaded:[http://www.youtube.com/get_video?video_id=dU96CiaDiJE&t=vjVQa1PpcFPdyj0rNHzDcXVFta3s1RfkSF6bRDp4juU=]
+[2009-05-15 18:07:07] Get:[http://www.youtube.com/watch?v=q1Y7srBLRwk]
+[2009-05-15 18:07:10] Get:[http://www.youtube.com/get_video?video_id=q1Y7srBLRwk&t=vjVQa1PpcFN0VI1Dh0cOcYS1evbH-N4MYIN2L3hLJGc=]
+[2009-05-15 18:07:55]  URL Downloaded:[http://www.youtube.com/get_video?video_id=8ZKthmjHpyY&t=vjVQa1PpcFMnty56EqPu305hnbbxxkYq7BajAYJTFt0=]
+[2009-05-15 18:07:55] Get:[http://www.youtube.com/watch?v=h-Gmuw1AmRg]
+[2009-05-15 18:08:02] Get:[http://www.youtube.com/get_video?video_id=h-Gmuw1AmRg&t=vjVQa1PpcFMD16XXVs2U6vb8uSRM3ChmN6nI0QquZi4=]
+[2009-05-15 18:08:51]  URL Downloaded:[http://www.youtube.com/get_video?video_id=HdxpyEjNhTg&t=vjVQa1PpcFPh57I_ZeaJAIX7CkiwSMEA-umhC6dLzt8=]
+[2009-05-15 18:08:51] Get:[http://www.youtube.com/watch?v=ObXqQgKr1XE]
+[2009-05-15 18:08:58] Get:[http://www.youtube.com/get_video?video_id=ObXqQgKr1XE&t=vjVQa1PpcFOeUF96MlGAOtQ91aX0BzwEFnj6TMVdRQg=]
+[2009-05-15 18:14:57]  URL Downloaded:[http://www.youtube.com/get_video?video_id=t-1ATvoJvBA&t=vjVQa1PpcFPKlG4eOJuerWD3YUaQxk2VbdAz3njeb5I=]
+[2009-05-15 18:14:57] Get:[http://www.youtube.com/watch?v=mD3ImXHZ8ZM]
+[2009-05-15 18:15:00] Get:[http://www.youtube.com/get_video?video_id=mD3ImXHZ8ZM&t=vjVQa1PpcFN8VGH1kHXTq4KPvEYPhqEpNOJ2JIqLrsA=]
+[2009-05-15 18:16:07]  URL Downloaded:[http://www.youtube.com/get_video?video_id=urB741vfaVA&t=vjVQa1PpcFMDiBi9tKNrSK2GcrjFvR4bfvSVSkTqKxk=]
+[2009-05-15 18:16:07] Get:[http://www.youtube.com/watch?v=QLMfhcOUxIw]
+[2009-05-15 18:16:11] Get:[http://www.youtube.com/get_video?video_id=QLMfhcOUxIw&t=vjVQa1PpcFOd7fraofEBHJwidwjOziI3WC7WsF6-roA=]
+[2009-05-15 18:17:39]  URL Downloaded:[http://www.youtube.com/get_video?video_id=h-Gmuw1AmRg&t=vjVQa1PpcFMD16XXVs2U6vb8uSRM3ChmN6nI0QquZi4=]
+[2009-05-15 18:17:39] Get:[http://www.youtube.com/watch?v=YEG7IFLoG6M]
+[2009-05-15 18:17:43] Get:[http://www.youtube.com/get_video?video_id=YEG7IFLoG6M&t=vjVQa1PpcFMvQk4xqdewEuwd4UbyVLtCWVCGW9VXXJo=]
+[2009-05-15 18:22:59]  URL Downloaded:[http://www.youtube.com/get_video?video_id=q1Y7srBLRwk&t=vjVQa1PpcFN0VI1Dh0cOcYS1evbH-N4MYIN2L3hLJGc=]
+[2009-05-15 18:22:59] Get:[http://www.youtube.com/watch?v=bq_GAzxP68U]
+[2009-05-15 18:23:04] Get:[http://www.youtube.com/get_video?video_id=bq_GAzxP68U&t=vjVQa1PpcFOGnaxDR-tXsjIZQ4v4NFNCcbjr1MZqJVo=]
+[2009-05-15 18:23:37]  URL Downloaded:[http://www.youtube.com/get_video?video_id=ObXqQgKr1XE&t=vjVQa1PpcFOeUF96MlGAOtQ91aX0BzwEFnj6TMVdRQg=]
+[2009-05-15 18:23:38] Get:[http://www.youtube.com/watch?v=qmwwIYJxLZY]
+[2009-05-15 18:23:45] Get:[http://www.youtube.com/get_video?video_id=qmwwIYJxLZY&t=vjVQa1PpcFOrgIiDburbslvRtKjreWx3R6P45xauj1Q=]
+[2009-05-15 18:28:54]  URL Downloaded:[http://www.youtube.com/get_video?video_id=mD3ImXHZ8ZM&t=vjVQa1PpcFN8VGH1kHXTq4KPvEYPhqEpNOJ2JIqLrsA=]
+[2009-05-15 18:28:54] Get:[http://www.youtube.com/watch?v=0v5MX17tjOY&feature=fvsr]
+[2009-05-15 18:29:02] Get:[http://www.youtube.com/get_video?video_id=0v5MX17tjOY&t=vjVQa1PpcFNwC5hoctEvcg5QP8pKAcW03trc8JmASGo=]
+[2009-05-15 18:36:19]  URL Downloaded:[http://www.youtube.com/get_video?video_id=YEG7IFLoG6M&t=vjVQa1PpcFMvQk4xqdewEuwd4UbyVLtCWVCGW9VXXJo=]
+[2009-05-15 18:36:19] Get:[http://www.youtube.com/watch?v=g0i7RLBdJFg]
+[2009-05-15 18:36:29] Get:[http://www.youtube.com/get_video?video_id=g0i7RLBdJFg&t=vjVQa1PpcFP26l9OtxWaq5on2qmVcJktjVnYaWHjG8Y=]
+[2009-05-15 18:36:45]  URL Downloaded:[http://www.youtube.com/get_video?video_id=QLMfhcOUxIw&t=vjVQa1PpcFOd7fraofEBHJwidwjOziI3WC7WsF6-roA=]
+[2009-05-15 18:36:45] Get:[http://www.youtube.com/watch?v=qqjjQZxwdE4]
+[2009-05-15 18:36:50] Get:[http://www.youtube.com/get_video?video_id=qqjjQZxwdE4&t=vjVQa1PpcFNBwszyWZu34awc82aRo7H8CfbZmK5oSWQ=]
+[2009-05-15 18:44:25]  URL Downloaded:[http://www.youtube.com/get_video?video_id=qmwwIYJxLZY&t=vjVQa1PpcFOrgIiDburbslvRtKjreWx3R6P45xauj1Q=]
+[2009-05-15 18:44:25] Get:[http://www.youtube.com/watch?v=kXmS58_lEuA]
+[2009-05-15 18:44:29] Get:[http://www.youtube.com/get_video?video_id=kXmS58_lEuA&t=vjVQa1PpcFMAozBwFmLphCp_XPrdDdzZEE_yefbL7j0=]
+[2009-05-15 18:45:36]  URL Downloaded:[http://www.youtube.com/get_video?video_id=bq_GAzxP68U&t=vjVQa1PpcFOGnaxDR-tXsjIZQ4v4NFNCcbjr1MZqJVo=]
+[2009-05-15 18:45:36] Get:[http://www.youtube.com/watch?v=IvyL63K_lOM]
+[2009-05-15 18:45:39] Get:[http://www.youtube.com/get_video?video_id=IvyL63K_lOM&t=vjVQa1PpcFOL5pmLELXWzduv7D8jRV5-iPuT0OG7DsE=]
+[2009-05-15 18:49:20]  URL Downloaded:[http://www.youtube.com/get_video?video_id=0v5MX17tjOY&t=vjVQa1PpcFNwC5hoctEvcg5QP8pKAcW03trc8JmASGo=]
+[2009-05-15 18:49:20] Get:[http://www.youtube.com/watch?v=vg3PqgHjhPg]
+[2009-05-15 18:49:23] Get:[http://www.youtube.com/get_video?video_id=vg3PqgHjhPg&t=vjVQa1PpcFNp84ahBJTm_qz3IkvVYl55dq6A3fj99Y4=]
+[2009-05-15 18:52:23]  URL Downloaded:[http://www.youtube.com/get_video?video_id=qqjjQZxwdE4&t=vjVQa1PpcFNBwszyWZu34awc82aRo7H8CfbZmK5oSWQ=]
+[2009-05-15 18:52:23] Get:[http://www.youtube.com/watch?v=yQBzq8f6tyc]
+[2009-05-15 18:52:34] Get:[http://www.youtube.com/get_video?video_id=yQBzq8f6tyc&t=vjVQa1PpcFMzKrATEe4dBelkGzmr45iM0nYm2Tbyb6s=]
+[2009-05-15 18:56:10]  URL Downloaded:[http://www.youtube.com/get_video?video_id=g0i7RLBdJFg&t=vjVQa1PpcFP26l9OtxWaq5on2qmVcJktjVnYaWHjG8Y=]
+[2009-05-15 18:56:10] Get:[http://www.youtube.com/watch?v=YNLFt58dd4g]
+[2009-05-15 18:56:18] Get:[http://www.youtube.com/get_video?video_id=YNLFt58dd4g&t=vjVQa1PpcFNgMDiCKp5VWU4gNHJV5zdwymVEu6JiFRM=]
+[2009-05-15 19:02:25]  URL Downloaded:[http://www.youtube.com/get_video?video_id=kXmS58_lEuA&t=vjVQa1PpcFMAozBwFmLphCp_XPrdDdzZEE_yefbL7j0=]
+[2009-05-15 19:02:25] Get:[http://www.youtube.com/watch?v=fB6r_HWrTlY]
+[2009-05-15 19:02:30] Get:[http://www.youtube.com/get_video?video_id=fB6r_HWrTlY&t=vjVQa1PpcFPFs29a2vbPXenC6gGMZw7-Plyg3kLPKGU=]
+[2009-05-15 19:02:50]  URL Downloaded:[http://www.youtube.com/get_video?video_id=IvyL63K_lOM&t=vjVQa1PpcFOL5pmLELXWzduv7D8jRV5-iPuT0OG7DsE=]
+[2009-05-15 19:02:51] Get:[http://www.youtube.com/watch?v=Ja9LFceUIK0&feature=fvsr]
+[2009-05-15 19:02:58] Get:[http://www.youtube.com/get_video?video_id=Ja9LFceUIK0&t=vjVQa1PpcFMceaOFrbKZFLdtZyydbMOO_ctIGkAN4SU=]
+[2009-05-15 19:05:51]  URL Downloaded:[http://www.youtube.com/get_video?video_id=yQBzq8f6tyc&t=vjVQa1PpcFMzKrATEe4dBelkGzmr45iM0nYm2Tbyb6s=]
+[2009-05-15 19:05:51] Get:[http://www.youtube.com/watch?v=0R__n6nJRfA]
+[2009-05-15 19:05:57] Get:[http://www.youtube.com/get_video?video_id=0R__n6nJRfA&t=vjVQa1PpcFMETTYl-JkoboqAn5AztaOgkPs5bZEEU2Y=]
+[2009-05-15 19:07:25]  URL Downloaded:[http://www.youtube.com/get_video?video_id=vg3PqgHjhPg&t=vjVQa1PpcFNp84ahBJTm_qz3IkvVYl55dq6A3fj99Y4=]
+[2009-05-15 19:07:25] Get:[http://www.youtube.com/watch?v=HoiUlyRtTKc]
+[2009-05-15 19:07:36] Get:[http://www.youtube.com/get_video?video_id=HoiUlyRtTKc&t=vjVQa1PpcFPgltKT703K6NjkyOQG_P90CDCzbTunZDk=]
+[2009-05-15 19:12:39]  URL Downloaded:[http://www.youtube.com/get_video?video_id=YNLFt58dd4g&t=vjVQa1PpcFNgMDiCKp5VWU4gNHJV5zdwymVEu6JiFRM=]
+[2009-05-15 19:12:39] Get:[http://www.youtube.com/watch?v=6qAw51HmBVk]
+[2009-05-15 19:12:43] Get:[http://www.youtube.com/get_video?video_id=6qAw51HmBVk&t=vjVQa1PpcFPVTdh6tlyWScGBcQSlp0E-Yls8RFXkEmY=]
+[2009-05-15 19:16:15]  URL Downloaded:[http://www.youtube.com/get_video?video_id=Ja9LFceUIK0&t=vjVQa1PpcFMceaOFrbKZFLdtZyydbMOO_ctIGkAN4SU=]
+[2009-05-15 19:16:15] Get:[http://www.youtube.com/watch?v=xcFqBZEbCSo]
+[2009-05-15 19:16:19] Get:[http://www.youtube.com/get_video?video_id=xcFqBZEbCSo&t=vjVQa1PpcFPn7mlnRDLV0-QPem9mdhAZbeOaGKsxvTA=]
+[2009-05-15 19:23:07]  URL Downloaded:[http://www.youtube.com/get_video?video_id=fB6r_HWrTlY&t=vjVQa1PpcFPFs29a2vbPXenC6gGMZw7-Plyg3kLPKGU=]
+[2009-05-15 19:23:07] Get:[http://www.youtube.com/watch?v=NloVSRJH9U8]
+[2009-05-15 19:23:11] Get:[http://www.youtube.com/get_video?video_id=NloVSRJH9U8&t=vjVQa1PpcFNCx0IrzK1wFskAWExOBIXkxSyMZex6yVY=]
+[2009-05-15 19:25:07]  URL Downloaded:[http://www.youtube.com/get_video?video_id=0R__n6nJRfA&t=vjVQa1PpcFMETTYl-JkoboqAn5AztaOgkPs5bZEEU2Y=]
+[2009-05-15 19:25:07] Get:[http://www.youtube.com/watch?v=DHcALFnzyl8&feature=fvsr]
+[2009-05-15 19:25:19] Get:[http://www.youtube.com/get_video?video_id=DHcALFnzyl8&t=vjVQa1PpcFO5TTiBDkV8e8ah8RNA-lT7PGU-dTr64UQ=]
+[2009-05-15 19:26:17]  URL Downloaded:[http://www.youtube.com/get_video?video_id=HoiUlyRtTKc&t=vjVQa1PpcFPgltKT703K6NjkyOQG_P90CDCzbTunZDk=]
+[2009-05-15 19:26:17] Get:[http://www.youtube.com/watch?v=dvUr7oU2H48]
+[2009-05-15 19:26:24] Get:[http://www.youtube.com/get_video?video_id=dvUr7oU2H48&t=vjVQa1PpcFMJFbs1kys9z4WPunCXClhgeIfj9r-VVp8=]
+[2009-05-15 19:31:32]  URL Downloaded:[http://www.youtube.com/get_video?video_id=6qAw51HmBVk&t=vjVQa1PpcFPVTdh6tlyWScGBcQSlp0E-Yls8RFXkEmY=]
+[2009-05-15 19:31:32] Get:[http://www.youtube.com/watch?v=WGHLF-XRoYs&feature=fvsr]
+[2009-05-15 19:31:36] Get:[http://www.youtube.com/get_video?video_id=WGHLF-XRoYs&t=vjVQa1PpcFNU54XYiEiQUtxbKe_x4TN0WFucVbpqmeI=]
+[2009-05-15 19:34:09]  URL Downloaded:[http://www.youtube.com/get_video?video_id=xcFqBZEbCSo&t=vjVQa1PpcFPn7mlnRDLV0-QPem9mdhAZbeOaGKsxvTA=]
+[2009-05-15 19:34:09]   Video:[http://www.youtube.com/watch?v=rUIYxUdLCEw] has been downloaded before, pass.
+
+[2009-05-15 19:34:09]   Video:[http://www.youtube.com/watch?v=ixasosKLt9c] has been downloaded before, pass.
+
+[2009-05-15 19:34:09]   Video:[http://www.youtube.com/watch?v=270V4NayA0o] has been downloaded before, pass.
+
+[2009-05-15 19:34:09]   Video:[http://www.youtube.com/watch?v=AWMzqeYSO-A] has been downloaded before, pass.
+
+[2009-05-15 19:34:09]   Video:[http://www.youtube.com/watch?v=VvV1vKtJ2vs] has been downloaded before, pass.
+
+[2009-05-15 19:34:09]   Video:[http://www.youtube.com/watch?v=0MgRLVSoBQE] has been downloaded before, pass.
+
+[2009-05-15 19:34:09]   Video:[http://www.youtube.com/watch?v=YU4vaBi82OI] has been downloaded before, pass.
+
+[2009-05-15 19:34:09]   Video:[http://www.youtube.com/watch?v=TXCOdxt6TYQ] has been downloaded before, pass.
+
+[2009-05-15 19:34:09]   Video:[http://www.youtube.com/watch?v=w_ANLodVBDA] has been downloaded before, pass.
+
+[2009-05-15 19:34:09]   Video:[http://www.youtube.com/watch?v=sDyhqSKHqQw] has been downloaded before, pass.
+
+[2009-05-15 19:34:09]   Video:[http://www.youtube.com/watch?v=Sm-yr4Itptw] has been downloaded before, pass.
+
+[2009-05-15 19:34:09]   Video:[http://www.youtube.com/watch?v=7VBD-VGMmk4] has been downloaded before, pass.
+
+[2009-05-15 19:34:09]   Video:[http://www.youtube.com/watch?v=2UbruQ9xmEI] has been downloaded before, pass.
+
+[2009-05-15 19:34:09]   Video:[http://www.youtube.com/watch?v=IGh4f48RpL8] has been downloaded before, pass.
+
+[2009-05-15 19:34:09]   Video:[http://www.youtube.com/watch?v=byEgwoW1Jk0] has been downloaded before, pass.
+
+[2009-05-15 19:34:09]   Video:[http://www.youtube.com/watch?v=Y8M96jT6s7A] has been downloaded before, pass.
+
+[2009-05-15 19:34:09]   Video:[http://www.youtube.com/watch?v=FAPX3Z04gHE] has been downloaded before, pass.
+
+[2009-05-15 19:34:09]   Video:[http://www.youtube.com/watch?v=Vj5Zl7O1x-0] has been downloaded before, pass.
+
+[2009-05-15 19:34:09]   Video:[http://www.youtube.com/watch?v=58rM36ck2nM] has been downloaded before, pass.
+
+[2009-05-15 19:34:09]   Video:[http://www.youtube.com/watch?v=m4Imid30ozo] has been downloaded before, pass.
+
+[2009-05-15 19:34:09]   Video:[http://www.youtube.com/watch?v=JzBsqjVDlsw] has been downloaded before, pass.
+
+[2009-05-15 19:34:09]   Video:[http://www.youtube.com/watch?v=c6ZZ2nGBhP0] has been downloaded before, pass.
+
+[2009-05-15 19:34:09]   Video:[http://www.youtube.com/watch?v=gVGokfADphc] has been downloaded before, pass.
+
+[2009-05-15 19:34:09]   Video:[http://www.youtube.com/watch?v=9d4MNboTGHg] has been downloaded before, pass.
+
+[2009-05-15 19:34:09]   Video:[http://www.youtube.com/watch?v=YvvlUgQAgEc] has been downloaded before, pass.
+
+[2009-05-15 19:34:09]   Video:[http://www.youtube.com/watch?v=aIwYOTM5pS0] has been downloaded before, pass.
+
+[2009-05-15 19:34:09]   Video:[http://www.youtube.com/watch?v=RBBAK0KtQjc] has been downloaded before, pass.
+
+[2009-05-15 19:34:09]   Video:[http://www.youtube.com/watch?v=Dy-WcrijeDc] has been downloaded before, pass.
+
+[2009-05-15 19:34:09]   Video:[http://www.youtube.com/watch?v=0ZHhUb_XxM0] has been downloaded before, pass.
+
+[2009-05-15 19:34:09]   Video:[http://www.youtube.com/watch?v=NtwEKOXbYlk] has been downloaded before, pass.
+
+[2009-05-15 19:34:09]   Video:[http://www.youtube.com/watch?v=QBIloemfzak] has been downloaded before, pass.
+
+[2009-05-15 19:34:09]   Video:[http://www.youtube.com/watch?v=8a8HDjcjk9M] has been downloaded before, pass.
+
+[2009-05-15 19:34:09]   Video:[http://www.youtube.com/watch?v=4xk4AaLQiH4] has been downloaded before, pass.
+
+[2009-05-15 19:34:09]   Video:[http://www.youtube.com/watch?v=no_ACWNXxj4] has been downloaded before, pass.
+
+[2009-05-15 19:34:09]   Video:[http://www.youtube.com/watch?v=8hK80FBfX1k] has been downloaded before, pass.
+
+[2009-05-15 19:34:09] Get:[http://www.youtube.com/watch?v=YJsaTrgI1JI]
+[2009-05-15 19:34:12] Get:[http://www.youtube.com/get_video?video_id=YJsaTrgI1JI&t=vjVQa1PpcFP0eUC37xDevLgnhpj8k3cV1dTu4cmz8Qs=]
+[2009-05-15 19:39:27]  URL Downloaded:[http://www.youtube.com/get_video?video_id=NloVSRJH9U8&t=vjVQa1PpcFNCx0IrzK1wFskAWExOBIXkxSyMZex6yVY=]
+[2009-05-15 19:39:27] Get:[http://www.youtube.com/watch?v=l3oY4iUX2vo]
+[2009-05-15 19:39:36] Get:[http://www.youtube.com/get_video?video_id=l3oY4iUX2vo&t=vjVQa1PpcFPFP9KoEUYf8Kt45Onb3m9n10AqEv0iRlw=]
+[2009-05-15 19:42:23]  URL Downloaded:[http://www.youtube.com/get_video?video_id=DHcALFnzyl8&t=vjVQa1PpcFO5TTiBDkV8e8ah8RNA-lT7PGU-dTr64UQ=]
+[2009-05-15 19:42:23] Get:[http://www.youtube.com/watch?v=uznxMgYZLdw]
+[2009-05-15 19:42:28] Get:[http://www.youtube.com/get_video?video_id=uznxMgYZLdw&t=vjVQa1PpcFOx_EcxPRkVtx620suoR84zkPkENtIn55U=]
+[2009-05-15 19:42:50]  URL Downloaded:[http://www.youtube.com/get_video?video_id=WGHLF-XRoYs&t=vjVQa1PpcFNU54XYiEiQUtxbKe_x4TN0WFucVbpqmeI=]
+[2009-05-15 19:42:50] Get:[http://www.youtube.com/watch?v=4bMT4u_mNTo]
+[2009-05-15 19:43:00] Get:[http://www.youtube.com/get_video?video_id=4bMT4u_mNTo&t=vjVQa1PpcFMLrMPxRCBBkrEaQSMlLT10jh-PsHEVj_A=]
+[2009-05-15 19:45:58]  URL Downloaded:[http://www.youtube.com/get_video?video_id=dvUr7oU2H48&t=vjVQa1PpcFMJFbs1kys9z4WPunCXClhgeIfj9r-VVp8=]
+[2009-05-15 19:45:58] Get:[http://www.youtube.com/watch?v=fc2ViBNh0tM]
+[2009-05-15 19:46:04] Get:[http://www.youtube.com/get_video?video_id=fc2ViBNh0tM&t=vjVQa1PpcFOccyZ8WdDw38MFoewdztnj77RLTWiG2uo=]
+[2009-05-15 19:50:30]  URL Downloaded:[http://www.youtube.com/get_video?video_id=YJsaTrgI1JI&t=vjVQa1PpcFP0eUC37xDevLgnhpj8k3cV1dTu4cmz8Qs=]
+[2009-05-15 19:50:30] Get:[http://www.youtube.com/watch?v=jkRkioHcZfg]
+[2009-05-15 19:50:34] Get:[http://www.youtube.com/get_video?video_id=jkRkioHcZfg&t=vjVQa1PpcFOmhxWTeSgaFaTz1MoImtvjUnURBcNPHww=]
+[2009-05-15 19:57:14]  URL Downloaded:[http://www.youtube.com/get_video?video_id=l3oY4iUX2vo&t=vjVQa1PpcFPFP9KoEUYf8Kt45Onb3m9n10AqEv0iRlw=]
+[2009-05-15 19:57:14] Get:[http://www.youtube.com/watch?v=i7StUiq_dAc]
+[2009-05-15 19:57:22] Get:[http://www.youtube.com/get_video?video_id=i7StUiq_dAc&t=vjVQa1PpcFNhGnOGcXYZ6RXbQOd5MNSkvb25SxBDM_w=]
+[2009-05-15 19:59:17]  URL Downloaded:[http://www.youtube.com/get_video?video_id=4bMT4u_mNTo&t=vjVQa1PpcFMLrMPxRCBBkrEaQSMlLT10jh-PsHEVj_A=]
+[2009-05-15 19:59:17] Get:[http://www.youtube.com/watch?v=uGRzJp3op_M]
+[2009-05-15 19:59:26] Get:[http://www.youtube.com/get_video?video_id=uGRzJp3op_M&t=vjVQa1PpcFN5fexi95eAV5dM8bz9Tib65WjbVtjymaE=]
+[2009-05-15 20:02:56]  URL Downloaded:[http://www.youtube.com/get_video?video_id=uznxMgYZLdw&t=vjVQa1PpcFOx_EcxPRkVtx620suoR84zkPkENtIn55U=]
+[2009-05-15 20:02:56] Get:[http://www.youtube.com/watch?v=9cSpox6sZ7k]
+[2009-05-15 20:02:59] Get:[http://www.youtube.com/get_video?video_id=9cSpox6sZ7k&t=vjVQa1PpcFOFZ-UF7zNuHJTlTBYXrswJOmK0WNPh7AE=]
+[2009-05-15 20:03:21]  URL Downloaded:[http://www.youtube.com/get_video?video_id=fc2ViBNh0tM&t=vjVQa1PpcFOccyZ8WdDw38MFoewdztnj77RLTWiG2uo=]
+[2009-05-15 20:03:21] Get:[http://www.youtube.com/watch?v=GhNeNmuAGvQ]
+[2009-05-15 20:03:28] Get:[http://www.youtube.com/get_video?video_id=GhNeNmuAGvQ&t=vjVQa1PpcFOUGuibujv1N1LurWdVPLO79j-34MfxVFI=]
+[2009-05-15 20:07:36]  URL Downloaded:[http://www.youtube.com/get_video?video_id=jkRkioHcZfg&t=vjVQa1PpcFOmhxWTeSgaFaTz1MoImtvjUnURBcNPHww=]
+[2009-05-15 20:07:37] Get:[http://www.youtube.com/watch?v=cYkYZGGpVoc]
+[2009-05-15 20:07:41] Get:[http://www.youtube.com/get_video?video_id=cYkYZGGpVoc&t=vjVQa1PpcFO7Z3WdLvDkLzP1xLfHsniLA54HlZwRxFs=]
+[2009-05-15 20:14:37]  URL Downloaded:[http://www.youtube.com/get_video?video_id=i7StUiq_dAc&t=vjVQa1PpcFNhGnOGcXYZ6RXbQOd5MNSkvb25SxBDM_w=]
+[2009-05-15 20:14:37] Get:[http://www.youtube.com/watch?v=rW10Ye2s1Z8]
+[2009-05-15 20:14:41] Get:[http://www.youtube.com/get_video?video_id=rW10Ye2s1Z8&t=vjVQa1PpcFO5tiKpqono4HzGjSeRBoM3pCk9hv-BGjw=]
+[2009-05-15 20:15:12]  URL Downloaded:[http://www.youtube.com/get_video?video_id=GhNeNmuAGvQ&t=vjVQa1PpcFOUGuibujv1N1LurWdVPLO79j-34MfxVFI=]
+[2009-05-15 20:15:12] Get:[http://www.youtube.com/watch?v=8QJ_rrOUGYA]
+[2009-05-15 20:15:14] Get:[http://www.youtube.com/get_video?video_id=8QJ_rrOUGYA&t=vjVQa1PpcFPOGN-zRTKRxO3zKO6XAhKb3Wy_bA5YVzE=]
+[2009-05-15 20:15:22]  URL Downloaded:[http://www.youtube.com/get_video?video_id=uGRzJp3op_M&t=vjVQa1PpcFN5fexi95eAV5dM8bz9Tib65WjbVtjymaE=]
+[2009-05-15 20:15:22] Get:[http://www.youtube.com/watch?v=tS_SGFxsieI]
+[2009-05-15 20:15:27] Get:[http://www.youtube.com/get_video?video_id=tS_SGFxsieI&t=vjVQa1PpcFNnR_T-2MRcOEseTFJcUWgjBIU6-6g82XY=]
+[2009-05-15 20:18:21]  URL Downloaded:[http://www.youtube.com/get_video?video_id=9cSpox6sZ7k&t=vjVQa1PpcFOFZ-UF7zNuHJTlTBYXrswJOmK0WNPh7AE=]
+[2009-05-15 20:18:21] Get:[http://www.youtube.com/watch?v=Fnq1rSu7qKs]
+[2009-05-15 20:18:24] Get:[http://www.youtube.com/get_video?video_id=Fnq1rSu7qKs&t=vjVQa1PpcFNdqh0sQ_vbWyk-xlBjab_eDoyJq7C-RMY=]
+[2009-05-15 20:21:39]  URL Downloaded:[http://www.youtube.com/get_video?video_id=rW10Ye2s1Z8&t=vjVQa1PpcFO5tiKpqono4HzGjSeRBoM3pCk9hv-BGjw=]
+[2009-05-15 20:21:39] Get:[http://www.youtube.com/watch?v=_X6KjQSjv8o]
+[2009-05-15 20:21:44] Get:[http://www.youtube.com/get_video?video_id=_X6KjQSjv8o&t=vjVQa1PpcFOi94HM291mJ7ykNsXXKHrDeZ1TXOAWdz0=]
+[2009-05-15 20:28:47]  URL Downloaded:[http://www.youtube.com/get_video?video_id=cYkYZGGpVoc&t=vjVQa1PpcFO7Z3WdLvDkLzP1xLfHsniLA54HlZwRxFs=]
+[2009-05-15 20:28:47] Get:[http://www.youtube.com/watch?v=EA1KXIgiNvI]
+[2009-05-15 20:28:52] Get:[http://www.youtube.com/get_video?video_id=EA1KXIgiNvI&t=vjVQa1PpcFMbtuRBimvAB8P5UbWpBMJyEyZnnFS1O1A=]
+[2009-05-15 20:31:19]  URL Downloaded:[http://www.youtube.com/get_video?video_id=8QJ_rrOUGYA&t=vjVQa1PpcFPOGN-zRTKRxO3zKO6XAhKb3Wy_bA5YVzE=]
+[2009-05-15 20:31:19] Get:[http://www.youtube.com/watch?v=8QJ_rrOUGYA&feature=fvsr]
+[2009-05-15 20:31:27] Get:[http://www.youtube.com/watch?v=KYChK1a9qKI]
+[2009-05-15 20:31:31] Get:[http://www.youtube.com/get_video?video_id=KYChK1a9qKI&t=vjVQa1PpcFNUhN-dt6E6fPjp0KGn0nRN5dedZu6cnZU=]
+[2009-05-15 20:32:09]  URL Downloaded:[http://www.youtube.com/get_video?video_id=tS_SGFxsieI&t=vjVQa1PpcFNnR_T-2MRcOEseTFJcUWgjBIU6-6g82XY=]
+[2009-05-15 20:32:09] Get:[http://www.youtube.com/watch?v=3ltpgkBv_bs]
+[2009-05-15 20:32:15] Get:[http://www.youtube.com/get_video?video_id=3ltpgkBv_bs&t=vjVQa1PpcFMnnQeCA2-Wn5BIXtnm0XdI7LQHKa9tHR8=]
+[2009-05-15 20:36:16]  URL Downloaded:[http://www.youtube.com/get_video?video_id=_X6KjQSjv8o&t=vjVQa1PpcFOi94HM291mJ7ykNsXXKHrDeZ1TXOAWdz0=]
+[2009-05-15 20:36:16] Get:[http://www.youtube.com/watch?v=blXngqZdfAM]
+[2009-05-15 20:36:20] Get:[http://www.youtube.com/get_video?video_id=blXngqZdfAM&t=vjVQa1PpcFMue3oX1BwFzJSAnkl3B6lTyIaeyXo1Tm8=]
+[2009-05-15 20:36:51]  URL Downloaded:[http://www.youtube.com/get_video?video_id=Fnq1rSu7qKs&t=vjVQa1PpcFNdqh0sQ_vbWyk-xlBjab_eDoyJq7C-RMY=]
+[2009-05-15 20:36:51] Get:[http://www.youtube.com/watch?v=Oc-8RsUmVWY]
+[2009-05-15 20:36:54] Get:[http://www.youtube.com/get_video?video_id=Oc-8RsUmVWY&t=vjVQa1PpcFM9cqKewZfcsR89fT0hmsaD9J9Bj-x9Xf8=]
+[2009-05-15 20:45:47]  URL Downloaded:[http://www.youtube.com/get_video?video_id=EA1KXIgiNvI&t=vjVQa1PpcFMbtuRBimvAB8P5UbWpBMJyEyZnnFS1O1A=]
+[2009-05-15 20:45:47] Get:[http://www.youtube.com/watch?v=nBBAZd-8qNQ]
+[2009-05-15 20:45:53] Get:[http://www.youtube.com/get_video?video_id=nBBAZd-8qNQ&t=vjVQa1PpcFNZzjsiAkAbx3QhnS3Ad08uwwK2h1SY7FY=]
+[2009-05-15 20:46:13]  URL Downloaded:[http://www.youtube.com/get_video?video_id=blXngqZdfAM&t=vjVQa1PpcFMue3oX1BwFzJSAnkl3B6lTyIaeyXo1Tm8=]
+[2009-05-15 20:46:13] Get:[http://www.youtube.com/watch?v=TjTtZt8Q3XQ]
+[2009-05-15 20:46:27] Get:[http://www.youtube.com/get_video?video_id=TjTtZt8Q3XQ&t=vjVQa1PpcFNK2uNNh-sHz21xN3TG4IzUE1LzBUUNAKE=]
+[2009-05-15 20:47:35]  URL Downloaded:[http://www.youtube.com/get_video?video_id=3ltpgkBv_bs&t=vjVQa1PpcFMnnQeCA2-Wn5BIXtnm0XdI7LQHKa9tHR8=]
+[2009-05-15 20:47:35] Get:[http://www.youtube.com/watch?v=OpDfMFTs-sc]
+[2009-05-15 20:47:41] Get:[http://www.youtube.com/get_video?video_id=OpDfMFTs-sc&t=vjVQa1PpcFNyVIGRjR-8yPOFHRXpMjBe_Y7LJhZC0OU=]
+[2009-05-15 20:47:46]  URL Downloaded:[http://www.youtube.com/get_video?video_id=KYChK1a9qKI&t=vjVQa1PpcFNUhN-dt6E6fPjp0KGn0nRN5dedZu6cnZU=]
+[2009-05-15 20:47:46] Get:[http://www.youtube.com/watch?v=30sSUlyCLyI]
+[2009-05-15 20:47:49] Get:[http://www.youtube.com/get_video?video_id=30sSUlyCLyI&t=vjVQa1PpcFMuJT3z2VDfXftmkvFFfI9S_0WUYOOkJHs=]
+[2009-05-15 20:49:55]  URL Downloaded:[http://www.youtube.com/get_video?video_id=Oc-8RsUmVWY&t=vjVQa1PpcFM9cqKewZfcsR89fT0hmsaD9J9Bj-x9Xf8=]
+[2009-05-15 20:49:55] Get:[http://www.youtube.com/watch?v=6AmdLP_BhuY]
+[2009-05-15 20:50:00] Get:[http://www.youtube.com/get_video?video_id=6AmdLP_BhuY&t=vjVQa1PpcFNmpFjQvih03ilRhSZn6cO6GSqsJWa415M=]
+[2009-05-15 20:59:39]  URL Downloaded:[http://www.youtube.com/get_video?video_id=TjTtZt8Q3XQ&t=vjVQa1PpcFNK2uNNh-sHz21xN3TG4IzUE1LzBUUNAKE=]
+[2009-05-15 20:59:39] Get:[http://www.youtube.com/watch?v=P1E4t7olQM0]
+[2009-05-15 20:59:42] Get:[http://www.youtube.com/get_video?video_id=P1E4t7olQM0&t=vjVQa1PpcFMqhbjZblvfFMPZKsoMgtnQvyUIGLPjsNg=]
+[2009-05-15 20:59:49]  URL Downloaded:[http://www.youtube.com/get_video?video_id=nBBAZd-8qNQ&t=vjVQa1PpcFNZzjsiAkAbx3QhnS3Ad08uwwK2h1SY7FY=]
+[2009-05-15 20:59:49] Get:[http://www.youtube.com/watch?v=qhwkesMutj8]
+[2009-05-15 20:59:51] Get:[http://www.youtube.com/get_video?video_id=qhwkesMutj8&t=vjVQa1PpcFP_wrhTh92S27jVLchHNUYeUPCHGA8Grmk=]
+[2009-05-15 20:59:55]  URL Downloaded:[http://www.youtube.com/get_video?video_id=OpDfMFTs-sc&t=vjVQa1PpcFNyVIGRjR-8yPOFHRXpMjBe_Y7LJhZC0OU=]
+[2009-05-15 20:59:55] Get:[http://www.youtube.com/watch?v=tChKsWQucLA]
+[2009-05-15 20:59:58] Get:[http://www.youtube.com/get_video?video_id=tChKsWQucLA&t=vjVQa1PpcFOaz-Edj73BVbi-k-vYZSzk3aExp4gI7cA=]
+[2009-05-15 21:02:10]  URL Downloaded:[http://www.youtube.com/get_video?video_id=30sSUlyCLyI&t=vjVQa1PpcFMuJT3z2VDfXftmkvFFfI9S_0WUYOOkJHs=]
+[2009-05-15 21:02:10] Get:[http://www.youtube.com/watch?v=wVvii-norkw]
+[2009-05-15 21:02:18] Get:[http://www.youtube.com/get_video?video_id=wVvii-norkw&t=vjVQa1PpcFPsS9vJsBQFPK7KFdqgqNPHrXkqdZ2V4Ug=]
+[2009-05-15 21:03:05]  URL Downloaded:[http://www.youtube.com/get_video?video_id=6AmdLP_BhuY&t=vjVQa1PpcFNmpFjQvih03ilRhSZn6cO6GSqsJWa415M=]
+[2009-05-15 21:03:05] Get:[http://www.youtube.com/watch?v=CFjL_zRSlzs]
+[2009-05-15 21:03:12] Get:[http://www.youtube.com/get_video?video_id=CFjL_zRSlzs&t=vjVQa1PpcFMoTu2Nyi1bHfCjCR1lKPgmZVwShe_1ejg=]
+[2009-05-15 21:10:49]  URL Downloaded:[http://www.youtube.com/get_video?video_id=qhwkesMutj8&t=vjVQa1PpcFP_wrhTh92S27jVLchHNUYeUPCHGA8Grmk=]
+[2009-05-15 21:10:49] Get:[http://www.youtube.com/watch?v=bGIY07DWDS0]
+[2009-05-15 21:10:54] Get:[http://www.youtube.com/get_video?video_id=bGIY07DWDS0&t=vjVQa1PpcFPcuNQyipLdA3AFCadhqgAFdydAbP0cURc=]
+[2009-05-15 21:11:58]  URL Downloaded:[http://www.youtube.com/get_video?video_id=tChKsWQucLA&t=vjVQa1PpcFOaz-Edj73BVbi-k-vYZSzk3aExp4gI7cA=]
+[2009-05-15 21:11:58] Get:[http://www.youtube.com/watch?v=kK-Qgzz6PA0]
+[2009-05-15 21:12:01] Get:[http://www.youtube.com/get_video?video_id=kK-Qgzz6PA0&t=vjVQa1PpcFM_y78I5qkXi8MagebriRxM2eyF0LmJebs=]
+[2009-05-15 21:12:35]  URL Downloaded:[http://www.youtube.com/get_video?video_id=P1E4t7olQM0&t=vjVQa1PpcFMqhbjZblvfFMPZKsoMgtnQvyUIGLPjsNg=]
+[2009-05-15 21:12:35] Get:[http://www.youtube.com/watch?v=5155LI4s-SY]
+[2009-05-15 21:12:43] Get:[http://www.youtube.com/get_video?video_id=5155LI4s-SY&t=vjVQa1PpcFPZVUAqd9kBiSWAs1LaPRKX58OoQW8sJVg=]
+[2009-05-15 21:13:17]  URL Downloaded:[http://www.youtube.com/get_video?video_id=wVvii-norkw&t=vjVQa1PpcFPsS9vJsBQFPK7KFdqgqNPHrXkqdZ2V4Ug=]
+[2009-05-15 21:13:17] Get:[http://www.youtube.com/watch?v=NvAvMNt9Nsg]
+[2009-05-15 21:13:26] Get:[http://www.youtube.com/get_video?video_id=NvAvMNt9Nsg&t=vjVQa1PpcFMb6ctWOseZioiiGtsuOCudarFpL_ybfVI=]
+[2009-05-15 21:17:42]  URL Downloaded:[http://www.youtube.com/get_video?video_id=CFjL_zRSlzs&t=vjVQa1PpcFMoTu2Nyi1bHfCjCR1lKPgmZVwShe_1ejg=]
+[2009-05-15 21:17:42] Get:[http://www.youtube.com/watch?v=PR52H6YS5Q8]
+[2009-05-15 21:17:51] Get:[http://www.youtube.com/get_video?video_id=PR52H6YS5Q8&t=vjVQa1PpcFO93w_nqAEnsrVS_QXR3bFStPgbqjy0Bqw=]
+[2009-05-15 21:25:06]  URL Downloaded:[http://www.youtube.com/get_video?video_id=5155LI4s-SY&t=vjVQa1PpcFPZVUAqd9kBiSWAs1LaPRKX58OoQW8sJVg=]
+[2009-05-15 21:25:06] Get:[http://www.youtube.com/watch?v=-1l_vnINKYo]
+[2009-05-15 21:25:10] Get:[http://www.youtube.com/get_video?video_id=-1l_vnINKYo&t=vjVQa1PpcFNGxxvOzKBZkGt7msbHwCxRIaFAV-bUPnI=]
+[2009-05-15 21:25:34]  URL Downloaded:[http://www.youtube.com/get_video?video_id=kK-Qgzz6PA0&t=vjVQa1PpcFM_y78I5qkXi8MagebriRxM2eyF0LmJebs=]
+[2009-05-15 21:25:34] Get:[http://www.youtube.com/watch?v=8H3Kj6Cnets]
+[2009-05-15 21:25:37] Get:[http://www.youtube.com/get_video?video_id=8H3Kj6Cnets&t=vjVQa1PpcFNHW9RRtUMa9S4cYWA1fMImu6Y-tBgZOhI=]
+[2009-05-15 21:25:42]  URL Downloaded:[http://www.youtube.com/get_video?video_id=bGIY07DWDS0&t=vjVQa1PpcFPcuNQyipLdA3AFCadhqgAFdydAbP0cURc=]
+[2009-05-15 21:25:42] Get:[http://www.youtube.com/watch?v=UDJGD5tosm4]
+[2009-05-15 21:25:49] Get:[http://www.youtube.com/get_video?video_id=UDJGD5tosm4&t=vjVQa1PpcFMEUoE4AeOj_jRB4QD_upoDftSOI8Cni3o=]
+[2009-05-15 21:27:11]  URL Downloaded:[http://www.youtube.com/get_video?video_id=NvAvMNt9Nsg&t=vjVQa1PpcFMb6ctWOseZioiiGtsuOCudarFpL_ybfVI=]
+[2009-05-15 21:27:11] Get:[http://www.youtube.com/watch?v=Bupca1hExv8]
+[2009-05-15 21:27:14] Get:[http://www.youtube.com/get_video?video_id=Bupca1hExv8&t=vjVQa1PpcFNkEVb14HEFBrAjn3Qnlplk-i8Pe3dqvng=]
+[2009-05-15 21:31:39]  URL Downloaded:[http://www.youtube.com/get_video?video_id=PR52H6YS5Q8&t=vjVQa1PpcFO93w_nqAEnsrVS_QXR3bFStPgbqjy0Bqw=]
+[2009-05-15 21:39:45]  URL Downloaded:[http://www.youtube.com/get_video?video_id=8H3Kj6Cnets&t=vjVQa1PpcFNHW9RRtUMa9S4cYWA1fMImu6Y-tBgZOhI=]
+[2009-05-15 21:40:12]  URL Downloaded:[http://www.youtube.com/get_video?video_id=UDJGD5tosm4&t=vjVQa1PpcFMEUoE4AeOj_jRB4QD_upoDftSOI8Cni3o=]
+[2009-05-15 21:40:16]  URL Downloaded:[http://www.youtube.com/get_video?video_id=-1l_vnINKYo&t=vjVQa1PpcFNGxxvOzKBZkGt7msbHwCxRIaFAV-bUPnI=]
+[2009-05-15 21:41:05]  URL Downloaded:[http://www.youtube.com/get_video?video_id=Bupca1hExv8&t=vjVQa1PpcFNkEVb14HEFBrAjn3Qnlplk-i8Pe3dqvng=]
