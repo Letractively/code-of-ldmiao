@@ -111,6 +111,15 @@ class RSSPage(PublicPage):
         rss_template = methods.get_rss_template()
         self.response.out.write(rss_template%(rss))
 
+class PictureXMLPage(PublicPage):
+    def get(self):
+        count = int(self.request.get('count'))
+        index = 0
+        images=methods.getImages(count=count, offset=index)
+        template_value={"images":images, "userid":"userid"}
+        self.response.headers['Content-Type'] = "text/xml"
+        self.render('views/pictures.xml', template_value)
+        
 class ShowImage(PublicPage):
     def get(self,id):
         image=methods.getImage(id)
@@ -151,6 +160,7 @@ def main():
                                         (r'/show/(?P<id>[0-9]+)/',ShowImage),
                                         (r'/(?P<page>[0-9]*)/?', MainPage),
                                         (r'/photos.rss', RSSPage),
+                                        (r'/picturexml', PictureXMLPage),
                                         ('.*',Error)
                                        ], debug=True)
     wsgiref.handlers.CGIHandler().run(application)
