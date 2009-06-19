@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<album userid="{{userid}}">
+    {% for image in images %}
+    <picture id="{{image.id}}" md5="{{image.id}}" height="{{image.height}}" width="{{image.width}}" isrotated="0">
+        <title><![CDATA[{{image.id}}]]></title>
+        <thumbnail><![CDATA[/s/{{image.id}}.jpg]]></thumbnail>
+        <path><![CDATA[/image/{{image.id}}.jpg]]></path>
+        <description><![CDATA[]]></description>
+    </picture>
+    {% endfor %}
+</album>
