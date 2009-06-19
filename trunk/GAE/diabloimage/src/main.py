@@ -113,7 +113,11 @@ class RSSPage(PublicPage):
 
 class PictureXMLPage(PublicPage):
     def get(self):
-        count = int(self.request.get('count'))
+        count = self.request.get('count')
+        if count:
+            count = int(count)
+        else:
+            count = 30
         index = 0
         images=methods.getImages(count=count, offset=index)
         template_value={"images":images, "userid":"userid"}
@@ -157,6 +161,8 @@ def main():
                                         (r'/xml/?', XMLPage),
                                         (r'/(?P<size>image)/(?P<id>[0-9]+)/?',GetImage),
                                         (r'/(?P<size>s)/(?P<id>[0-9]+)/?',GetImage),
+                                        (r'/(?P<size>image)/(?P<id>[0-9]+).jpg',GetImage),
+                                        (r'/(?P<size>s)/(?P<id>[0-9]+).jpg',GetImage),
                                         (r'/show/(?P<id>[0-9]+)/',ShowImage),
                                         (r'/(?P<page>[0-9]*)/?', MainPage),
                                         (r'/photos.rss', RSSPage),
