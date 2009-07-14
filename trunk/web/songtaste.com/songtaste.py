@@ -208,8 +208,11 @@ if __name__=="__main__":
     #getAllRecommendedSongsFromUser('572763')
     #getSongsFromAblum('136560')
     #getSongsFromURL('http://songtaste.com/music/chart', 'week_order_new');
-    getSongsFromURL('http://songtaste.com/music.php?tag=chart&dt=2009-03-23', 'week_2009-03-23')
-    getSongsFromURL('http://songtaste.com/music.php?tag=chart&dt=2009-03-30', 'week_2009-03-30')
+    #getSongsFromURL('http://songtaste.com/music.php?tag=chart&dt=2009-05-11', 'week_2009-05-11')
+    getSongsFromURL('http://songtaste.com/music.php?tag=chart&dt=2009-06-01', 'week_2009-06-01')
+    getSongsFromURL('http://songtaste.com/music.php?tag=chart&dt=2009-06-08', 'week_2009-06-08')
+    getSongsFromURL('http://songtaste.com/music.php?tag=chart&dt=2009-06-15', 'week_2009-06-15')
+    #getSongsFromURL('http://songtaste.com/music.php?tag=chart&dt=2009-04-06', 'week_2009-04-06')
     #getSongsFromURL('http://songtaste.com/music.php?tag=chart&dt=2009-02-16', 'week_2009-02-16')
     #getSongsFromURL('http://songtaste.com/music.php?tag=chart&dt=2009-02-09', 'week_2009-02-09')
     #getSongsFromURL('http://songtaste.com/music.php?tag=chart&dt=2009-02-02', 'week_2009-02-02')
