@@ -217,18 +217,19 @@ def saveImage(dirname, img_url, img_name=None):
                 print "Create dir: "+dirname
                 os.mkdir(dirname)
 
-    content = getContent(img_url)
     if img_name is None:
-        image_md5 = compute_md5(content)
+        image_md5 = compute_md5(img_url)
         img_path_name = dirname + "/" + image_md5 + ".jpg"
     else:
-        img_path_name = dirname + "/" + img_name + ".jpg"
+        img_path_name = dirname + "/" + img_name
         image_md5 = img_name
 
     if existFile(img_path_name):
         print "\033[31m File " + img_path_name + " already exists, pass~~ \033[0m"
         return image_md5
 
+    content = getContent(img_url)
+    
     try:
         f = open(img_path_name, "wb")
         f.write(content)
