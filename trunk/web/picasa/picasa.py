@@ -163,8 +163,8 @@ def log(str):
     
 # ###################################################################################################
 if __name__ == "__main__":
-    email = 'accountname@gmail.com'   
-    password = 'password'
+    email = 'name@gmail.com'   
+    password = 'pass'
     app_name = 'test-app'
     
     picasa = Picasa(app_name, email, password)
@@ -179,8 +179,3 @@ if __name__ == "__main__":
             print id, albumid, title, description, src#, thumbnail
             log(src)
     
-    '''
-    album, photos = picasa.getAlbumAndPicsFromPicasaAlbumLink('http://picasaweb.google.com/AsianGirls.ilove/KoreaScooterRaceChampionshipLeeJiWooPart2')
-    print album
-    print photos
-    '''
