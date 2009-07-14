@@ -2,6 +2,13 @@
 # -*- coding: utf-8 -*-
 
 import re, codecs
+import urllib
+import urllib2
+import os
+import sys
+import random
+import time
+import md5
 
 import gdata.photos.service
 import gdata.media
