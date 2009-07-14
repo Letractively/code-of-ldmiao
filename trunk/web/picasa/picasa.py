@@ -153,6 +153,7 @@ class Picasa():
                 id, albumid, title, description, src, thumbnail = self.getPhotoInfo(photo)
                 print id, albumid, title, description, src, thumbnail
 
+# ###################################################################################################
 def log(str):
     if str:
         str = str.strip()
@@ -160,16 +161,86 @@ def log(str):
             f = codecs.open("log.log", "a", "utf-8" )
             f.write(str + u'\n')
             f.close()
-    
+
+# ###################################################################################################
+def getContent(url):
+    '''change space char into %20'''
+    url = url.replace(" ", "%20")
+    content = None
+    test_time = 3
+    #success = False
+    #while(success == False):
+    while(test_time > 0):
+        try:
+            filehandle = urllib.urlopen(url, proxies=proxies)
+            content = filehandle.read()
+            #success = True
+            test_time = 0
+        except:
+            #success = False
+            test_time = test_time - 1
+            print "Download failed, " + str(test_time) + " times left~~~~"
+    return content
+
+def getDirName(url):
+    dirname = url[(url.rfind('/')+1):(len(url))]
+    dirname = getChineseFromURL(dirname)
+    if dirname == None:
+        dirname = "images"
+    return dirname
+
+def existFile(filename):
+    if os.path.exists(filename):
+        return True
+    else:
+        return False
+
+def saveImage(dirname, img_url, img_name=None):
+    print "download image:" + img_url
+
+    if not existFile(dirname):
+        try:
+            print "Create dir: "+dirname
+            os.mkdir(dirname)
+        except:
+            dirname = "images"
+            if not existFile(dirname):
+                print "Create dir: "+dirname
+                os.mkdir(dirname)
+
+    content = getContent(img_url)
+    if img_name is None:
+        image_md5 = compute_md5(content)
+        img_path_name = dirname + "/" + image_md5 + ".jpg"
+    else:
+        img_path_name = dirname + "/" + img_name + ".jpg"
+        image_md5 = img_name
+
+    if existFile(img_path_name):
+        print "\033[31m File " + img_path_name + " already exists, pass~~ \033[0m"
+        return image_md5
+
+    try:
+        f = open(img_path_name, "wb")
+        f.write(content)
+        f.close()
+        print "\033[33m Image " + img_path_name + " SAVE! \033[0m"
+    except:
+        print "Error occured, pass~"
+
+    return image_md5
+
+
 # ###################################################################################################
 if __name__ == "__main__":
-    email = 'name@gmail.com'   
+    '''
+    email = 'name@gmail.com'
     password = 'pass'
     app_name = 'test-app'
-    
+
     picasa = Picasa(app_name, email, password)
     username, albums = picasa.getAlbumsFromPicasaUserLink('http://picasaweb.google.com/cabbage718')
-    
+
     for album in albums:
         albumid, uid, photoNum, title, description, provider, cover, source = picasa.getAlbumInfo(album)
         print albumid, uid, photoNum, title, description, provider, cover, source
@@ -178,4 +249,12 @@ if __name__ == "__main__":
             id, albumid, title, description, src, thumbnail = picasa.getPhotoInfo(photo)
             print id, albumid, title, description, src#, thumbnail
             log(src)
+    '''
+    
+    f = codecs.open('log.log', 'r', 'utf-8')
+    line = f.readline()
+    while line:
+        url = line.strip()
+        saveImage('cabbage718', url, url[url.rfind('/')+1:])
+        line = f.readline()
     
