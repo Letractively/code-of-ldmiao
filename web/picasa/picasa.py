@@ -170,6 +170,8 @@ def log(str):
             f.close()
 
 # ###################################################################################################
+proxies = None
+
 def getContent(url):
     '''change space char into %20'''
     url = url.replace(" ", "%20")
