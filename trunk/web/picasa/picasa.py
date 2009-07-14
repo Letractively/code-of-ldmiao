@@ -221,6 +221,7 @@ def saveImage(dirname, img_url, img_name=None):
         image_md5 = compute_md5(img_url)
         img_path_name = dirname + "/" + image_md5 + ".jpg"
     else:
+        img_name = img_name.replace("%20", " ")
         img_path_name = dirname + "/" + img_name
         image_md5 = img_name
 
