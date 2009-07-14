@@ -168,7 +168,7 @@ if __name__ == "__main__":
     app_name = 'test-app'
     
     picasa = Picasa(app_name, email, password)
-    username, albums = picasa.getAlbumsFromPicasaUserLink('http://picasaweb.google.com/AsianGirls.ilove')
+    username, albums = picasa.getAlbumsFromPicasaUserLink('http://picasaweb.google.com/cabbage718')
     
     for album in albums:
         albumid, uid, photoNum, title, description, provider, cover, source = picasa.getAlbumInfo(album)
