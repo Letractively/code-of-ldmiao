@@ -89,6 +89,21 @@ class Picasa():
         album = self.gd_client.InsertAlbum(title=title, summary=summary, access=access)
         album = self.gd_client.Put(album, album.GetEditLink().href, converter=gdata.photos.AlbumEntryFromString)
         return album
+    
+    def modifyAlbum(self, album, title, summary, access='unlist'):
+        if title is not None:
+            album.title.text = title
+        
+        if summary is not None:
+            if isinstance(album, gdata.photos.AlbumEntry):
+                album.summary.text = summary
+            if isinstance(album, gdata.photos.AlbumFeed):
+                album.subtitle.text = summary
+        
+        album.rights.text = access
+        
+        updated_album = self.gd_client.Put(album, album.GetEditLink().href, converter=gdata.photos.AlbumEntryFromString)
+        return updated_album
 
     def putPhoto(self, album, title, description, filename, content_type='image/jpeg'):
         self.checkConnection()
@@ -244,11 +259,12 @@ def saveImage(dirname, img_url, img_name=None):
 
 # ###################################################################################################
 if __name__ == "__main__":
-    '''
+    
     email = 'name@gmail.com'
     password = 'pass'
     app_name = 'test-app'
-
+    
+    '''
     picasa = Picasa(app_name, email, password)
     username, albums = picasa.getAlbumsFromPicasaUserLink('http://picasaweb.google.com/cabbage718')
 
@@ -260,7 +276,7 @@ if __name__ == "__main__":
             id, albumid, title, description, src, thumbnail = picasa.getPhotoInfo(photo)
             print id, albumid, title, description, src#, thumbnail
             log(src)
-    '''
+    
     
     f = codecs.open('log.log', 'r', 'utf-8')
     line = f.readline()
@@ -268,4 +284,12 @@ if __name__ == "__main__":
         url = line.strip()
         saveImage('cabbage718', url, url[url.rfind('/')+1:])
         line = f.readline()
+    '''
+
+    picasa = Picasa(app_name, email, password)
+    username, albums = picasa.getAlbumsFromPicasaUserLink('http://picasaweb.google.com/cabbage718')
+
+    for album in albums:
+        picasa.modifyAlbum(album, None, None, access='unlist')
+        break
     
