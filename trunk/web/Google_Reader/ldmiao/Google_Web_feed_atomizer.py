@@ -98,13 +98,14 @@ def test():
     feed = "http://xuxiaonian.blog.sohu.com/rss"
     feed = "http://lidaokui.blog.sohu.com/rss"
     feed = "http://fangang.blog.sohu.com/rss"
+    feed = "http://blog.xuite.net/netmecc/mj/rss.xml"
     
     user = "PyGtalkRobot"
     passwd = "PyGtalkRobotByLdmiao"
     fc = feedconverter(user, passwd)
-    title, feeds = fc.feeds(feed, 2000)
+    title, feeds = fc.feeds(feed, 1000)
     
-    f = open(u'fangang.html', 'w')
+    f = open(u'mm.html', 'w')
     
     
     style='''<style>
@@ -277,8 +278,8 @@ def saveFeedToGAE():
         idx += 1
 		
 if __name__=='__main__':
-    #test()
+    test()
 	#saveFeedToGAE()
     #archive()
-    saveFeed(u"mm", "http://blog.xuite.net/netmecc/mj/rss.xml")
+    #saveFeed(u"mm", "http://blog.xuite.net/netmecc/mj/rss.xml")
         
