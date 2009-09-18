@@ -279,6 +279,6 @@ def saveFeedToGAE():
 if __name__=='__main__':
     #test()
 	#saveFeedToGAE()
-    archive()
-    #saveFeed(u"樊纲", "http://fangang.blog.sohu.com/rss")
+    #archive()
+    saveFeed(u"mm", "http://blog.xuite.net/netmecc/mj/rss.xml")
         
