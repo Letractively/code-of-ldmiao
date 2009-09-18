@@ -280,5 +280,5 @@ if __name__=='__main__':
     #test()
 	#saveFeedToGAE()
     #archive()
-    saveFeed(u"mm", "http://blog.xuite.net/netmecc/mj/rss.xml")
+    saveFeed(u"mm", "http://blog.xuite.net/netmecc/mj/atom.xml")
         
