@@ -103,7 +103,7 @@ def test():
     user = "PyGtalkRobot"
     passwd = "PyGtalkRobotByLdmiao"
     fc = feedconverter(user, passwd)
-    title, feeds = fc.feeds(feed, 1000)
+    title, feeds = fc.feeds(feed, 3000)
     
     f = open(u'mm.html', 'w')
     
